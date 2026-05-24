@@ -1,19 +1,19 @@
 //This is the code to compute the Picard rank of the square of squares variety.
 
-//We need to build our variety and its curves over Q(i, sqrt(2), sqrt(3)). We also need to have Comps.m on hand to produce this.
+//We need to build our variety and its curves over Q(i, sqrt(2), sqrt(3)). We also need to have Comps.m on hand to produce this
 
 R<x> := PolynomialRing(Rationals());
 L<i, sqrt2, sqrt3> := NumberField([x^2 + 1, x^2 - 2, x^2 - 3]);
 P<a,b,c,d,m,e,f,g,h> := ProjectiveSpace(L, 8);
 S := Scheme(P,[a^2+b^2+c^2-3*m^2,d^2+e^2-2*m^2,f^2+g^2+h^2-3*m^2,a^2+d^2+f^2-3*m^2,b^2-2*m^2+g^2,c^2+e^2+h^2-3*m^2,a^2-2*m^2+h^2,f^2-2*m^2+c^2]);
 
-\\Get our 256 singular points
+//Get our 256 singular points
 
 pts := Points(SingularSubscheme(S));
 
-\\paste in Comps.m. See Section 4 for all of the information.
+//Paste in Comps.m. See Section 4 for all of the information
 
-\\Create an empty curves list
+//Create an empty curves list
 
 CurvesOnS := [];
 
@@ -22,7 +22,7 @@ Append(~CurvesOnS, Scheme(S, Comps[i]));
 end for;
 
 Cpts := [{pt : pt in pts | pt in C} : C in CurvesOnS];
-//Now that we have imported the curves list, we can create the intersection function.
+//Now that we have imported the curves list, we can create the intersection function
 
 function intersection(C, j)
   // j is index in "CurvesOnS cat pts"
@@ -38,10 +38,9 @@ function intersection(C, j)
       CC := C meet CurvesOnS[j];
       assert Dimension(CC) lt 1;
     end if;
-// The self-intersection of CurvesOnS[j] is 2g -2 - 3deg(C) --> (2g - 2 - 3deg(C))*m
-    // The count of intersection points (with multiplicity) --> Degree(CC)
-    // Subtract the number of singularities of S-bar among these
-    //   (blowing them up reduces the intersection number there) --> -&+[...]
+//The self-intersection of CurvesOnS[j] is 2g -2 - 3deg(C) --> (2g - 2 - 3deg(C))*m
+    //The count of intersection points (with multiplicity) --> Degree(CC)
+    //Subtract the number of singularities of S-bar among these. Blowing them up reduces the intersection number there) --> -&+[...]
     return (2*ArithmeticGenus(C) - 2 - 3*Degree(C))*m + Degree(CC) - &+[Integers() | Multiplicity(C, pt) : pt in Cpts[j] | pt in C];
 else
     pt := pts[j-#CurvesOnS];
@@ -55,15 +54,15 @@ pairingmat := ZeroMatrix(Integers(), bdim, bdim); // initialize the matrix with 
 MatCC := Matrix(Integers(),
                 [[k eq j select 2*ArithmeticGenus(C) - 2 - 3*Degree(C) else intersection(C, k) : k in [1..#CurvesOnS]] where C := CurvesOnS[j]
                    : j in [1..#CurvesOnS]]);
-// pairing between curves and singularities
+//Pairing between curves and singularities
 MatCP := Matrix(Integers(),
                 [[pts[k] in ptC select 1 else 0 : k in [1..#pts]] where ptC := Cpts[j]
                    : j in [1..#CurvesOnS]]);
-// Put the parts together
+//Put the parts together
 InsertBlock(~pairingmat, MatCC, 1, 1);
 InsertBlock(~pairingmat, MatCP, 1, #CurvesOnS+1);
 InsertBlock(~pairingmat, Transpose(MatCP), #CurvesOnS+1, 1);
-// the exceptional curves are pairwise disjoint and have self-intersection -2
+// The exceptional curves are pairwise disjoint and have self-intersection -2
 InsertBlock(~pairingmat, DiagonalMatrix(Integers(), [-2 : j in [1..#pts]]), #CurvesOnS+1, #CurvesOnS+1);
 
 //Rank 410 with all components from our Comps file
@@ -75,7 +74,7 @@ InsertBlock(~pairingmat, DiagonalMatrix(Integers(), [-2 : j in [1..#pts]]), #Cur
 1616000000000000000000000000000000000000000. This factors as 2^762*3^101*5^39*7^5*13^20*17^4*19*47^4*61^4*5105753
 
 
-//This is the code to compute the Picard rank of the Magic K3. Our cycles are defined over Q(i, sqrt(2), sqrt(3)), so we need to define our variety over it. The code is essentially as above, but we need to change the self-intersection formula to line up with the formula for K3 surfaces C^2 = 2g - 2.
+//This is the code to compute the Picard rank of the Magic K3. Our cycles are defined over Q(i, sqrt(2), sqrt(3)), so we need to define our variety over it. The code is essentially as above, but we need to change the self-intersection formula to line up with the formula for K3 surfaces C^2 = 2g - 2
 
 R<x> := PolynomialRing(Rationals());
 L<i, sqrt2, sqrt3> := NumberField([x^2 + 1, x^2 -2, x^2 -3]);
@@ -91,7 +90,7 @@ Append(~CurvesOnS, Scheme(S, Comps[i]));
 end for;
 
 Cpts := [{pt : pt in pts | pt in C} : C in CurvesOnS];
-//Now that we have imported the curves list, we can create the intersection function.
+//Now that we have imported the curves list, we can create the intersection function
 
 function intersection(C, j)
   // j is index in "CurvesOnS cat pts"
@@ -107,10 +106,10 @@ function intersection(C, j)
       CC := C meet CurvesOnS[j];
       assert Dimension(CC) lt 1;
     end if;
-// The self-intersection of CurvesOnS[j] is 2g -2 --> (2g - 2)*m
-    // The count of intersection points (with multiplicity) --> Degree(CC)
-    // Subtract the number of singularities of S-bar among these
-    //   (blowing them up reduces the intersection number there) --> -&+[...]
+//The self-intersection of CurvesOnS[j] is 2g -2 --> (2g - 2)*m
+    //The count of intersection points (with multiplicity) --> Degree(CC)
+    //Subtract the number of singularities of S-bar among these
+    //(blowing them up reduces the intersection number there) --> -&+[...]
     return (2*ArithmeticGenus(C) - 2)*m + Degree(CC) - &+[Integers() | Multiplicity(C, pt) : pt in Cpts[j] | pt in C];
 else
     pt := pts[j-#CurvesOnS];
@@ -120,19 +119,19 @@ end function;
 
 bdim := #CurvesOnS + #pts;
 pairingmat := ZeroMatrix(Integers(), bdim, bdim); // initialize the matrix with zeros
-// pairing between curves
+//Pairing between curves
 MatCC := Matrix(Integers(),
                 [[k eq j select 2*ArithmeticGenus(C) - 2 else intersection(C, k) : k in [1..#CurvesOnS]] where C := CurvesOnS[j]
                    : j in [1..#CurvesOnS]]);
-// pairing between curves and singularities
+//Pairing between curves and singularities
 MatCP := Matrix(Integers(),
                 [[pts[k] in ptC select 1 else 0 : k in [1..#pts]] where ptC := Cpts[j]
                    : j in [1..#CurvesOnS]]);
-// Put the parts together
+//Put the parts together
 InsertBlock(~pairingmat, MatCC, 1, 1);
 InsertBlock(~pairingmat, MatCP, 1, #CurvesOnS+1);
 InsertBlock(~pairingmat, Transpose(MatCP), #CurvesOnS+1, 1);
-// the exceptional curves are pairwise disjoint and have self-intersection -2
+//The exceptional curves are pairwise disjoint and have self-intersection -2
 InsertBlock(~pairingmat, DiagonalMatrix(Integers(), [-2 : j in [1..#pts]]), #CurvesOnS+1, #CurvesOnS+1);
 
-//With the current MagicK3Comps file, we conjecture that the Magic K3 has Picard rank 19
+//The rank is 19!
