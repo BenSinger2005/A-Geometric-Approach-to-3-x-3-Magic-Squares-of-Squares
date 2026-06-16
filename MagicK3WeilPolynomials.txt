@@ -1,4 +1,4 @@
-//These are the Weil Polynomials of the magic K3. We give the two outputs from the Magma function WeilPolynomialOfDegree2K3Surface as well as their product. 
+//These are the Weil Polynomials of the magic K3 $X$ from Section 4.2. We give the two outputs from the Magma function WeilPolynomialOfDegree2K3Surface as well as their product. 
 
 //The sextic curve we are working with is of the form
 
