@@ -24,8 +24,6 @@ f6 := x^4*y^2 - 2*x^2*y^4 - 4*x^4*y*z + 6*x^2*y^3*z + 4*x^4*z^2 - 10*x^2*y^2*z^2
 
 ////We see that the points must lie on the union of the line x = 0 and the "conic" y^2 - 2*y*z + 2*z^2 = 0, which splits as the two lines y + (-i - 1)*z = 0, y + (i-1)*z = 0
 
-
-
 //all with multiplicity 1 except for (1:0:0) which has multiplicity 2.
 
 //Inflection point equation y0^4*z0 - 3136/27*x0^2*z0^3 + 320/27*y0^2*z0^3 + 14336/27*x0*z0^4 -16384/27*z0^5, x0^3 - 4*x0^2*z0 - y0^2*z0 - 4*x0*z0^2 + 16*z0^3, x0*y0^2 - 28/3*x0^2*z0 - 4/3*y0^2*z0 + 128/3*x0*z0^2 - 208/3*z0^3, -x0^3 + 4*x0^2*z0 + y0^2*z0 + 4*x0*z0^2 - 16*z0^3. Octic and irreducible outside of the flex at (0:1:0).
