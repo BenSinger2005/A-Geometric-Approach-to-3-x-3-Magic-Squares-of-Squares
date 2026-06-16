@@ -65,13 +65,7 @@ InsertBlock(~pairingmat, Transpose(MatCP), #CurvesOnS+1, 1);
 // The exceptional curves are pairwise disjoint and have self-intersection -2
 InsertBlock(~pairingmat, DiagonalMatrix(Integers(), [-2 : j in [1..#pts]]), #CurvesOnS+1, #CurvesOnS+1);
 
-//Rank 410 with all components from our Comps file
-
-//The Discriminant: 1192918290276309693519536394422003105074107558973261489180881139895427332790365
-3010028225067702372679859379035882355291160065123032782938736332796386587303424
-8678330728800058165686009498914845137721557511777653208654461270968000440894114
-6565734523931701549451270224820016439751619068663198676599520828331054086951115
-1616000000000000000000000000000000000000000. This factors as 2^762*3^101*5^39*7^5*13^20*17^4*19*47^4*61^4*5105753
+//Rank 439 with all components from our Comps file
 
 
 //This is the code to compute the Picard rank of the Magic K3. Our cycles are defined over Q(i, sqrt(2), sqrt(3)), so we need to define our variety over it. The code is essentially as above, but we need to change the self-intersection formula to line up with the formula for K3 surfaces C^2 = 2g - 2
