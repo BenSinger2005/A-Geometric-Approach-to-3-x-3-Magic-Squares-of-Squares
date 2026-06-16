@@ -1,0 +1,267 @@
+//Here is the code to compute the associated double cover to the magic octic K3 surfaces, as well as the factorization of its branch sextic into a union of six lines with computed triple points.
+
+QuadraticFormToMatrix := function(Q)
+    // Given a homogeneous degree-2 polynomial Q in n variables, we return the unique symmetric nxn matrix M with Q = x^T * M * x.
+    R := Parent(Q);
+    n := Rank(R);
+    K := BaseRing(R);
+    error if Characteristic(K) eq 2,
+        "QuadraticFormToMatrix: need characteristic != 2.";
+    error if not IsHomogeneous(Q) or TotalDegree(Q) ne 2,
+        "QuadraticFormToMatrix: input must be homogeneous of degree 2.";
+ 
+    M    := ZeroMatrix(K, n, n);
+    half := K!1 / K!2;
+    for i in [1..n] do
+        M[i,i] := MonomialCoefficient(Q, R.i^2);
+        for j in [i+1..n] do
+            c      := MonomialCoefficient(Q, R.i * R.j);
+            M[i,j] := half * c;
+            M[j,i] := half * c;
+        end for;
+    end for;
+    return M;
+end function;
+ 
+ 
+MatrixToQuadraticForm := function(M, R)
+    // Inverse of QuadraticFormToMatrix.  R is the polynomial ring in which the answer should live (its rank must equal Nrows(M)).
+    n := Nrows(M);
+    error if n ne Ncols(M), "MatrixToQuadraticForm: matrix must be square.";
+    error if Rank(R) ne n,
+        "MatrixToQuadraticForm: polynomial ring rank must match matrix size.";
+    x  := Matrix(R, n, 1, [R.i : i in [1..n]]);
+    MR := ChangeRing(M, R);
+    return (Transpose(x) * MR * x)[1,1];
+end function;
+
+//The main construction.
+ 
+AssociatedSexticFromMatrices := function(Ms)
+    // Given three symmetric 6x6 matrices M_1, M_2, M_3 over a field K of characteristic != 2, return the sextic  F(s,t,u) = Det(s*M_1 + t*M_2 + u*M_3) in K[s,t,u], together with that polynomial ring.
+    error if #Ms ne 3,
+        "AssociatedSexticFromMatrices: need exactly 3 matrices.";
+    error if not forall{ M : M in Ms | Nrows(M) eq 6 and Ncols(M) eq 6 },
+        "AssociatedSexticFromMatrices: all Gram matrices must be 6x6.";
+    error if not forall{ M : M in Ms | M eq Transpose(M) },
+        "AssociatedSexticFromMatrices: all Gram matrices must be symmetric.";
+    K := BaseRing(Ms[1]);
+    error if Characteristic(K) eq 2,
+        "AssociatedSexticFromMatrices: base ring must have characteristic != 2.";
+    P<s,t,u> := PolynomialRing(K, 3);
+    MP :=   s * ChangeRing(Ms[1], P)
+          + t * ChangeRing(Ms[2], P)
+          + u * ChangeRing(Ms[3], P);
+    F := Determinant(MP);
+    error if IsZero(F),
+        "AssociatedSexticFromMatrices: determinant is identically zero "
+        cat "(the net is degenerate).";
+    error if not IsHomogeneous(F) or TotalDegree(F) ne 6,
+        "AssociatedSexticFromMatrices: determinant is not a homogeneous sextic "
+        cat "(this indicates a bug).";
+    return F, P;
+end function;
+ 
+ 
+AssociatedSextic := function(quadrics)
+    // Given a sequence [Q_1, Q_2, Q_3] of three homogeneous degree-2 polynomials in 6 variables, return F(s,t,u) and the ring K[s,t,u].
+    error if #quadrics ne 3,
+        "AssociatedSextic: need exactly 3 quadrics to span the net.";
+    R := Parent(quadrics[1]);
+    error if Rank(R) ne 6,
+        "AssociatedSextic: quadrics must live in a 6-variable polynomial "
+        cat "ring (so X sits in P^5).";
+ 
+    Ms := [ QuadraticFormToMatrix(Q) : Q in quadrics ];
+    return AssociatedSexticFromMatrices(Ms);
+end function;
+ 
+Extract the linear factors of F.
+
+LineFactors := function(F)
+    // Returns <fac, mult, constant>:
+    //   fac      = [ L_1, ..., L_r ]  list of irreducible linear factors,
+    //   mult     = [ m_1, ..., m_r ]  their multiplicities,
+    //   constant = the unit factor c so that F = c * prod L_i^{m_i}.
+    //
+    // Errors if any irreducible factor has degree >= 2.
+
+    R := Parent(F);
+    error if Rank(R) ne 3,
+        "LineFactors: F must live in a 3-variable polynomial ring.";
+    error if not IsHomogeneous(F),
+        "LineFactors: F must be homogeneous.";
+
+    fact, c := Factorization(F);
+
+    lines := [];
+    mults := [];
+    for pair in fact do
+        L := pair[1];
+        m := pair[2];
+        d := TotalDegree(L);
+        error if d ne 1,
+            "LineFactors: F has an irreducible factor of degree "
+            cat IntegerToString(d)
+            cat " -- F does not split into linear factors over its field "
+            cat "of definition.  Use LineFactorsOverSplittingField first, "
+            cat "or factor over an explicit extension.";
+        Append(~lines, L);
+        Append(~mults, m);
+    end for;
+
+    return lines, mults, c;
+end function;
+
+
+//Where do two lines meet?
+
+LineLineIntersection := function(L1, L2)
+    // Given two linear forms L1, L2 in K[s,t,u], return the unique intersection point of {L1 = 0} and {L2 = 0} in P^2(K), as a 3-tuple [a, b, c] (normalized so that the first nonzero entry is 1).
+    // Returns < false, _ > if the lines coincide (parallel/equal in P^2).
+
+    R := Parent(L1);
+    error if R ne Parent(L2),
+        "LineLineIntersection: linear forms must come from the same ring.";
+    K := BaseRing(R);
+
+    // Build the 2x3 coefficient matrix and intersect via cross product.
+    coeffs := function(L)
+        return [ MonomialCoefficient(L, R.i) : i in [1..3] ];
+    end function;
+    a := coeffs(L1);
+    b := coeffs(L2);
+
+    // P = a x b  (the cross product gives the intersection point in P^2).
+    P := [ a[2]*b[3] - a[3]*b[2],
+           a[3]*b[1] - a[1]*b[3],
+           a[1]*b[2] - a[2]*b[1] ];
+
+    if forall{ i : i in [1..3] | P[i] eq 0 } then
+        // Lines coincide (or one is identically zero).
+        return false, [ K | 0, 0, 0 ];
+    end if;
+
+    // Normalize so that the first nonzero coordinate is 1.
+    pivot := 1;
+    while P[pivot] eq 0 do pivot +:= 1; end while;
+    inv := K!1 / P[pivot];
+    P   := [ inv * x : x in P ];
+
+    return true, P;
+end function;
+
+//Group identical projective points.
+
+PointEq := function(P, Q)
+    // True iff P, Q are equal as points of P^2.  Both are 3-sequences.
+    // (Our normalization above makes equality coordinatewise, but we
+    // do a robust cross-product test to be safe.)
+    K := Parent(P[1]);
+    return    P[1]*Q[2] - P[2]*Q[1] eq K!0
+          and P[1]*Q[3] - P[3]*Q[1] eq K!0
+          and P[2]*Q[3] - P[3]*Q[2] eq K!0;
+end function;
+
+//Here is the main routine.
+
+LineIntersections := function(F : Verbose := true)
+    lines, mults, _ := LineFactors(F);
+    r := #lines;
+    K := BaseRing(Parent(F));
+    if Verbose then
+        print "Linear factors of F:";
+        for i in [1..r] do
+            print "  L_", i, " = ", lines[i],
+                  "    (multiplicity", mults[i], ")";
+        end for;
+        print "";
+    end if;
+    // distinctPoints       : list of distinct intersection points
+    // incidence[k]         : indices  i  with  L_i  passing through point k
+    // lineMults            : (re-exposed for caller convenience)
+    distinctPoints := [];
+    incidence      := [];
+    for i in [1..r-1] do
+        for j in [i+1..r] do
+            ok, P := LineLineIntersection(lines[i], lines[j]);
+            if not ok then
+                // L_i and L_j coincide; skip (their "intersection" is
+                // the whole line, handled by the multiplicity report).
+                continue;
+            end if;
+            // Have we seen this point before?
+            found := false;
+            for k in [1..#distinctPoints] do
+                if PointEq(distinctPoints[k], P) then
+                    // Add whichever index isn't already in the incidence list.
+                    if not (i in incidence[k]) then
+                        Append(~incidence[k], i);
+                    end if;
+                    if not (j in incidence[k]) then
+                        Append(~incidence[k], j);
+                    end if;
+                    found := true;
+                    break;
+                end if;
+            end for;
+            if not found then
+                Append(~distinctPoints, P);
+                Append(~incidence,      [i, j]);
+            end if;
+        end for;
+    end for;
+    if Verbose then
+        print "Distinct intersection points and the lines through them:";
+        if #distinctPoints eq 0 then
+            print "  (none -- e.g. if F is a 6th power of a single line)";
+        end if;
+        for k in [1..#distinctPoints] do
+            P := distinctPoints[k];
+            inc := Sort(incidence[k]);
+            // Sum of multiplicities of the concurrent lines is the
+            // multiplicity of F at this point.
+            multAtP := &+[ mults[i] : i in inc ];
+            print "  P_", k, " = (", P[1], ":", P[2], ":", P[3], ")",
+                  "  lines through P:", inc,
+                  "  mult_P(F) =", multAtP;
+        end for;
+        print "";
+        print "Singularity types on S : w^2 = F at the branch points:";
+        for k in [1..#distinctPoints] do
+            inc := Sort(incidence[k]);
+            // Effective branch multiplicity: each line counted with its
+            // multiplicity in F.  But a line of multiplicity 2 in F is
+            // a non-reduced component of the branch, and S is non-normal
+            // along it; we flag that case below.
+            kk := #inc;                   // # of distinct lines through P
+            print "  at P_", k, ":  ", kk, "distinct lines concurrent";
+            if exists{ i : i in inc | mults[i] gt 1 } then
+                print "     warning: at least one line through P_",
+                      k, "is non-reduced in F; S is non-normal along it.";
+            elif kk eq 2 then
+                print "     => transverse double point on the branch curve,",
+                      "A_1 singularity on S.";
+            else  // kk >= 3 distinct reduced lines concurrent at P
+                print "     =>", kk, "reduced lines concurrent at P:",
+                      "ordinary (kk)-fold point on the branch,",
+                      "non-ADE singularity on S in general.";
+            end if;
+        end for;
+        // Report any line of multiplicity >= 2 in F.
+        nonReducedExists := exists{ i : i in [1..r] | mults[i] ge 2 };
+        if nonReducedExists then
+            print "";
+            print "Non-reduced lines in F (S is non-normal along these):";
+            for i in [1..r] do
+                if mults[i] ge 2 then
+                    print "  L_", i, " = ", lines[i],
+                          "  has multiplicity", mults[i], "in F.";
+                end if;
+            end for;
+        end if;
+        print "";
+    end if;
+    return distinctPoints, incidence, mults;
+end function;
+ 
