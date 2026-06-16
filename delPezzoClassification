@@ -1,0 +1,323 @@
+
+//Here is the classification of the 23 del Pezzo surfaces gotten by considering arrangements of magic squares of 5 squares up to isomorphism over Qbar mentioned in Section 4. Each configuration defines a complete intersection of 2 diagonal quadrics in P^4. Since the quadrics are simultaneously diagonal, isomorphism reduces to the PGL_2-orbit on P^1 of the 5 degenerate-pencil parameters [c2_i : -c1_i], with multiplicity (the Segre symbol). This was written with the help of Claude.
+ 
+//Input the 23 configurations. Each config: [Q1_coeffs, Q2_coeffs] for (x0^2, x1^2, x2^2, x3^2, x4^2)
+ 
+configs := [
+    [* [ 0, 1, 2,-1,-2], [ 1, 0,-1, 1,-1] *],   //  1
+    [* [ 0, 1, 2,-2,-1], [ 2, 0,-2, 1,-1] *],   //  2
+    [* [ 0, 1,-1, 1,-1], [ 2, 0,-3, 2,-1] *],   //  3
+    [* [ 0, 0, 2,-1,-1], [ 2,-1, 0, 1,-2] *],   //  4
+    [* [ 0, 1, 0, 1,-2], [ 1, 0,-2, 2,-1] *],   //  5
+    [* [ 0, 0, 1,-2, 1], [ 1, 1, 0,-1,-1] *],   //  6
+    [* [ 0, 1, 0,-2, 1], [ 1, 0, 1,-1,-1] *],   //  7
+    [* [ 0, 1,-1,-1, 1], [ 2, 0, 1,-1,-2] *],   //  8
+    [* [ 0, 2, 1,-1,-2], [ 1, 0,-1,-1, 1] *],   //  9
+    [* [ 0, 0, 1,-2, 1], [ 2, 1, 0,-2,-1] *],   // 10
+    [* [ 0, 1, 1, 0,-2], [ 1, 0, 0,-2, 1] *],   // 11
+    [* [ 0, 1,-1,-1, 1], [ 2, 0, 0,-1,-1] *],   // 12
+    [* [ 0, 1, 1, 0,-2], [ 1, 0,-1,-1, 1] *],   // 13
+    [* [ 0, 1, 0, 1,-2], [ 1, 0,-1,-1, 1] *],   // 14
+    [* [ 0, 1,-2, 0, 1], [ 2, 0, 0,-1,-1] *],   // 15
+    [* [ 0, 1, 2,-1,-2], [ 1, 0,-2, 0, 1] *],   // 16
+    [* [ 0, 1,-2, 0, 1], [ 1, 0, 1,-1,-1] *],   // 17
+    [* [ 0, 1, 1,-1,-1], [ 1, 0,-2, 0, 1] *],   // 18
+    [* [ 0, 1,-2, 1, 0], [ 1, 0,-2, 0, 1] *],   // 19
+    [* [ 0, 1, 1,-2, 0], [ 2, 0,-1, 0,-1] *],   // 20
+    [* [ 0, 1, 1,-2, 0], [ 1, 0,-2, 2,-1] *],   // 21
+    [* [ 0, 1, a1,-1,-1], [ 1, 0,-2, 0, 1] *],   // 22
+    [* [ 0, 1,-2, 1, 0], [ 1, 0,-2, 0, 1] *]    // 23
+];
+ 
+//Build the pencil's 5 degenerate points on P^1. For each coordinate i, the diagonal entry of lambda*Q1 + mu*Q2 vanishes at (lambda:mu) = (c2_i : -c1_i). We represent each point of P^1 as a pair <u,v> with gcd-normalization and a sign convention.
+ 
+function NormP1(u, v)
+    // Normalize a P^1 point <u,v> in Q^2 \ {0}.
+    if u eq 0 then
+        return <0, 1>;
+    end if;
+    if v eq 0 then
+        return <1, 0>;
+    end if;
+    // Both nonzero: canonicalize by scaling to v = 1, store as <u/v, 1>.
+    return <u/v, 1>;
+end function;
+ 
+function PencilPoints(c1, c2)
+    pts := [* *];
+    for i in [1..5] do
+        u := c2[i];   v := -c1[i];
+        if u eq 0 and v eq 0 then
+            Append(~pts, <"BAD", 0>);
+        else
+            Append(~pts, NormP1(Rationals()!u, Rationals()!v));
+        end if;
+    end for;
+    return pts;
+end function;
+ 
+//Equality and Segre symbol
+ 
+function P1Equal(p, q)
+    // p, q are pairs <u,v> in canonical form (v = 1 or v = 0)
+    return p[1] eq q[1] and p[2] eq q[2];
+end function;
+
+//Group the 5 points by equality; return sorted (descending) partition.
+function SegreSymbol(pts)
+    used := [false : i in [1..5]];
+    parts := [];
+    for i in [1..5] do
+        if used[i] then continue; end if;
+        count := 1;
+        used[i] := true;
+        for j in [i+1..5] do
+            if not used[j] and P1Equal(pts[i], pts[j]) then
+                count +:= 1;
+                used[j] := true;
+            end if;
+        end for;
+        Append(~parts, count);
+    end for;
+    return Sort(parts, func<a,b | b - a>);   // descending
+end function;
+ 
+//Mobius transformation and PGL_2 canonical form
+ 
+//M is a 2x2 rational matrix; p is <u,v>.
+function ApplyMobius(M, p)
+    u := p[1]; v := p[2];
+    nu := M[1,1]*u + M[1,2]*v;
+    nv := M[2,1]*u + M[2,2]*v;
+    if nu eq 0 and nv eq 0 then
+        return <"BAD", 0>;
+    end if;
+    return NormP1(Rationals()!nu, Rationals()!nv);
+end function;
+ 
+//Returns a 2x2 matrix sending a -> [0:1], b -> [1:0], c -> [1:1]. Returns 0 if degenerate (any two of a,b,c coincide).
+function MobiusFromThreePts(a, b, c)
+    
+    if P1Equal(a,b) or P1Equal(b,c) or P1Equal(a,c) then
+        return ZeroMatrix(Rationals(), 2, 2);
+    end if;
+    au := a[1]; av := a[2];
+    bu := b[1]; bv := b[2];
+    cu := c[1]; cv := c[2];
+    T1c := -av*cu + au*cv;
+    T2c := -bv*cu + bu*cv;
+    if T1c eq 0 or T2c eq 0 then
+        return ZeroMatrix(Rationals(), 2, 2);
+    end if;
+    M := Matrix(Rationals(), 2, 2,
+        [ T2c*(-av), T2c*au,
+          T1c*(-bv), T1c*bu ]);
+    return M;
+end function;
+
+//Key for sorting P^1 points: finite points by (num, denom), then infinity.
+function PointSortKey(p)
+    if p[1] cmpeq "BAD" then return <2, 0, 0>; end if;
+    if p[2] eq 0 then return <1, 0, 0>; end if;    // infinity
+    return <0, Numerator(p[1]), Denominator(p[1])>;
+end function;
+ 
+//Compare two 3-tuples of integers.
+function KeyLT(k1, k2)
+    for j in [1..3] do
+        if k1[j] lt k2[j] then return true; end if;
+        if k1[j] gt k2[j] then return false; end if;
+    end for;
+    return false;
+end function;
+ 
+function KeyEQ(k1, k2)
+    return k1[1] eq k2[1] and k1[2] eq k2[2] and k1[3] eq k2[3];
+end function;
+ 
+function FormLT(f1, f2)
+    // Lex compare two sequences of <key, mult> pairs where key is a 3-tuple of integers.
+    n := Min(#f1, #f2);
+    for i in [1..n] do
+        if KeyLT(f1[i][1], f2[i][1]) then return true; end if;
+        if KeyLT(f2[i][1], f1[i][1]) then return false; end if;
+        if f1[i][2] lt f2[i][2] then return true; end if;
+        if f1[i][2] gt f2[i][2] then return false; end if;
+    end for;
+    return #f1 lt #f2;
+end function;
+ //The following returns a tuple invariant under PGL_2 acting on the 5 points. The idea is to enumerate all ordered triples (a,b,c) of distinct points, apply the Mobius transformation sending them to (0, inf, 1); record the multiset (point, multiplicity) of all 5 images sorted lexicographically, and take the minimum.
+function CanonicalForm(pts)
+    // We first collect distinct points with multiplicities
+    distinct := [* *];
+    mults := [];
+    for p in pts do
+        if p[1] cmpeq "BAD" then continue; end if;
+        found := false;
+        for k in [1..#distinct] do
+            if P1Equal(distinct[k], p) then
+                mults[k] +:= 1;
+                found := true;
+                break;
+            end if;
+        end for;
+        if not found then
+            Append(~distinct, p);
+            Append(~mults, 1);
+        end if;
+    end for;
+ 
+    n := #distinct;
+    if n lt 3 then
+        // PGL_2 is transitive on tuples of <= 3 distinct points, so only the multiplicity partition is the invariant.
+        return [* n, Sort(mults, func<a,b | b-a>), [] *];
+    end if;
+ 
+    bestForm := [];
+    bestSet := false;
+ 
+    for i in [1..n] do
+        for j in [1..n] do
+            if j eq i then continue; end if;
+            for k in [1..n] do
+                if k eq i or k eq j then continue; end if;
+                a := distinct[i];
+                b := distinct[j];
+                c := distinct[k];
+                M := MobiusFromThreePts(a, b, c);
+                if IsZero(M) then continue; end if;
+ 
+                imageData := [* *];
+                for kk in [1..n] do
+                    q := ApplyMobius(M, distinct[kk]);
+                    Append(~imageData, <q, mults[kk]>);
+                end for;
+ 
+                // Selection sort imageData by (PointSortKey, multiplicity)
+                for ii in [1..#imageData - 1] do
+                    minIdx := ii;
+                    for jj in [ii+1..#imageData] do
+                        kA := PointSortKey(imageData[minIdx][1]);
+                        kB := PointSortKey(imageData[jj][1]);
+                        if KeyLT(kB, kA) then
+                            minIdx := jj;
+                        elif KeyEQ(kA, kB) and imageData[jj][2] lt imageData[minIdx][2] then
+                            minIdx := jj;
+                        end if;
+                    end for;
+                    if minIdx ne ii then
+                        tmp := imageData[ii];
+                        imageData[ii] := imageData[minIdx];
+                        imageData[minIdx] := tmp;
+                    end if;
+                end for;
+                form := [<PointSortKey(imageData[ii][1]), imageData[ii][2]> : ii in [1..#imageData]];
+                if not bestSet or FormLT(form, bestForm) then
+                    bestForm := form;
+                    bestSet := true;
+                end if;
+            end for;
+        end for;
+    end for;
+    return [* n, Sort(mults, func<a,b | b-a>), bestForm *];
+end function;
+ 
+function CanonEq(c1, c2)
+    //Compare two canonical forms (each is [* n_distinct, partition, form *]).
+    if c1[1] ne c2[1] then return false; end if;
+    if c1[2] ne c2[2] then return false; end if;
+    f1 := c1[3]; f2 := c2[3];
+    if #f1 ne #f2 then return false; end if;
+    for i in [1..#f1] do
+        if not KeyEQ(f1[i][1], f2[i][1]) then return false; end if;
+        if f1[i][2] ne f2[i][2] then return false; end if;
+    end for;
+    return true;
+end function;
+ 
+//Now, we run the classification
+ 
+print "============================================================";
+print "Per-configuration data";
+print "============================================================";
+printf "%3s | %-15s | %s\n", "#", "Segre symbol", "Degenerate pencil points on P^1";
+print "-----------------------------------------------------------";
+ 
+allData := [* *];
+ 
+for idx in [1..#configs] do
+    c1 := configs[idx][1];
+    c2 := configs[idx][2];
+    pts := PencilPoints(c1, c2);
+    segre := SegreSymbol(pts);
+    canon := CanonicalForm(pts);
+    Append(~allData, <idx, segre, canon, pts>);
+ 
+    // Pretty print the points
+    ptStrs := [];
+    for p in pts do
+        if p[1] cmpeq "BAD" then
+            Append(~ptStrs, "BAD");
+        elif p[2] eq 0 then
+            Append(~ptStrs, "inf");
+        else
+            Append(~ptStrs, Sprint(p[1]));
+        end if;
+    end for;
+    printf "%3o | %-15o | [%o, %o, %o, %o, %o]\n",
+        idx, segre, ptStrs[1], ptStrs[2], ptStrs[3], ptStrs[4], ptStrs[5];
+end for;
+ 
+//Group by canonical form
+ 
+print "";
+print "============================================================";
+print "Isomorphism classes over Qbar";
+print "============================================================";
+ 
+classes := [* *];   // each entry: <canonical_form, list of config indices>
+ 
+for d in allData do
+    idx := d[1]; canon := d[3];
+    placed := false;
+    for k in [1..#classes] do
+        if CanonEq(classes[k][1], canon) then
+            Append(~(classes[k][2]), idx);
+            placed := true;
+            break;
+        end if;
+    end for;
+    if not placed then
+        Append(~classes, <canon, [idx]>);
+    end if;
+end for;
+ 
+//We sort classes by their smallest config index (selection sort, since classes is a list)
+for ii in [1..#classes - 1] do
+    minIdx := ii;
+    for jj in [ii+1..#classes] do
+        if Min(classes[jj][2]) lt Min(classes[minIdx][2]) then
+            minIdx := jj;
+        end if;
+    end for;
+    if minIdx ne ii then
+        tmp := classes[ii];
+        classes[ii] := classes[minIdx];
+        classes[minIdx] := tmp;
+    end if;
+end for;
+ 
+className := ["A", "B", "C", "D", "E", "F", "G", "H"];
+for k in [1..#classes] do
+    canon := classes[k][1];
+    members := classes[k][2];
+    // Recover the Segre symbol from any member
+    repIdx := members[1];
+    repSegre := allData[repIdx][2];
+    printf "Class %o: configs %o  |  Segre = %o\n",
+        className[k], members, repSegre;
+end for;
+ 
+print "";
+print "Done.";
+ 
