@@ -3743,8 +3743,7 @@ Comps := [
         b^2 + 3/5*g^2 - 2/5*h^2,
         a^2 - 2/5*g^2 + 3/5*h^2
     ],
-//preimage of lines on del pezzo surfaces corresponding to configurations 1, 2, 3, 5, 8, and 9
-[
+    [
         a^2 + b^2 + c^2 - 3*m^2,
         d^2 - 2*m^2 + e^2,
         -3*m^2 + f^2 + g^2 + h^2,
@@ -4517,246 +4516,4607 @@ Comps := [
         c + 1/3*sqrt3*g - 1/3*sqrt3*h,
         f + g + h
     ],
-[
-    d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
-    a - 2/3*sqrt3*g + 1/3*sqrt3*h,
-    b + 1/3*sqrt3*g - 2/3*sqrt3*h,
-    c + 1/3*sqrt3*g + 1/3*sqrt3*h,
-    f + g - h
-],
-[
-    d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
-    a + 2/3*sqrt3*g + 1/3*sqrt3*h,
-    b - 1/3*sqrt3*g - 2/3*sqrt3*h,
-    c - 1/3*sqrt3*g + 1/3*sqrt3*h,
-    f - g - h
-],
-[
-    d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
-    a + 2/3*sqrt3*g - 1/3*sqrt3*h,
-    b - 1/3*sqrt3*g + 2/3*sqrt3*h,
-    c - 1/3*sqrt3*g - 1/3*sqrt3*h,
-    f - g + h
-],
-[
-    d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
-    a - 2/3*sqrt3*g - 1/3*sqrt3*h,
-    b + 1/3*sqrt3*g + 2/3*sqrt3*h,
-    c - 1/3*sqrt3*g + 1/3*sqrt3*h,
-    f - g - h
-],
-[
-    d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
-    a - 2/3*sqrt3*g + 1/3*sqrt3*h,
-    b + 1/3*sqrt3*g - 2/3*sqrt3*h,
-    c - 1/3*sqrt3*g - 1/3*sqrt3*h,
-    f - g + h
-],
-[
-    d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
-    a + 2/3*sqrt3*g + 1/3*sqrt3*h,
-    b - 1/3*sqrt3*g - 2/3*sqrt3*h,
-    c + 1/3*sqrt3*g - 1/3*sqrt3*h,
-    f + g + h
-],
-[
-    d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
-    a + 2/3*sqrt3*g - 1/3*sqrt3*h,
-    b - 1/3*sqrt3*g + 2/3*sqrt3*h,
-    c + 1/3*sqrt3*g + 1/3*sqrt3*h,
-    f + g - h
-],
-[
-    d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
-    a - 2/3*sqrt3*g - 1/3*sqrt3*h,
-    b + 1/3*sqrt3*g + 2/3*sqrt3*h,
-    c - 1/3*sqrt3*g + 1/3*sqrt3*h,
-    f + g + h
-],
-[
-    d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
-    a - 2/3*sqrt3*g + 1/3*sqrt3*h,
-    b + 1/3*sqrt3*g - 2/3*sqrt3*h,
-    c - 1/3*sqrt3*g - 1/3*sqrt3*h,
-    f + g - h
-],
-[
-    d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
-    a + 2/3*sqrt3*g + 1/3*sqrt3*h,
-    b - 1/3*sqrt3*g - 2/3*sqrt3*h,
-    c + 1/3*sqrt3*g - 1/3*sqrt3*h,
-    f - g - h
-],
-[
-    d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
-    a + 2/3*sqrt3*g - 1/3*sqrt3*h,
-    b - 1/3*sqrt3*g + 2/3*sqrt3*h,
-    c + 1/3*sqrt3*g + 1/3*sqrt3*h,
-    f - g + h
-],
-[
-    d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
-    a - 2/3*sqrt3*g - 1/3*sqrt3*h,
-    b - 1/3*sqrt3*g - 2/3*sqrt3*h,
-    c + 1/3*sqrt3*g - 1/3*sqrt3*h,
-    f - g - h
-],
-[
-    d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
-    a - 2/3*sqrt3*g + 1/3*sqrt3*h,
-    b - 1/3*sqrt3*g + 2/3*sqrt3*h,
-    c + 1/3*sqrt3*g + 1/3*sqrt3*h,
-    f - g + h
-],
-[
-    d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
-    a + 2/3*sqrt3*g + 1/3*sqrt3*h,
-    b + 1/3*sqrt3*g + 2/3*sqrt3*h,
-    c - 1/3*sqrt3*g + 1/3*sqrt3*h,
-    f + g + h
-],
-[
-    d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
-    a + 2/3*sqrt3*g - 1/3*sqrt3*h,
-    b + 1/3*sqrt3*g - 2/3*sqrt3*h,
-    c - 1/3*sqrt3*g - 1/3*sqrt3*h,
-    f + g - h
-],
-[
-    d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
-    a - 2/3*sqrt3*g - 1/3*sqrt3*h,
-    b - 1/3*sqrt3*g - 2/3*sqrt3*h,
-    c + 1/3*sqrt3*g - 1/3*sqrt3*h,
-    f + g + h
-],
-[
-    d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
-    a - 2/3*sqrt3*g + 1/3*sqrt3*h,
-    b - 1/3*sqrt3*g + 2/3*sqrt3*h,
-    c + 1/3*sqrt3*g + 1/3*sqrt3*h,
-    f + g - h
-],
-[
-    d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
-    a + 2/3*sqrt3*g + 1/3*sqrt3*h,
-    b + 1/3*sqrt3*g + 2/3*sqrt3*h,
-    c - 1/3*sqrt3*g + 1/3*sqrt3*h,
-    f - g - h
-],
-[
-    d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
-    a + 2/3*sqrt3*g - 1/3*sqrt3*h,
-    b + 1/3*sqrt3*g - 2/3*sqrt3*h,
-    c - 1/3*sqrt3*g - 1/3*sqrt3*h,
-    f - g + h
-],
-[
-    d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
-    a - 2/3*sqrt3*g - 1/3*sqrt3*h,
-    b - 1/3*sqrt3*g - 2/3*sqrt3*h,
-    c - 1/3*sqrt3*g + 1/3*sqrt3*h,
-    f - g - h
-],
-[
-    d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
-    a - 2/3*sqrt3*g + 1/3*sqrt3*h,
-    b - 1/3*sqrt3*g + 2/3*sqrt3*h,
-    c - 1/3*sqrt3*g - 1/3*sqrt3*h,
-    f - g + h
-],
-[
-    d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
-    a + 2/3*sqrt3*g + 1/3*sqrt3*h,
-    b + 1/3*sqrt3*g + 2/3*sqrt3*h,
-    c + 1/3*sqrt3*g - 1/3*sqrt3*h,
-    f + g + h
-],
-[
-    d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
-    a + 2/3*sqrt3*g - 1/3*sqrt3*h,
-    b + 1/3*sqrt3*g - 2/3*sqrt3*h,
-    c + 1/3*sqrt3*g + 1/3*sqrt3*h,
-    f + g - h
-],
-[
-    d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
-    a - 2/3*sqrt3*g - 1/3*sqrt3*h,
-    b - 1/3*sqrt3*g - 2/3*sqrt3*h,
-    c - 1/3*sqrt3*g + 1/3*sqrt3*h,
-    f + g + h
-],
-[
-    d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
-    a - 2/3*sqrt3*g + 1/3*sqrt3*h,
-    b - 1/3*sqrt3*g + 2/3*sqrt3*h,
-    c - 1/3*sqrt3*g - 1/3*sqrt3*h,
-    f + g - h
-],
-[
-    d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
-    a + 2/3*sqrt3*g + 1/3*sqrt3*h,
-    b + 1/3*sqrt3*g + 2/3*sqrt3*h,
-    c + 1/3*sqrt3*g - 1/3*sqrt3*h,
-    f - g - h
-],
-[
-    d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
-    m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
-    e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
-    a + 2/3*sqrt3*g - 1/3*sqrt3*h,
-    b + 1/3*sqrt3*g - 2/3*sqrt3*h,
-    c + 1/3*sqrt3*g + 1/3*sqrt3*h,
-    f - g + h
-    ]];
+    [
+        d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
+        a - 2/3*sqrt3*g + 1/3*sqrt3*h,
+        b + 1/3*sqrt3*g - 2/3*sqrt3*h,
+        c + 1/3*sqrt3*g + 1/3*sqrt3*h,
+        f + g - h
+    ],
+    [
+        d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
+        a + 2/3*sqrt3*g + 1/3*sqrt3*h,
+        b - 1/3*sqrt3*g - 2/3*sqrt3*h,
+        c - 1/3*sqrt3*g + 1/3*sqrt3*h,
+        f - g - h
+    ],
+    [
+        d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
+        a + 2/3*sqrt3*g - 1/3*sqrt3*h,
+        b - 1/3*sqrt3*g + 2/3*sqrt3*h,
+        c - 1/3*sqrt3*g - 1/3*sqrt3*h,
+        f - g + h
+    ],
+    [
+        d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
+        a - 2/3*sqrt3*g - 1/3*sqrt3*h,
+        b + 1/3*sqrt3*g + 2/3*sqrt3*h,
+        c - 1/3*sqrt3*g + 1/3*sqrt3*h,
+        f - g - h
+    ],
+    [
+        d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
+        a - 2/3*sqrt3*g + 1/3*sqrt3*h,
+        b + 1/3*sqrt3*g - 2/3*sqrt3*h,
+        c - 1/3*sqrt3*g - 1/3*sqrt3*h,
+        f - g + h
+    ],
+    [
+        d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
+        a + 2/3*sqrt3*g + 1/3*sqrt3*h,
+        b - 1/3*sqrt3*g - 2/3*sqrt3*h,
+        c + 1/3*sqrt3*g - 1/3*sqrt3*h,
+        f + g + h
+    ],
+    [
+        d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
+        a + 2/3*sqrt3*g - 1/3*sqrt3*h,
+        b - 1/3*sqrt3*g + 2/3*sqrt3*h,
+        c + 1/3*sqrt3*g + 1/3*sqrt3*h,
+        f + g - h
+    ],
+    [
+        d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
+        a - 2/3*sqrt3*g - 1/3*sqrt3*h,
+        b + 1/3*sqrt3*g + 2/3*sqrt3*h,
+        c - 1/3*sqrt3*g + 1/3*sqrt3*h,
+        f + g + h
+    ],
+    [
+        d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
+        a - 2/3*sqrt3*g + 1/3*sqrt3*h,
+        b + 1/3*sqrt3*g - 2/3*sqrt3*h,
+        c - 1/3*sqrt3*g - 1/3*sqrt3*h,
+        f + g - h
+    ],
+    [
+        d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
+        a + 2/3*sqrt3*g + 1/3*sqrt3*h,
+        b - 1/3*sqrt3*g - 2/3*sqrt3*h,
+        c + 1/3*sqrt3*g - 1/3*sqrt3*h,
+        f - g - h
+    ],
+    [
+        d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
+        a + 2/3*sqrt3*g - 1/3*sqrt3*h,
+        b - 1/3*sqrt3*g + 2/3*sqrt3*h,
+        c + 1/3*sqrt3*g + 1/3*sqrt3*h,
+        f - g + h
+    ],
+    [
+        d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
+        a - 2/3*sqrt3*g - 1/3*sqrt3*h,
+        b - 1/3*sqrt3*g - 2/3*sqrt3*h,
+        c + 1/3*sqrt3*g - 1/3*sqrt3*h,
+        f - g - h
+    ],
+    [
+        d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
+        a - 2/3*sqrt3*g + 1/3*sqrt3*h,
+        b - 1/3*sqrt3*g + 2/3*sqrt3*h,
+        c + 1/3*sqrt3*g + 1/3*sqrt3*h,
+        f - g + h
+    ],
+    [
+        d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
+        a + 2/3*sqrt3*g + 1/3*sqrt3*h,
+        b + 1/3*sqrt3*g + 2/3*sqrt3*h,
+        c - 1/3*sqrt3*g + 1/3*sqrt3*h,
+        f + g + h
+    ],
+    [
+        d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
+        a + 2/3*sqrt3*g - 1/3*sqrt3*h,
+        b + 1/3*sqrt3*g - 2/3*sqrt3*h,
+        c - 1/3*sqrt3*g - 1/3*sqrt3*h,
+        f + g - h
+    ],
+    [
+        d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
+        a - 2/3*sqrt3*g - 1/3*sqrt3*h,
+        b - 1/3*sqrt3*g - 2/3*sqrt3*h,
+        c + 1/3*sqrt3*g - 1/3*sqrt3*h,
+        f + g + h
+    ],
+    [
+        d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
+        a - 2/3*sqrt3*g + 1/3*sqrt3*h,
+        b - 1/3*sqrt3*g + 2/3*sqrt3*h,
+        c + 1/3*sqrt3*g + 1/3*sqrt3*h,
+        f + g - h
+    ],
+    [
+        d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
+        a + 2/3*sqrt3*g + 1/3*sqrt3*h,
+        b + 1/3*sqrt3*g + 2/3*sqrt3*h,
+        c - 1/3*sqrt3*g + 1/3*sqrt3*h,
+        f - g - h
+    ],
+    [
+        d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
+        a + 2/3*sqrt3*g - 1/3*sqrt3*h,
+        b + 1/3*sqrt3*g - 2/3*sqrt3*h,
+        c - 1/3*sqrt3*g - 1/3*sqrt3*h,
+        f - g + h
+    ],
+    [
+        d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
+        a - 2/3*sqrt3*g - 1/3*sqrt3*h,
+        b - 1/3*sqrt3*g - 2/3*sqrt3*h,
+        c - 1/3*sqrt3*g + 1/3*sqrt3*h,
+        f - g - h
+    ],
+    [
+        d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
+        a - 2/3*sqrt3*g + 1/3*sqrt3*h,
+        b - 1/3*sqrt3*g + 2/3*sqrt3*h,
+        c - 1/3*sqrt3*g - 1/3*sqrt3*h,
+        f - g + h
+    ],
+    [
+        d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
+        a + 2/3*sqrt3*g + 1/3*sqrt3*h,
+        b + 1/3*sqrt3*g + 2/3*sqrt3*h,
+        c + 1/3*sqrt3*g - 1/3*sqrt3*h,
+        f + g + h
+    ],
+    [
+        d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
+        a + 2/3*sqrt3*g - 1/3*sqrt3*h,
+        b + 1/3*sqrt3*g - 2/3*sqrt3*h,
+        c + 1/3*sqrt3*g + 1/3*sqrt3*h,
+        f + g - h
+    ],
+    [
+        d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
+        a - 2/3*sqrt3*g - 1/3*sqrt3*h,
+        b - 1/3*sqrt3*g - 2/3*sqrt3*h,
+        c - 1/3*sqrt3*g + 1/3*sqrt3*h,
+        f + g + h
+    ],
+    [
+        d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
+        a - 2/3*sqrt3*g + 1/3*sqrt3*h,
+        b - 1/3*sqrt3*g + 2/3*sqrt3*h,
+        c - 1/3*sqrt3*g - 1/3*sqrt3*h,
+        f + g - h
+    ],
+    [
+        d^2 + 1/3*g^2 + 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 - 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 - 8/3*g*h - 2/3*h^2,
+        a + 2/3*sqrt3*g + 1/3*sqrt3*h,
+        b + 1/3*sqrt3*g + 2/3*sqrt3*h,
+        c + 1/3*sqrt3*g - 1/3*sqrt3*h,
+        f - g - h
+    ],
+    [
+        d^2 + 1/3*g^2 - 4/3*g*h - 2/3*h^2,
+        m^2 - 2/3*g^2 + 2/3*g*h - 2/3*h^2,
+        e^2 - 5/3*g^2 + 8/3*g*h - 2/3*h^2,
+        a + 2/3*sqrt3*g - 1/3*sqrt3*h,
+        b + 1/3*sqrt3*g - 2/3*sqrt3*h,
+        c + 1/3*sqrt3*g + 1/3*sqrt3*h,
+        f - g + h
+    ],
+    [
+        5/12*sqrt2*i*f^2 - 1/12*sqrt2*i*g^2 + e*h - 5/6*sqrt2*i*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m - 1/3*sqrt3*sqrt2*e + 1/3*sqrt3*i*h,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - e + sqrt2*i*h,
+        b - 1/3*sqrt3*i*e - 2/3*sqrt3*sqrt2*h,
+        a^2 - 2/3*f^2 - 2/3*g^2 + 1/3*h^2
+    ],
+    [
+        f^4 + 10/11*f^2*g^2 + g^4 + 4/11*f^2*h^2 + 4/11*g^2*h^2 - 4/11*h^4,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        11/28*sqrt2*i*e*f^2 + m*g^2 + 9/28*sqrt2*i*e*g^2 + 2/7*m*h^2 + 
+            5/14*sqrt2*i*e*h^2,
+        m*f^2 - 1/28*sqrt2*i*e*f^2 - 11/28*sqrt2*i*e*g^2 - 4/7*m*h^2 - 
+            3/14*sqrt2*i*e*h^2,
+        m*e + 1/12*sqrt2*i*f^2 - 5/12*sqrt2*i*g^2 - 1/6*sqrt2*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - 1/3*sqrt3*sqrt2*m + 1/3*sqrt3*i*e,
+        b - 2/3*sqrt3*sqrt2*m - 1/3*sqrt3*i*e,
+        a + 1/3*sqrt3*i*m - 1/3*sqrt3*sqrt2*e
+    ],
+    [
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        26/9*sqrt3*i*f^3 + m*g^2 + 20/9*sqrt3*i*f*g^2 - 5*m*h^2 + 
+            8/9*sqrt3*i*f*h^2,
+        m*f - 2/9*sqrt3*i*f^2 - 1/18*sqrt3*i*g^2 + 5/18*sqrt3*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d - 1/2*sqrt3*sqrt2*m - 1/2*sqrt2*i*f,
+        c^2 + 1/3*f^2 - 2/3*g^2 - 2/3*h^2,
+        b - 1/2*sqrt2*i*m - 1/2*sqrt3*sqrt2*f,
+        a - 1/2*sqrt3*sqrt2*m + 1/2*sqrt2*i*f
+    ],
+    [
+        f + 1/2*sqrt2*i*g - 1/2*sqrt2*i*h,
+        e + 1/3*sqrt3*i*g - 2/3*sqrt3*i*h,
+        m - 1/6*sqrt3*sqrt2*g - 1/6*sqrt3*sqrt2*h,
+        d^2 - 2/3*g^2 + 2/3*g*h - 5/3*h^2,
+        c^2 - 5/6*g^2 + 1/3*g*h - 5/6*h^2,
+        b^2 + 2/3*g^2 - 2/3*g*h - 1/3*h^2,
+        a^2 - 1/3*g^2 - 2/3*g*h + 2/3*h^2
+    ],
+    [
+        f - g + sqrt2*i*h,
+        e^2 - 5/3*g^2 + 8/3*sqrt2*i*g*h + 10/3*h^2,
+        m - 1/3*sqrt3*sqrt2*g + 1/3*sqrt3*i*h,
+        d - 1/3*sqrt3*i*g - 2/3*sqrt3*sqrt2*h,
+        c^2 - 1/3*g^2 - 2/3*sqrt2*i*g*h - 4/3*h^2,
+        b^2 - 1/3*g^2 + 4/3*sqrt2*i*g*h + 2/3*h^2,
+        a^2 - 4/3*g^2 + 4/3*sqrt2*i*g*h + 5/3*h^2
+    ],
+    [
+        f^2 + 6/7*sqrt3*i*f*g - 5/7*g^2 - 2/7*h^2,
+        e^2 + 8/7*sqrt3*i*f*g - 9/7*g^2 + 2/7*h^2,
+        m - 1/2*sqrt3*sqrt2*f - 1/2*sqrt2*i*g,
+        d - 2*f - sqrt3*i*g,
+        c^2 - 2/7*sqrt3*i*f*g - 3/7*g^2 - 4/7*h^2,
+        b^2 + 4/7*sqrt3*i*f*g - 1/7*g^2 - 6/7*h^2,
+        a + 1/2*sqrt2*i*f - 1/2*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 + 5/2*g^2 - 3*sqrt3*i*g*h - 7/2*h^2,
+        e - sqrt3*i*g - 2*h,
+        m - 1/2*sqrt2*i*g - 1/2*sqrt3*sqrt2*h,
+        d^2 - 2*g^2 + 2*sqrt3*i*g*h + h^2,
+        c - 1/2*sqrt3*sqrt2*g + 1/2*sqrt2*i*h,
+        b^2 + 2*g^2 - 2*sqrt3*i*g*h - 3*h^2,
+        a^2 + g^2 - 2*sqrt3*i*g*h - 2*h^2
+    ],
+    [
+        5/12*sqrt2*i*f^2 - 1/12*sqrt2*i*g^2 + e*h - 5/6*sqrt2*i*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m + 1/3*sqrt3*sqrt2*e - 1/3*sqrt3*i*h,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - e + sqrt2*i*h,
+        b - 1/3*sqrt3*i*e - 2/3*sqrt3*sqrt2*h,
+        a^2 - 2/3*f^2 - 2/3*g^2 + 1/3*h^2
+    ],
+    [
+        f^4 + 10/11*f^2*g^2 + g^4 + 4/11*f^2*h^2 + 4/11*g^2*h^2 - 4/11*h^4,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        -11/28*sqrt2*i*e*f^2 + m*g^2 - 9/28*sqrt2*i*e*g^2 + 2/7*m*h^2 - 
+            5/14*sqrt2*i*e*h^2,
+        m*f^2 + 1/28*sqrt2*i*e*f^2 + 11/28*sqrt2*i*e*g^2 - 4/7*m*h^2 + 
+            3/14*sqrt2*i*e*h^2,
+        m*e - 1/12*sqrt2*i*f^2 + 5/12*sqrt2*i*g^2 + 1/6*sqrt2*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + 1/3*sqrt3*sqrt2*m + 1/3*sqrt3*i*e,
+        b + 2/3*sqrt3*sqrt2*m - 1/3*sqrt3*i*e,
+        a - 1/3*sqrt3*i*m - 1/3*sqrt3*sqrt2*e
+    ],
+    [
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        -26/9*sqrt3*i*f^3 + m*g^2 - 20/9*sqrt3*i*f*g^2 - 5*m*h^2 - 
+            8/9*sqrt3*i*f*h^2,
+        m*f + 2/9*sqrt3*i*f^2 + 1/18*sqrt3*i*g^2 - 5/18*sqrt3*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d + 1/2*sqrt3*sqrt2*m - 1/2*sqrt2*i*f,
+        c^2 + 1/3*f^2 - 2/3*g^2 - 2/3*h^2,
+        b + 1/2*sqrt2*i*m - 1/2*sqrt3*sqrt2*f,
+        a + 1/2*sqrt3*sqrt2*m + 1/2*sqrt2*i*f
+    ],
+    [
+        f + 1/2*sqrt2*i*g - 1/2*sqrt2*i*h,
+        e + 1/3*sqrt3*i*g - 2/3*sqrt3*i*h,
+        m + 1/6*sqrt3*sqrt2*g + 1/6*sqrt3*sqrt2*h,
+        d^2 - 2/3*g^2 + 2/3*g*h - 5/3*h^2,
+        c^2 - 5/6*g^2 + 1/3*g*h - 5/6*h^2,
+        b^2 + 2/3*g^2 - 2/3*g*h - 1/3*h^2,
+        a^2 - 1/3*g^2 - 2/3*g*h + 2/3*h^2
+    ],
+    [
+        f - g + sqrt2*i*h,
+        e^2 - 5/3*g^2 + 8/3*sqrt2*i*g*h + 10/3*h^2,
+        m + 1/3*sqrt3*sqrt2*g - 1/3*sqrt3*i*h,
+        d - 1/3*sqrt3*i*g - 2/3*sqrt3*sqrt2*h,
+        c^2 - 1/3*g^2 - 2/3*sqrt2*i*g*h - 4/3*h^2,
+        b^2 - 1/3*g^2 + 4/3*sqrt2*i*g*h + 2/3*h^2,
+        a^2 - 4/3*g^2 + 4/3*sqrt2*i*g*h + 5/3*h^2
+    ],
+    [
+        f^2 + 6/7*sqrt3*i*f*g - 5/7*g^2 - 2/7*h^2,
+        e^2 + 8/7*sqrt3*i*f*g - 9/7*g^2 + 2/7*h^2,
+        m + 1/2*sqrt3*sqrt2*f + 1/2*sqrt2*i*g,
+        d - 2*f - sqrt3*i*g,
+        c^2 - 2/7*sqrt3*i*f*g - 3/7*g^2 - 4/7*h^2,
+        b^2 + 4/7*sqrt3*i*f*g - 1/7*g^2 - 6/7*h^2,
+        a + 1/2*sqrt2*i*f - 1/2*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 + 5/2*g^2 - 3*sqrt3*i*g*h - 7/2*h^2,
+        e - sqrt3*i*g - 2*h,
+        m + 1/2*sqrt2*i*g + 1/2*sqrt3*sqrt2*h,
+        d^2 - 2*g^2 + 2*sqrt3*i*g*h + h^2,
+        c - 1/2*sqrt3*sqrt2*g + 1/2*sqrt2*i*h,
+        b^2 + 2*g^2 - 2*sqrt3*i*g*h - 3*h^2,
+        a^2 + g^2 - 2*sqrt3*i*g*h - 2*h^2
+    ],
+    [
+        5/12*sqrt2*i*f^2 - 1/12*sqrt2*i*g^2 + e*h - 5/6*sqrt2*i*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m - 1/3*sqrt3*sqrt2*e + 1/3*sqrt3*i*h,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - e + sqrt2*i*h,
+        b + 1/3*sqrt3*i*e + 2/3*sqrt3*sqrt2*h,
+        a^2 - 2/3*f^2 - 2/3*g^2 + 1/3*h^2
+    ],
+    [
+        f^4 + 10/11*f^2*g^2 + g^4 + 4/11*f^2*h^2 + 4/11*g^2*h^2 - 4/11*h^4,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        -11/28*sqrt2*i*e*f^2 + m*g^2 - 9/28*sqrt2*i*e*g^2 + 2/7*m*h^2 - 
+            5/14*sqrt2*i*e*h^2,
+        m*f^2 + 1/28*sqrt2*i*e*f^2 + 11/28*sqrt2*i*e*g^2 - 4/7*m*h^2 + 
+            3/14*sqrt2*i*e*h^2,
+        m*e - 1/12*sqrt2*i*f^2 + 5/12*sqrt2*i*g^2 + 1/6*sqrt2*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - 1/3*sqrt3*sqrt2*m - 1/3*sqrt3*i*e,
+        b - 2/3*sqrt3*sqrt2*m + 1/3*sqrt3*i*e,
+        a + 1/3*sqrt3*i*m + 1/3*sqrt3*sqrt2*e
+    ],
+    [
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        26/9*sqrt3*i*f^3 + m*g^2 + 20/9*sqrt3*i*f*g^2 - 5*m*h^2 + 
+            8/9*sqrt3*i*f*h^2,
+        m*f - 2/9*sqrt3*i*f^2 - 1/18*sqrt3*i*g^2 + 5/18*sqrt3*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d - 1/2*sqrt3*sqrt2*m - 1/2*sqrt2*i*f,
+        c^2 + 1/3*f^2 - 2/3*g^2 - 2/3*h^2,
+        b + 1/2*sqrt2*i*m + 1/2*sqrt3*sqrt2*f,
+        a - 1/2*sqrt3*sqrt2*m + 1/2*sqrt2*i*f
+    ],
+    [
+        f + 1/2*sqrt2*i*g - 1/2*sqrt2*i*h,
+        e - 1/3*sqrt3*i*g + 2/3*sqrt3*i*h,
+        m - 1/6*sqrt3*sqrt2*g - 1/6*sqrt3*sqrt2*h,
+        d^2 - 2/3*g^2 + 2/3*g*h - 5/3*h^2,
+        c^2 - 5/6*g^2 + 1/3*g*h - 5/6*h^2,
+        b^2 + 2/3*g^2 - 2/3*g*h - 1/3*h^2,
+        a^2 - 1/3*g^2 - 2/3*g*h + 2/3*h^2
+    ],
+    [
+        f - g + sqrt2*i*h,
+        e^2 - 5/3*g^2 + 8/3*sqrt2*i*g*h + 10/3*h^2,
+        m - 1/3*sqrt3*sqrt2*g + 1/3*sqrt3*i*h,
+        d + 1/3*sqrt3*i*g + 2/3*sqrt3*sqrt2*h,
+        c^2 - 1/3*g^2 - 2/3*sqrt2*i*g*h - 4/3*h^2,
+        b^2 - 1/3*g^2 + 4/3*sqrt2*i*g*h + 2/3*h^2,
+        a^2 - 4/3*g^2 + 4/3*sqrt2*i*g*h + 5/3*h^2
+    ],
+    [
+        f^2 - 6/7*sqrt3*i*f*g - 5/7*g^2 - 2/7*h^2,
+        e^2 - 8/7*sqrt3*i*f*g - 9/7*g^2 + 2/7*h^2,
+        m - 1/2*sqrt3*sqrt2*f + 1/2*sqrt2*i*g,
+        d - 2*f + sqrt3*i*g,
+        c^2 + 2/7*sqrt3*i*f*g - 3/7*g^2 - 4/7*h^2,
+        b^2 - 4/7*sqrt3*i*f*g - 1/7*g^2 - 6/7*h^2,
+        a + 1/2*sqrt2*i*f + 1/2*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 + 5/2*g^2 + 3*sqrt3*i*g*h - 7/2*h^2,
+        e + sqrt3*i*g - 2*h,
+        m + 1/2*sqrt2*i*g - 1/2*sqrt3*sqrt2*h,
+        d^2 - 2*g^2 - 2*sqrt3*i*g*h + h^2,
+        c + 1/2*sqrt3*sqrt2*g + 1/2*sqrt2*i*h,
+        b^2 + 2*g^2 + 2*sqrt3*i*g*h - 3*h^2,
+        a^2 + g^2 + 2*sqrt3*i*g*h - 2*h^2
+    ],
+    [
+        5/12*sqrt2*i*f^2 - 1/12*sqrt2*i*g^2 + e*h - 5/6*sqrt2*i*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m + 1/3*sqrt3*sqrt2*e - 1/3*sqrt3*i*h,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - e + sqrt2*i*h,
+        b + 1/3*sqrt3*i*e + 2/3*sqrt3*sqrt2*h,
+        a^2 - 2/3*f^2 - 2/3*g^2 + 1/3*h^2
+    ],
+    [
+        f^4 + 10/11*f^2*g^2 + g^4 + 4/11*f^2*h^2 + 4/11*g^2*h^2 - 4/11*h^4,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        11/28*sqrt2*i*e*f^2 + m*g^2 + 9/28*sqrt2*i*e*g^2 + 2/7*m*h^2 + 
+            5/14*sqrt2*i*e*h^2,
+        m*f^2 - 1/28*sqrt2*i*e*f^2 - 11/28*sqrt2*i*e*g^2 - 4/7*m*h^2 - 
+            3/14*sqrt2*i*e*h^2,
+        m*e + 1/12*sqrt2*i*f^2 - 5/12*sqrt2*i*g^2 - 1/6*sqrt2*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + 1/3*sqrt3*sqrt2*m - 1/3*sqrt3*i*e,
+        b + 2/3*sqrt3*sqrt2*m + 1/3*sqrt3*i*e,
+        a - 1/3*sqrt3*i*m + 1/3*sqrt3*sqrt2*e
+    ],
+    [
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        -26/9*sqrt3*i*f^3 + m*g^2 - 20/9*sqrt3*i*f*g^2 - 5*m*h^2 - 
+            8/9*sqrt3*i*f*h^2,
+        m*f + 2/9*sqrt3*i*f^2 + 1/18*sqrt3*i*g^2 - 5/18*sqrt3*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d + 1/2*sqrt3*sqrt2*m - 1/2*sqrt2*i*f,
+        c^2 + 1/3*f^2 - 2/3*g^2 - 2/3*h^2,
+        b - 1/2*sqrt2*i*m + 1/2*sqrt3*sqrt2*f,
+        a + 1/2*sqrt3*sqrt2*m + 1/2*sqrt2*i*f
+    ],
+    [
+        f + 1/2*sqrt2*i*g - 1/2*sqrt2*i*h,
+        e - 1/3*sqrt3*i*g + 2/3*sqrt3*i*h,
+        m + 1/6*sqrt3*sqrt2*g + 1/6*sqrt3*sqrt2*h,
+        d^2 - 2/3*g^2 + 2/3*g*h - 5/3*h^2,
+        c^2 - 5/6*g^2 + 1/3*g*h - 5/6*h^2,
+        b^2 + 2/3*g^2 - 2/3*g*h - 1/3*h^2,
+        a^2 - 1/3*g^2 - 2/3*g*h + 2/3*h^2
+    ],
+    [
+        f - g + sqrt2*i*h,
+        e^2 - 5/3*g^2 + 8/3*sqrt2*i*g*h + 10/3*h^2,
+        m + 1/3*sqrt3*sqrt2*g - 1/3*sqrt3*i*h,
+        d + 1/3*sqrt3*i*g + 2/3*sqrt3*sqrt2*h,
+        c^2 - 1/3*g^2 - 2/3*sqrt2*i*g*h - 4/3*h^2,
+        b^2 - 1/3*g^2 + 4/3*sqrt2*i*g*h + 2/3*h^2,
+        a^2 - 4/3*g^2 + 4/3*sqrt2*i*g*h + 5/3*h^2
+    ],
+    [
+        f^2 - 6/7*sqrt3*i*f*g - 5/7*g^2 - 2/7*h^2,
+        e^2 - 8/7*sqrt3*i*f*g - 9/7*g^2 + 2/7*h^2,
+        m + 1/2*sqrt3*sqrt2*f - 1/2*sqrt2*i*g,
+        d - 2*f + sqrt3*i*g,
+        c^2 + 2/7*sqrt3*i*f*g - 3/7*g^2 - 4/7*h^2,
+        b^2 - 4/7*sqrt3*i*f*g - 1/7*g^2 - 6/7*h^2,
+        a + 1/2*sqrt2*i*f + 1/2*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 + 5/2*g^2 + 3*sqrt3*i*g*h - 7/2*h^2,
+        e + sqrt3*i*g - 2*h,
+        m - 1/2*sqrt2*i*g + 1/2*sqrt3*sqrt2*h,
+        d^2 - 2*g^2 - 2*sqrt3*i*g*h + h^2,
+        c + 1/2*sqrt3*sqrt2*g + 1/2*sqrt2*i*h,
+        b^2 + 2*g^2 + 2*sqrt3*i*g*h - 3*h^2,
+        a^2 + g^2 + 2*sqrt3*i*g*h - 2*h^2
+    ],
+    [
+        -5/12*sqrt2*i*f^2 + 1/12*sqrt2*i*g^2 + e*h + 5/6*sqrt2*i*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m + 1/3*sqrt3*sqrt2*e + 1/3*sqrt3*i*h,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + e + sqrt2*i*h,
+        b + 1/3*sqrt3*i*e - 2/3*sqrt3*sqrt2*h,
+        a^2 - 2/3*f^2 - 2/3*g^2 + 1/3*h^2
+    ],
+    [
+        f^4 + 10/11*f^2*g^2 + g^4 + 4/11*f^2*h^2 + 4/11*g^2*h^2 - 4/11*h^4,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        11/28*sqrt2*i*e*f^2 + m*g^2 + 9/28*sqrt2*i*e*g^2 + 2/7*m*h^2 + 
+            5/14*sqrt2*i*e*h^2,
+        m*f^2 - 1/28*sqrt2*i*e*f^2 - 11/28*sqrt2*i*e*g^2 - 4/7*m*h^2 - 
+            3/14*sqrt2*i*e*h^2,
+        m*e + 1/12*sqrt2*i*f^2 - 5/12*sqrt2*i*g^2 - 1/6*sqrt2*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - 1/3*sqrt3*sqrt2*m + 1/3*sqrt3*i*e,
+        b + 2/3*sqrt3*sqrt2*m + 1/3*sqrt3*i*e,
+        a + 1/3*sqrt3*i*m - 1/3*sqrt3*sqrt2*e
+    ],
+    [
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        26/9*sqrt3*i*f^3 + m*g^2 + 20/9*sqrt3*i*f*g^2 - 5*m*h^2 + 
+            8/9*sqrt3*i*f*h^2,
+        m*f - 2/9*sqrt3*i*f^2 - 1/18*sqrt3*i*g^2 + 5/18*sqrt3*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d + 1/2*sqrt3*sqrt2*m + 1/2*sqrt2*i*f,
+        c^2 + 1/3*f^2 - 2/3*g^2 - 2/3*h^2,
+        b - 1/2*sqrt2*i*m - 1/2*sqrt3*sqrt2*f,
+        a - 1/2*sqrt3*sqrt2*m + 1/2*sqrt2*i*f
+    ],
+    [
+        f - 1/2*sqrt2*i*g - 1/2*sqrt2*i*h,
+        e - 1/3*sqrt3*i*g - 2/3*sqrt3*i*h,
+        m + 1/6*sqrt3*sqrt2*g - 1/6*sqrt3*sqrt2*h,
+        d^2 - 2/3*g^2 - 2/3*g*h - 5/3*h^2,
+        c^2 - 5/6*g^2 - 1/3*g*h - 5/6*h^2,
+        b^2 + 2/3*g^2 + 2/3*g*h - 1/3*h^2,
+        a^2 - 1/3*g^2 + 2/3*g*h + 2/3*h^2
+    ],
+    [
+        f + g + sqrt2*i*h,
+        e^2 - 5/3*g^2 - 8/3*sqrt2*i*g*h + 10/3*h^2,
+        m + 1/3*sqrt3*sqrt2*g + 1/3*sqrt3*i*h,
+        d + 1/3*sqrt3*i*g - 2/3*sqrt3*sqrt2*h,
+        c^2 - 1/3*g^2 + 2/3*sqrt2*i*g*h - 4/3*h^2,
+        b^2 - 1/3*g^2 - 4/3*sqrt2*i*g*h + 2/3*h^2,
+        a^2 - 4/3*g^2 - 4/3*sqrt2*i*g*h + 5/3*h^2
+    ],
+    [
+        f^2 + 6/7*sqrt3*i*f*g - 5/7*g^2 - 2/7*h^2,
+        e^2 + 8/7*sqrt3*i*f*g - 9/7*g^2 + 2/7*h^2,
+        m - 1/2*sqrt3*sqrt2*f - 1/2*sqrt2*i*g,
+        d + 2*f + sqrt3*i*g,
+        c^2 - 2/7*sqrt3*i*f*g - 3/7*g^2 - 4/7*h^2,
+        b^2 + 4/7*sqrt3*i*f*g - 1/7*g^2 - 6/7*h^2,
+        a + 1/2*sqrt2*i*f - 1/2*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 + 5/2*g^2 - 3*sqrt3*i*g*h - 7/2*h^2,
+        e + sqrt3*i*g + 2*h,
+        m - 1/2*sqrt2*i*g - 1/2*sqrt3*sqrt2*h,
+        d^2 - 2*g^2 + 2*sqrt3*i*g*h + h^2,
+        c - 1/2*sqrt3*sqrt2*g + 1/2*sqrt2*i*h,
+        b^2 + 2*g^2 - 2*sqrt3*i*g*h - 3*h^2,
+        a^2 + g^2 - 2*sqrt3*i*g*h - 2*h^2
+    ],
+    [
+        -5/12*sqrt2*i*f^2 + 1/12*sqrt2*i*g^2 + e*h + 5/6*sqrt2*i*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m - 1/3*sqrt3*sqrt2*e - 1/3*sqrt3*i*h,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + e + sqrt2*i*h,
+        b + 1/3*sqrt3*i*e - 2/3*sqrt3*sqrt2*h,
+        a^2 - 2/3*f^2 - 2/3*g^2 + 1/3*h^2
+    ],
+    [
+        f^4 + 10/11*f^2*g^2 + g^4 + 4/11*f^2*h^2 + 4/11*g^2*h^2 - 4/11*h^4,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        -11/28*sqrt2*i*e*f^2 + m*g^2 - 9/28*sqrt2*i*e*g^2 + 2/7*m*h^2 - 
+            5/14*sqrt2*i*e*h^2,
+        m*f^2 + 1/28*sqrt2*i*e*f^2 + 11/28*sqrt2*i*e*g^2 - 4/7*m*h^2 + 
+            3/14*sqrt2*i*e*h^2,
+        m*e - 1/12*sqrt2*i*f^2 + 5/12*sqrt2*i*g^2 + 1/6*sqrt2*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + 1/3*sqrt3*sqrt2*m + 1/3*sqrt3*i*e,
+        b - 2/3*sqrt3*sqrt2*m + 1/3*sqrt3*i*e,
+        a - 1/3*sqrt3*i*m - 1/3*sqrt3*sqrt2*e
+    ],
+    [
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        -26/9*sqrt3*i*f^3 + m*g^2 - 20/9*sqrt3*i*f*g^2 - 5*m*h^2 - 
+            8/9*sqrt3*i*f*h^2,
+        m*f + 2/9*sqrt3*i*f^2 + 1/18*sqrt3*i*g^2 - 5/18*sqrt3*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d - 1/2*sqrt3*sqrt2*m + 1/2*sqrt2*i*f,
+        c^2 + 1/3*f^2 - 2/3*g^2 - 2/3*h^2,
+        b + 1/2*sqrt2*i*m - 1/2*sqrt3*sqrt2*f,
+        a + 1/2*sqrt3*sqrt2*m + 1/2*sqrt2*i*f
+    ],
+    [
+        f - 1/2*sqrt2*i*g - 1/2*sqrt2*i*h,
+        e - 1/3*sqrt3*i*g - 2/3*sqrt3*i*h,
+        m - 1/6*sqrt3*sqrt2*g + 1/6*sqrt3*sqrt2*h,
+        d^2 - 2/3*g^2 - 2/3*g*h - 5/3*h^2,
+        c^2 - 5/6*g^2 - 1/3*g*h - 5/6*h^2,
+        b^2 + 2/3*g^2 + 2/3*g*h - 1/3*h^2,
+        a^2 - 1/3*g^2 + 2/3*g*h + 2/3*h^2
+    ],
+    [
+        f + g + sqrt2*i*h,
+        e^2 - 5/3*g^2 - 8/3*sqrt2*i*g*h + 10/3*h^2,
+        m - 1/3*sqrt3*sqrt2*g - 1/3*sqrt3*i*h,
+        d + 1/3*sqrt3*i*g - 2/3*sqrt3*sqrt2*h,
+        c^2 - 1/3*g^2 + 2/3*sqrt2*i*g*h - 4/3*h^2,
+        b^2 - 1/3*g^2 - 4/3*sqrt2*i*g*h + 2/3*h^2,
+        a^2 - 4/3*g^2 - 4/3*sqrt2*i*g*h + 5/3*h^2
+    ],
+    [
+        f^2 + 6/7*sqrt3*i*f*g - 5/7*g^2 - 2/7*h^2,
+        e^2 + 8/7*sqrt3*i*f*g - 9/7*g^2 + 2/7*h^2,
+        m + 1/2*sqrt3*sqrt2*f + 1/2*sqrt2*i*g,
+        d + 2*f + sqrt3*i*g,
+        c^2 - 2/7*sqrt3*i*f*g - 3/7*g^2 - 4/7*h^2,
+        b^2 + 4/7*sqrt3*i*f*g - 1/7*g^2 - 6/7*h^2,
+        a + 1/2*sqrt2*i*f - 1/2*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 + 5/2*g^2 - 3*sqrt3*i*g*h - 7/2*h^2,
+        e + sqrt3*i*g + 2*h,
+        m + 1/2*sqrt2*i*g + 1/2*sqrt3*sqrt2*h,
+        d^2 - 2*g^2 + 2*sqrt3*i*g*h + h^2,
+        c - 1/2*sqrt3*sqrt2*g + 1/2*sqrt2*i*h,
+        b^2 + 2*g^2 - 2*sqrt3*i*g*h - 3*h^2,
+        a^2 + g^2 - 2*sqrt3*i*g*h - 2*h^2
+    ],
+    [
+        -5/12*sqrt2*i*f^2 + 1/12*sqrt2*i*g^2 + e*h + 5/6*sqrt2*i*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m + 1/3*sqrt3*sqrt2*e + 1/3*sqrt3*i*h,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + e + sqrt2*i*h,
+        b - 1/3*sqrt3*i*e + 2/3*sqrt3*sqrt2*h,
+        a^2 - 2/3*f^2 - 2/3*g^2 + 1/3*h^2
+    ],
+    [
+        f^4 + 10/11*f^2*g^2 + g^4 + 4/11*f^2*h^2 + 4/11*g^2*h^2 - 4/11*h^4,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        -11/28*sqrt2*i*e*f^2 + m*g^2 - 9/28*sqrt2*i*e*g^2 + 2/7*m*h^2 - 
+            5/14*sqrt2*i*e*h^2,
+        m*f^2 + 1/28*sqrt2*i*e*f^2 + 11/28*sqrt2*i*e*g^2 - 4/7*m*h^2 + 
+            3/14*sqrt2*i*e*h^2,
+        m*e - 1/12*sqrt2*i*f^2 + 5/12*sqrt2*i*g^2 + 1/6*sqrt2*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - 1/3*sqrt3*sqrt2*m - 1/3*sqrt3*i*e,
+        b + 2/3*sqrt3*sqrt2*m - 1/3*sqrt3*i*e,
+        a + 1/3*sqrt3*i*m + 1/3*sqrt3*sqrt2*e
+    ],
+    [
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        26/9*sqrt3*i*f^3 + m*g^2 + 20/9*sqrt3*i*f*g^2 - 5*m*h^2 + 
+            8/9*sqrt3*i*f*h^2,
+        m*f - 2/9*sqrt3*i*f^2 - 1/18*sqrt3*i*g^2 + 5/18*sqrt3*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d + 1/2*sqrt3*sqrt2*m + 1/2*sqrt2*i*f,
+        c^2 + 1/3*f^2 - 2/3*g^2 - 2/3*h^2,
+        b + 1/2*sqrt2*i*m + 1/2*sqrt3*sqrt2*f,
+        a - 1/2*sqrt3*sqrt2*m + 1/2*sqrt2*i*f
+    ],
+    [
+        f - 1/2*sqrt2*i*g - 1/2*sqrt2*i*h,
+        e + 1/3*sqrt3*i*g + 2/3*sqrt3*i*h,
+        m + 1/6*sqrt3*sqrt2*g - 1/6*sqrt3*sqrt2*h,
+        d^2 - 2/3*g^2 - 2/3*g*h - 5/3*h^2,
+        c^2 - 5/6*g^2 - 1/3*g*h - 5/6*h^2,
+        b^2 + 2/3*g^2 + 2/3*g*h - 1/3*h^2,
+        a^2 - 1/3*g^2 + 2/3*g*h + 2/3*h^2
+    ],
+    [
+        f + g + sqrt2*i*h,
+        e^2 - 5/3*g^2 - 8/3*sqrt2*i*g*h + 10/3*h^2,
+        m + 1/3*sqrt3*sqrt2*g + 1/3*sqrt3*i*h,
+        d - 1/3*sqrt3*i*g + 2/3*sqrt3*sqrt2*h,
+        c^2 - 1/3*g^2 + 2/3*sqrt2*i*g*h - 4/3*h^2,
+        b^2 - 1/3*g^2 - 4/3*sqrt2*i*g*h + 2/3*h^2,
+        a^2 - 4/3*g^2 - 4/3*sqrt2*i*g*h + 5/3*h^2
+    ],
+    [
+        f^2 - 6/7*sqrt3*i*f*g - 5/7*g^2 - 2/7*h^2,
+        e^2 - 8/7*sqrt3*i*f*g - 9/7*g^2 + 2/7*h^2,
+        m - 1/2*sqrt3*sqrt2*f + 1/2*sqrt2*i*g,
+        d + 2*f - sqrt3*i*g,
+        c^2 + 2/7*sqrt3*i*f*g - 3/7*g^2 - 4/7*h^2,
+        b^2 - 4/7*sqrt3*i*f*g - 1/7*g^2 - 6/7*h^2,
+        a + 1/2*sqrt2*i*f + 1/2*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 + 5/2*g^2 + 3*sqrt3*i*g*h - 7/2*h^2,
+        e - sqrt3*i*g + 2*h,
+        m + 1/2*sqrt2*i*g - 1/2*sqrt3*sqrt2*h,
+        d^2 - 2*g^2 - 2*sqrt3*i*g*h + h^2,
+        c + 1/2*sqrt3*sqrt2*g + 1/2*sqrt2*i*h,
+        b^2 + 2*g^2 + 2*sqrt3*i*g*h - 3*h^2,
+        a^2 + g^2 + 2*sqrt3*i*g*h - 2*h^2
+    ],
+    [
+        -5/12*sqrt2*i*f^2 + 1/12*sqrt2*i*g^2 + e*h + 5/6*sqrt2*i*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m - 1/3*sqrt3*sqrt2*e - 1/3*sqrt3*i*h,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + e + sqrt2*i*h,
+        b - 1/3*sqrt3*i*e + 2/3*sqrt3*sqrt2*h,
+        a^2 - 2/3*f^2 - 2/3*g^2 + 1/3*h^2
+    ],
+    [
+        f^4 + 10/11*f^2*g^2 + g^4 + 4/11*f^2*h^2 + 4/11*g^2*h^2 - 4/11*h^4,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        11/28*sqrt2*i*e*f^2 + m*g^2 + 9/28*sqrt2*i*e*g^2 + 2/7*m*h^2 + 
+            5/14*sqrt2*i*e*h^2,
+        m*f^2 - 1/28*sqrt2*i*e*f^2 - 11/28*sqrt2*i*e*g^2 - 4/7*m*h^2 - 
+            3/14*sqrt2*i*e*h^2,
+        m*e + 1/12*sqrt2*i*f^2 - 5/12*sqrt2*i*g^2 - 1/6*sqrt2*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + 1/3*sqrt3*sqrt2*m - 1/3*sqrt3*i*e,
+        b - 2/3*sqrt3*sqrt2*m - 1/3*sqrt3*i*e,
+        a - 1/3*sqrt3*i*m + 1/3*sqrt3*sqrt2*e
+    ],
+    [
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        -26/9*sqrt3*i*f^3 + m*g^2 - 20/9*sqrt3*i*f*g^2 - 5*m*h^2 - 
+            8/9*sqrt3*i*f*h^2,
+        m*f + 2/9*sqrt3*i*f^2 + 1/18*sqrt3*i*g^2 - 5/18*sqrt3*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d - 1/2*sqrt3*sqrt2*m + 1/2*sqrt2*i*f,
+        c^2 + 1/3*f^2 - 2/3*g^2 - 2/3*h^2,
+        b - 1/2*sqrt2*i*m + 1/2*sqrt3*sqrt2*f,
+        a + 1/2*sqrt3*sqrt2*m + 1/2*sqrt2*i*f
+    ],
+    [
+        f - 1/2*sqrt2*i*g - 1/2*sqrt2*i*h,
+        e + 1/3*sqrt3*i*g + 2/3*sqrt3*i*h,
+        m - 1/6*sqrt3*sqrt2*g + 1/6*sqrt3*sqrt2*h,
+        d^2 - 2/3*g^2 - 2/3*g*h - 5/3*h^2,
+        c^2 - 5/6*g^2 - 1/3*g*h - 5/6*h^2,
+        b^2 + 2/3*g^2 + 2/3*g*h - 1/3*h^2,
+        a^2 - 1/3*g^2 + 2/3*g*h + 2/3*h^2
+    ],
+    [
+        f + g + sqrt2*i*h,
+        e^2 - 5/3*g^2 - 8/3*sqrt2*i*g*h + 10/3*h^2,
+        m - 1/3*sqrt3*sqrt2*g - 1/3*sqrt3*i*h,
+        d - 1/3*sqrt3*i*g + 2/3*sqrt3*sqrt2*h,
+        c^2 - 1/3*g^2 + 2/3*sqrt2*i*g*h - 4/3*h^2,
+        b^2 - 1/3*g^2 - 4/3*sqrt2*i*g*h + 2/3*h^2,
+        a^2 - 4/3*g^2 - 4/3*sqrt2*i*g*h + 5/3*h^2
+    ],
+    [
+        f^2 - 6/7*sqrt3*i*f*g - 5/7*g^2 - 2/7*h^2,
+        e^2 - 8/7*sqrt3*i*f*g - 9/7*g^2 + 2/7*h^2,
+        m + 1/2*sqrt3*sqrt2*f - 1/2*sqrt2*i*g,
+        d + 2*f - sqrt3*i*g,
+        c^2 + 2/7*sqrt3*i*f*g - 3/7*g^2 - 4/7*h^2,
+        b^2 - 4/7*sqrt3*i*f*g - 1/7*g^2 - 6/7*h^2,
+        a + 1/2*sqrt2*i*f + 1/2*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 + 5/2*g^2 + 3*sqrt3*i*g*h - 7/2*h^2,
+        e - sqrt3*i*g + 2*h,
+        m - 1/2*sqrt2*i*g + 1/2*sqrt3*sqrt2*h,
+        d^2 - 2*g^2 - 2*sqrt3*i*g*h + h^2,
+        c + 1/2*sqrt3*sqrt2*g + 1/2*sqrt2*i*h,
+        b^2 + 2*g^2 + 2*sqrt3*i*g*h - 3*h^2,
+        a^2 + g^2 + 2*sqrt3*i*g*h - 2*h^2
+    ],
+    [
+        5/12*sqrt2*i*f^2 - 1/12*sqrt2*i*g^2 + e*h - 5/6*sqrt2*i*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m + 1/3*sqrt3*sqrt2*e - 1/3*sqrt3*i*h,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + e - sqrt2*i*h,
+        b + 1/3*sqrt3*i*e + 2/3*sqrt3*sqrt2*h,
+        a^2 - 2/3*f^2 - 2/3*g^2 + 1/3*h^2
+    ],
+    [
+        f^4 + 10/11*f^2*g^2 + g^4 + 4/11*f^2*h^2 + 4/11*g^2*h^2 - 4/11*h^4,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        11/28*sqrt2*i*e*f^2 + m*g^2 + 9/28*sqrt2*i*e*g^2 + 2/7*m*h^2 + 
+            5/14*sqrt2*i*e*h^2,
+        m*f^2 - 1/28*sqrt2*i*e*f^2 - 11/28*sqrt2*i*e*g^2 - 4/7*m*h^2 - 
+            3/14*sqrt2*i*e*h^2,
+        m*e + 1/12*sqrt2*i*f^2 - 5/12*sqrt2*i*g^2 - 1/6*sqrt2*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - 1/3*sqrt3*sqrt2*m + 1/3*sqrt3*i*e,
+        b + 2/3*sqrt3*sqrt2*m + 1/3*sqrt3*i*e,
+        a - 1/3*sqrt3*i*m + 1/3*sqrt3*sqrt2*e
+    ],
+    [
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        -26/9*sqrt3*i*f^3 + m*g^2 - 20/9*sqrt3*i*f*g^2 - 5*m*h^2 - 
+            8/9*sqrt3*i*f*h^2,
+        m*f + 2/9*sqrt3*i*f^2 + 1/18*sqrt3*i*g^2 - 5/18*sqrt3*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d + 1/2*sqrt3*sqrt2*m - 1/2*sqrt2*i*f,
+        c^2 + 1/3*f^2 - 2/3*g^2 - 2/3*h^2,
+        b - 1/2*sqrt2*i*m + 1/2*sqrt3*sqrt2*f,
+        a - 1/2*sqrt3*sqrt2*m - 1/2*sqrt2*i*f
+    ],
+    [
+        f + 1/2*sqrt2*i*g + 1/2*sqrt2*i*h,
+        e - 1/3*sqrt3*i*g - 2/3*sqrt3*i*h,
+        m + 1/6*sqrt3*sqrt2*g - 1/6*sqrt3*sqrt2*h,
+        d^2 - 2/3*g^2 - 2/3*g*h - 5/3*h^2,
+        c^2 - 5/6*g^2 - 1/3*g*h - 5/6*h^2,
+        b^2 + 2/3*g^2 + 2/3*g*h - 1/3*h^2,
+        a^2 - 1/3*g^2 + 2/3*g*h + 2/3*h^2
+    ],
+    [
+        f + g - sqrt2*i*h,
+        e^2 - 5/3*g^2 + 8/3*sqrt2*i*g*h + 10/3*h^2,
+        m + 1/3*sqrt3*sqrt2*g - 1/3*sqrt3*i*h,
+        d + 1/3*sqrt3*i*g + 2/3*sqrt3*sqrt2*h,
+        c^2 - 1/3*g^2 - 2/3*sqrt2*i*g*h - 4/3*h^2,
+        b^2 - 1/3*g^2 + 4/3*sqrt2*i*g*h + 2/3*h^2,
+        a^2 - 4/3*g^2 + 4/3*sqrt2*i*g*h + 5/3*h^2
+    ],
+    [
+        f^2 + 6/7*sqrt3*i*f*g - 5/7*g^2 - 2/7*h^2,
+        e^2 + 8/7*sqrt3*i*f*g - 9/7*g^2 + 2/7*h^2,
+        m - 1/2*sqrt3*sqrt2*f - 1/2*sqrt2*i*g,
+        d + 2*f + sqrt3*i*g,
+        c^2 - 2/7*sqrt3*i*f*g - 3/7*g^2 - 4/7*h^2,
+        b^2 + 4/7*sqrt3*i*f*g - 1/7*g^2 - 6/7*h^2,
+        a - 1/2*sqrt2*i*f + 1/2*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 + 5/2*g^2 - 3*sqrt3*i*g*h - 7/2*h^2,
+        e + sqrt3*i*g + 2*h,
+        m - 1/2*sqrt2*i*g - 1/2*sqrt3*sqrt2*h,
+        d^2 - 2*g^2 + 2*sqrt3*i*g*h + h^2,
+        c + 1/2*sqrt3*sqrt2*g - 1/2*sqrt2*i*h,
+        b^2 + 2*g^2 - 2*sqrt3*i*g*h - 3*h^2,
+        a^2 + g^2 - 2*sqrt3*i*g*h - 2*h^2
+    ],
+    [
+        5/12*sqrt2*i*f^2 - 1/12*sqrt2*i*g^2 + e*h - 5/6*sqrt2*i*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m - 1/3*sqrt3*sqrt2*e + 1/3*sqrt3*i*h,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + e - sqrt2*i*h,
+        b + 1/3*sqrt3*i*e + 2/3*sqrt3*sqrt2*h,
+        a^2 - 2/3*f^2 - 2/3*g^2 + 1/3*h^2
+    ],
+    [
+        f^4 + 10/11*f^2*g^2 + g^4 + 4/11*f^2*h^2 + 4/11*g^2*h^2 - 4/11*h^4,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        -11/28*sqrt2*i*e*f^2 + m*g^2 - 9/28*sqrt2*i*e*g^2 + 2/7*m*h^2 - 
+            5/14*sqrt2*i*e*h^2,
+        m*f^2 + 1/28*sqrt2*i*e*f^2 + 11/28*sqrt2*i*e*g^2 - 4/7*m*h^2 + 
+            3/14*sqrt2*i*e*h^2,
+        m*e - 1/12*sqrt2*i*f^2 + 5/12*sqrt2*i*g^2 + 1/6*sqrt2*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + 1/3*sqrt3*sqrt2*m + 1/3*sqrt3*i*e,
+        b - 2/3*sqrt3*sqrt2*m + 1/3*sqrt3*i*e,
+        a + 1/3*sqrt3*i*m + 1/3*sqrt3*sqrt2*e
+    ],
+    [
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        26/9*sqrt3*i*f^3 + m*g^2 + 20/9*sqrt3*i*f*g^2 - 5*m*h^2 + 
+            8/9*sqrt3*i*f*h^2,
+        m*f - 2/9*sqrt3*i*f^2 - 1/18*sqrt3*i*g^2 + 5/18*sqrt3*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d - 1/2*sqrt3*sqrt2*m - 1/2*sqrt2*i*f,
+        c^2 + 1/3*f^2 - 2/3*g^2 - 2/3*h^2,
+        b + 1/2*sqrt2*i*m + 1/2*sqrt3*sqrt2*f,
+        a + 1/2*sqrt3*sqrt2*m - 1/2*sqrt2*i*f
+    ],
+    [
+        f + 1/2*sqrt2*i*g + 1/2*sqrt2*i*h,
+        e - 1/3*sqrt3*i*g - 2/3*sqrt3*i*h,
+        m - 1/6*sqrt3*sqrt2*g + 1/6*sqrt3*sqrt2*h,
+        d^2 - 2/3*g^2 - 2/3*g*h - 5/3*h^2,
+        c^2 - 5/6*g^2 - 1/3*g*h - 5/6*h^2,
+        b^2 + 2/3*g^2 + 2/3*g*h - 1/3*h^2,
+        a^2 - 1/3*g^2 + 2/3*g*h + 2/3*h^2
+    ],
+    [
+        f + g - sqrt2*i*h,
+        e^2 - 5/3*g^2 + 8/3*sqrt2*i*g*h + 10/3*h^2,
+        m - 1/3*sqrt3*sqrt2*g + 1/3*sqrt3*i*h,
+        d + 1/3*sqrt3*i*g + 2/3*sqrt3*sqrt2*h,
+        c^2 - 1/3*g^2 - 2/3*sqrt2*i*g*h - 4/3*h^2,
+        b^2 - 1/3*g^2 + 4/3*sqrt2*i*g*h + 2/3*h^2,
+        a^2 - 4/3*g^2 + 4/3*sqrt2*i*g*h + 5/3*h^2
+    ],
+    [
+        f^2 + 6/7*sqrt3*i*f*g - 5/7*g^2 - 2/7*h^2,
+        e^2 + 8/7*sqrt3*i*f*g - 9/7*g^2 + 2/7*h^2,
+        m + 1/2*sqrt3*sqrt2*f + 1/2*sqrt2*i*g,
+        d + 2*f + sqrt3*i*g,
+        c^2 - 2/7*sqrt3*i*f*g - 3/7*g^2 - 4/7*h^2,
+        b^2 + 4/7*sqrt3*i*f*g - 1/7*g^2 - 6/7*h^2,
+        a - 1/2*sqrt2*i*f + 1/2*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 + 5/2*g^2 - 3*sqrt3*i*g*h - 7/2*h^2,
+        e + sqrt3*i*g + 2*h,
+        m + 1/2*sqrt2*i*g + 1/2*sqrt3*sqrt2*h,
+        d^2 - 2*g^2 + 2*sqrt3*i*g*h + h^2,
+        c + 1/2*sqrt3*sqrt2*g - 1/2*sqrt2*i*h,
+        b^2 + 2*g^2 - 2*sqrt3*i*g*h - 3*h^2,
+        a^2 + g^2 - 2*sqrt3*i*g*h - 2*h^2
+    ],
+    [
+        5/12*sqrt2*i*f^2 - 1/12*sqrt2*i*g^2 + e*h - 5/6*sqrt2*i*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m + 1/3*sqrt3*sqrt2*e - 1/3*sqrt3*i*h,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + e - sqrt2*i*h,
+        b - 1/3*sqrt3*i*e - 2/3*sqrt3*sqrt2*h,
+        a^2 - 2/3*f^2 - 2/3*g^2 + 1/3*h^2
+    ],
+    [
+        f^4 + 10/11*f^2*g^2 + g^4 + 4/11*f^2*h^2 + 4/11*g^2*h^2 - 4/11*h^4,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        -11/28*sqrt2*i*e*f^2 + m*g^2 - 9/28*sqrt2*i*e*g^2 + 2/7*m*h^2 - 
+            5/14*sqrt2*i*e*h^2,
+        m*f^2 + 1/28*sqrt2*i*e*f^2 + 11/28*sqrt2*i*e*g^2 - 4/7*m*h^2 + 
+            3/14*sqrt2*i*e*h^2,
+        m*e - 1/12*sqrt2*i*f^2 + 5/12*sqrt2*i*g^2 + 1/6*sqrt2*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - 1/3*sqrt3*sqrt2*m - 1/3*sqrt3*i*e,
+        b + 2/3*sqrt3*sqrt2*m - 1/3*sqrt3*i*e,
+        a - 1/3*sqrt3*i*m - 1/3*sqrt3*sqrt2*e
+    ],
+    [
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        -26/9*sqrt3*i*f^3 + m*g^2 - 20/9*sqrt3*i*f*g^2 - 5*m*h^2 - 
+            8/9*sqrt3*i*f*h^2,
+        m*f + 2/9*sqrt3*i*f^2 + 1/18*sqrt3*i*g^2 - 5/18*sqrt3*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d + 1/2*sqrt3*sqrt2*m - 1/2*sqrt2*i*f,
+        c^2 + 1/3*f^2 - 2/3*g^2 - 2/3*h^2,
+        b + 1/2*sqrt2*i*m - 1/2*sqrt3*sqrt2*f,
+        a - 1/2*sqrt3*sqrt2*m - 1/2*sqrt2*i*f
+    ],
+    [
+        f + 1/2*sqrt2*i*g + 1/2*sqrt2*i*h,
+        e + 1/3*sqrt3*i*g + 2/3*sqrt3*i*h,
+        m + 1/6*sqrt3*sqrt2*g - 1/6*sqrt3*sqrt2*h,
+        d^2 - 2/3*g^2 - 2/3*g*h - 5/3*h^2,
+        c^2 - 5/6*g^2 - 1/3*g*h - 5/6*h^2,
+        b^2 + 2/3*g^2 + 2/3*g*h - 1/3*h^2,
+        a^2 - 1/3*g^2 + 2/3*g*h + 2/3*h^2
+    ],
+    [
+        f + g - sqrt2*i*h,
+        e^2 - 5/3*g^2 + 8/3*sqrt2*i*g*h + 10/3*h^2,
+        m + 1/3*sqrt3*sqrt2*g - 1/3*sqrt3*i*h,
+        d - 1/3*sqrt3*i*g - 2/3*sqrt3*sqrt2*h,
+        c^2 - 1/3*g^2 - 2/3*sqrt2*i*g*h - 4/3*h^2,
+        b^2 - 1/3*g^2 + 4/3*sqrt2*i*g*h + 2/3*h^2,
+        a^2 - 4/3*g^2 + 4/3*sqrt2*i*g*h + 5/3*h^2
+    ],
+    [
+        f^2 - 6/7*sqrt3*i*f*g - 5/7*g^2 - 2/7*h^2,
+        e^2 - 8/7*sqrt3*i*f*g - 9/7*g^2 + 2/7*h^2,
+        m - 1/2*sqrt3*sqrt2*f + 1/2*sqrt2*i*g,
+        d + 2*f - sqrt3*i*g,
+        c^2 + 2/7*sqrt3*i*f*g - 3/7*g^2 - 4/7*h^2,
+        b^2 - 4/7*sqrt3*i*f*g - 1/7*g^2 - 6/7*h^2,
+        a - 1/2*sqrt2*i*f - 1/2*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 + 5/2*g^2 + 3*sqrt3*i*g*h - 7/2*h^2,
+        e - sqrt3*i*g + 2*h,
+        m + 1/2*sqrt2*i*g - 1/2*sqrt3*sqrt2*h,
+        d^2 - 2*g^2 - 2*sqrt3*i*g*h + h^2,
+        c - 1/2*sqrt3*sqrt2*g - 1/2*sqrt2*i*h,
+        b^2 + 2*g^2 + 2*sqrt3*i*g*h - 3*h^2,
+        a^2 + g^2 + 2*sqrt3*i*g*h - 2*h^2
+    ],
+    [
+        5/12*sqrt2*i*f^2 - 1/12*sqrt2*i*g^2 + e*h - 5/6*sqrt2*i*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m - 1/3*sqrt3*sqrt2*e + 1/3*sqrt3*i*h,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + e - sqrt2*i*h,
+        b - 1/3*sqrt3*i*e - 2/3*sqrt3*sqrt2*h,
+        a^2 - 2/3*f^2 - 2/3*g^2 + 1/3*h^2
+    ],
+    [
+        f^4 + 10/11*f^2*g^2 + g^4 + 4/11*f^2*h^2 + 4/11*g^2*h^2 - 4/11*h^4,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        11/28*sqrt2*i*e*f^2 + m*g^2 + 9/28*sqrt2*i*e*g^2 + 2/7*m*h^2 + 
+            5/14*sqrt2*i*e*h^2,
+        m*f^2 - 1/28*sqrt2*i*e*f^2 - 11/28*sqrt2*i*e*g^2 - 4/7*m*h^2 - 
+            3/14*sqrt2*i*e*h^2,
+        m*e + 1/12*sqrt2*i*f^2 - 5/12*sqrt2*i*g^2 - 1/6*sqrt2*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + 1/3*sqrt3*sqrt2*m - 1/3*sqrt3*i*e,
+        b - 2/3*sqrt3*sqrt2*m - 1/3*sqrt3*i*e,
+        a + 1/3*sqrt3*i*m - 1/3*sqrt3*sqrt2*e
+    ],
+    [
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        26/9*sqrt3*i*f^3 + m*g^2 + 20/9*sqrt3*i*f*g^2 - 5*m*h^2 + 
+            8/9*sqrt3*i*f*h^2,
+        m*f - 2/9*sqrt3*i*f^2 - 1/18*sqrt3*i*g^2 + 5/18*sqrt3*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d - 1/2*sqrt3*sqrt2*m - 1/2*sqrt2*i*f,
+        c^2 + 1/3*f^2 - 2/3*g^2 - 2/3*h^2,
+        b - 1/2*sqrt2*i*m - 1/2*sqrt3*sqrt2*f,
+        a + 1/2*sqrt3*sqrt2*m - 1/2*sqrt2*i*f
+    ],
+    [
+        f + 1/2*sqrt2*i*g + 1/2*sqrt2*i*h,
+        e + 1/3*sqrt3*i*g + 2/3*sqrt3*i*h,
+        m - 1/6*sqrt3*sqrt2*g + 1/6*sqrt3*sqrt2*h,
+        d^2 - 2/3*g^2 - 2/3*g*h - 5/3*h^2,
+        c^2 - 5/6*g^2 - 1/3*g*h - 5/6*h^2,
+        b^2 + 2/3*g^2 + 2/3*g*h - 1/3*h^2,
+        a^2 - 1/3*g^2 + 2/3*g*h + 2/3*h^2
+    ],
+    [
+        f + g - sqrt2*i*h,
+        e^2 - 5/3*g^2 + 8/3*sqrt2*i*g*h + 10/3*h^2,
+        m - 1/3*sqrt3*sqrt2*g + 1/3*sqrt3*i*h,
+        d - 1/3*sqrt3*i*g - 2/3*sqrt3*sqrt2*h,
+        c^2 - 1/3*g^2 - 2/3*sqrt2*i*g*h - 4/3*h^2,
+        b^2 - 1/3*g^2 + 4/3*sqrt2*i*g*h + 2/3*h^2,
+        a^2 - 4/3*g^2 + 4/3*sqrt2*i*g*h + 5/3*h^2
+    ],
+    [
+        f^2 - 6/7*sqrt3*i*f*g - 5/7*g^2 - 2/7*h^2,
+        e^2 - 8/7*sqrt3*i*f*g - 9/7*g^2 + 2/7*h^2,
+        m + 1/2*sqrt3*sqrt2*f - 1/2*sqrt2*i*g,
+        d + 2*f - sqrt3*i*g,
+        c^2 + 2/7*sqrt3*i*f*g - 3/7*g^2 - 4/7*h^2,
+        b^2 - 4/7*sqrt3*i*f*g - 1/7*g^2 - 6/7*h^2,
+        a - 1/2*sqrt2*i*f - 1/2*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 + 5/2*g^2 + 3*sqrt3*i*g*h - 7/2*h^2,
+        e - sqrt3*i*g + 2*h,
+        m - 1/2*sqrt2*i*g + 1/2*sqrt3*sqrt2*h,
+        d^2 - 2*g^2 - 2*sqrt3*i*g*h + h^2,
+        c - 1/2*sqrt3*sqrt2*g - 1/2*sqrt2*i*h,
+        b^2 + 2*g^2 + 2*sqrt3*i*g*h - 3*h^2,
+        a^2 + g^2 + 2*sqrt3*i*g*h - 2*h^2
+    ],
+    [
+        -5/12*sqrt2*i*f^2 + 1/12*sqrt2*i*g^2 + e*h + 5/6*sqrt2*i*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m - 1/3*sqrt3*sqrt2*e - 1/3*sqrt3*i*h,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - e - sqrt2*i*h,
+        b - 1/3*sqrt3*i*e + 2/3*sqrt3*sqrt2*h,
+        a^2 - 2/3*f^2 - 2/3*g^2 + 1/3*h^2
+    ],
+    [
+        f^4 + 10/11*f^2*g^2 + g^4 + 4/11*f^2*h^2 + 4/11*g^2*h^2 - 4/11*h^4,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        11/28*sqrt2*i*e*f^2 + m*g^2 + 9/28*sqrt2*i*e*g^2 + 2/7*m*h^2 + 
+            5/14*sqrt2*i*e*h^2,
+        m*f^2 - 1/28*sqrt2*i*e*f^2 - 11/28*sqrt2*i*e*g^2 - 4/7*m*h^2 - 
+            3/14*sqrt2*i*e*h^2,
+        m*e + 1/12*sqrt2*i*f^2 - 5/12*sqrt2*i*g^2 - 1/6*sqrt2*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - 1/3*sqrt3*sqrt2*m + 1/3*sqrt3*i*e,
+        b - 2/3*sqrt3*sqrt2*m - 1/3*sqrt3*i*e,
+        a - 1/3*sqrt3*i*m + 1/3*sqrt3*sqrt2*e
+    ],
+    [
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        -26/9*sqrt3*i*f^3 + m*g^2 - 20/9*sqrt3*i*f*g^2 - 5*m*h^2 - 
+            8/9*sqrt3*i*f*h^2,
+        m*f + 2/9*sqrt3*i*f^2 + 1/18*sqrt3*i*g^2 - 5/18*sqrt3*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d - 1/2*sqrt3*sqrt2*m + 1/2*sqrt2*i*f,
+        c^2 + 1/3*f^2 - 2/3*g^2 - 2/3*h^2,
+        b - 1/2*sqrt2*i*m + 1/2*sqrt3*sqrt2*f,
+        a - 1/2*sqrt3*sqrt2*m - 1/2*sqrt2*i*f
+    ],
+    [
+        f - 1/2*sqrt2*i*g + 1/2*sqrt2*i*h,
+        e + 1/3*sqrt3*i*g - 2/3*sqrt3*i*h,
+        m - 1/6*sqrt3*sqrt2*g - 1/6*sqrt3*sqrt2*h,
+        d^2 - 2/3*g^2 + 2/3*g*h - 5/3*h^2,
+        c^2 - 5/6*g^2 + 1/3*g*h - 5/6*h^2,
+        b^2 + 2/3*g^2 - 2/3*g*h - 1/3*h^2,
+        a^2 - 1/3*g^2 - 2/3*g*h + 2/3*h^2
+    ],
+    [
+        f - g - sqrt2*i*h,
+        e^2 - 5/3*g^2 - 8/3*sqrt2*i*g*h + 10/3*h^2,
+        m - 1/3*sqrt3*sqrt2*g - 1/3*sqrt3*i*h,
+        d - 1/3*sqrt3*i*g + 2/3*sqrt3*sqrt2*h,
+        c^2 - 1/3*g^2 + 2/3*sqrt2*i*g*h - 4/3*h^2,
+        b^2 - 1/3*g^2 - 4/3*sqrt2*i*g*h + 2/3*h^2,
+        a^2 - 4/3*g^2 - 4/3*sqrt2*i*g*h + 5/3*h^2
+    ],
+    [
+        f^2 + 6/7*sqrt3*i*f*g - 5/7*g^2 - 2/7*h^2,
+        e^2 + 8/7*sqrt3*i*f*g - 9/7*g^2 + 2/7*h^2,
+        m - 1/2*sqrt3*sqrt2*f - 1/2*sqrt2*i*g,
+        d - 2*f - sqrt3*i*g,
+        c^2 - 2/7*sqrt3*i*f*g - 3/7*g^2 - 4/7*h^2,
+        b^2 + 4/7*sqrt3*i*f*g - 1/7*g^2 - 6/7*h^2,
+        a - 1/2*sqrt2*i*f + 1/2*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 + 5/2*g^2 - 3*sqrt3*i*g*h - 7/2*h^2,
+        e - sqrt3*i*g - 2*h,
+        m - 1/2*sqrt2*i*g - 1/2*sqrt3*sqrt2*h,
+        d^2 - 2*g^2 + 2*sqrt3*i*g*h + h^2,
+        c + 1/2*sqrt3*sqrt2*g - 1/2*sqrt2*i*h,
+        b^2 + 2*g^2 - 2*sqrt3*i*g*h - 3*h^2,
+        a^2 + g^2 - 2*sqrt3*i*g*h - 2*h^2
+    ],
+    [
+        -5/12*sqrt2*i*f^2 + 1/12*sqrt2*i*g^2 + e*h + 5/6*sqrt2*i*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m + 1/3*sqrt3*sqrt2*e + 1/3*sqrt3*i*h,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - e - sqrt2*i*h,
+        b - 1/3*sqrt3*i*e + 2/3*sqrt3*sqrt2*h,
+        a^2 - 2/3*f^2 - 2/3*g^2 + 1/3*h^2
+    ],
+    [
+        f^4 + 10/11*f^2*g^2 + g^4 + 4/11*f^2*h^2 + 4/11*g^2*h^2 - 4/11*h^4,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        -11/28*sqrt2*i*e*f^2 + m*g^2 - 9/28*sqrt2*i*e*g^2 + 2/7*m*h^2 - 
+            5/14*sqrt2*i*e*h^2,
+        m*f^2 + 1/28*sqrt2*i*e*f^2 + 11/28*sqrt2*i*e*g^2 - 4/7*m*h^2 + 
+            3/14*sqrt2*i*e*h^2,
+        m*e - 1/12*sqrt2*i*f^2 + 5/12*sqrt2*i*g^2 + 1/6*sqrt2*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + 1/3*sqrt3*sqrt2*m + 1/3*sqrt3*i*e,
+        b + 2/3*sqrt3*sqrt2*m - 1/3*sqrt3*i*e,
+        a + 1/3*sqrt3*i*m + 1/3*sqrt3*sqrt2*e
+    ],
+    [
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        26/9*sqrt3*i*f^3 + m*g^2 + 20/9*sqrt3*i*f*g^2 - 5*m*h^2 + 
+            8/9*sqrt3*i*f*h^2,
+        m*f - 2/9*sqrt3*i*f^2 - 1/18*sqrt3*i*g^2 + 5/18*sqrt3*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d + 1/2*sqrt3*sqrt2*m + 1/2*sqrt2*i*f,
+        c^2 + 1/3*f^2 - 2/3*g^2 - 2/3*h^2,
+        b + 1/2*sqrt2*i*m + 1/2*sqrt3*sqrt2*f,
+        a + 1/2*sqrt3*sqrt2*m - 1/2*sqrt2*i*f
+    ],
+    [
+        f - 1/2*sqrt2*i*g + 1/2*sqrt2*i*h,
+        e + 1/3*sqrt3*i*g - 2/3*sqrt3*i*h,
+        m + 1/6*sqrt3*sqrt2*g + 1/6*sqrt3*sqrt2*h,
+        d^2 - 2/3*g^2 + 2/3*g*h - 5/3*h^2,
+        c^2 - 5/6*g^2 + 1/3*g*h - 5/6*h^2,
+        b^2 + 2/3*g^2 - 2/3*g*h - 1/3*h^2,
+        a^2 - 1/3*g^2 - 2/3*g*h + 2/3*h^2
+    ],
+    [
+        f - g - sqrt2*i*h,
+        e^2 - 5/3*g^2 - 8/3*sqrt2*i*g*h + 10/3*h^2,
+        m + 1/3*sqrt3*sqrt2*g + 1/3*sqrt3*i*h,
+        d - 1/3*sqrt3*i*g + 2/3*sqrt3*sqrt2*h,
+        c^2 - 1/3*g^2 + 2/3*sqrt2*i*g*h - 4/3*h^2,
+        b^2 - 1/3*g^2 - 4/3*sqrt2*i*g*h + 2/3*h^2,
+        a^2 - 4/3*g^2 - 4/3*sqrt2*i*g*h + 5/3*h^2
+    ],
+    [
+        f^2 + 6/7*sqrt3*i*f*g - 5/7*g^2 - 2/7*h^2,
+        e^2 + 8/7*sqrt3*i*f*g - 9/7*g^2 + 2/7*h^2,
+        m + 1/2*sqrt3*sqrt2*f + 1/2*sqrt2*i*g,
+        d - 2*f - sqrt3*i*g,
+        c^2 - 2/7*sqrt3*i*f*g - 3/7*g^2 - 4/7*h^2,
+        b^2 + 4/7*sqrt3*i*f*g - 1/7*g^2 - 6/7*h^2,
+        a - 1/2*sqrt2*i*f + 1/2*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 + 5/2*g^2 - 3*sqrt3*i*g*h - 7/2*h^2,
+        e - sqrt3*i*g - 2*h,
+        m + 1/2*sqrt2*i*g + 1/2*sqrt3*sqrt2*h,
+        d^2 - 2*g^2 + 2*sqrt3*i*g*h + h^2,
+        c + 1/2*sqrt3*sqrt2*g - 1/2*sqrt2*i*h,
+        b^2 + 2*g^2 - 2*sqrt3*i*g*h - 3*h^2,
+        a^2 + g^2 - 2*sqrt3*i*g*h - 2*h^2
+    ],
+    [
+        -5/12*sqrt2*i*f^2 + 1/12*sqrt2*i*g^2 + e*h + 5/6*sqrt2*i*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m - 1/3*sqrt3*sqrt2*e - 1/3*sqrt3*i*h,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - e - sqrt2*i*h,
+        b + 1/3*sqrt3*i*e - 2/3*sqrt3*sqrt2*h,
+        a^2 - 2/3*f^2 - 2/3*g^2 + 1/3*h^2
+    ],
+    [
+        f^4 + 10/11*f^2*g^2 + g^4 + 4/11*f^2*h^2 + 4/11*g^2*h^2 - 4/11*h^4,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        -11/28*sqrt2*i*e*f^2 + m*g^2 - 9/28*sqrt2*i*e*g^2 + 2/7*m*h^2 - 
+            5/14*sqrt2*i*e*h^2,
+        m*f^2 + 1/28*sqrt2*i*e*f^2 + 11/28*sqrt2*i*e*g^2 - 4/7*m*h^2 + 
+            3/14*sqrt2*i*e*h^2,
+        m*e - 1/12*sqrt2*i*f^2 + 5/12*sqrt2*i*g^2 + 1/6*sqrt2*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - 1/3*sqrt3*sqrt2*m - 1/3*sqrt3*i*e,
+        b - 2/3*sqrt3*sqrt2*m + 1/3*sqrt3*i*e,
+        a - 1/3*sqrt3*i*m - 1/3*sqrt3*sqrt2*e
+    ],
+    [
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        -26/9*sqrt3*i*f^3 + m*g^2 - 20/9*sqrt3*i*f*g^2 - 5*m*h^2 - 
+            8/9*sqrt3*i*f*h^2,
+        m*f + 2/9*sqrt3*i*f^2 + 1/18*sqrt3*i*g^2 - 5/18*sqrt3*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d - 1/2*sqrt3*sqrt2*m + 1/2*sqrt2*i*f,
+        c^2 + 1/3*f^2 - 2/3*g^2 - 2/3*h^2,
+        b + 1/2*sqrt2*i*m - 1/2*sqrt3*sqrt2*f,
+        a - 1/2*sqrt3*sqrt2*m - 1/2*sqrt2*i*f
+    ],
+    [
+        f - 1/2*sqrt2*i*g + 1/2*sqrt2*i*h,
+        e - 1/3*sqrt3*i*g + 2/3*sqrt3*i*h,
+        m - 1/6*sqrt3*sqrt2*g - 1/6*sqrt3*sqrt2*h,
+        d^2 - 2/3*g^2 + 2/3*g*h - 5/3*h^2,
+        c^2 - 5/6*g^2 + 1/3*g*h - 5/6*h^2,
+        b^2 + 2/3*g^2 - 2/3*g*h - 1/3*h^2,
+        a^2 - 1/3*g^2 - 2/3*g*h + 2/3*h^2
+    ],
+    [
+        f - g - sqrt2*i*h,
+        e^2 - 5/3*g^2 - 8/3*sqrt2*i*g*h + 10/3*h^2,
+        m - 1/3*sqrt3*sqrt2*g - 1/3*sqrt3*i*h,
+        d + 1/3*sqrt3*i*g - 2/3*sqrt3*sqrt2*h,
+        c^2 - 1/3*g^2 + 2/3*sqrt2*i*g*h - 4/3*h^2,
+        b^2 - 1/3*g^2 - 4/3*sqrt2*i*g*h + 2/3*h^2,
+        a^2 - 4/3*g^2 - 4/3*sqrt2*i*g*h + 5/3*h^2
+    ],
+    [
+        f^2 - 6/7*sqrt3*i*f*g - 5/7*g^2 - 2/7*h^2,
+        e^2 - 8/7*sqrt3*i*f*g - 9/7*g^2 + 2/7*h^2,
+        m - 1/2*sqrt3*sqrt2*f + 1/2*sqrt2*i*g,
+        d - 2*f + sqrt3*i*g,
+        c^2 + 2/7*sqrt3*i*f*g - 3/7*g^2 - 4/7*h^2,
+        b^2 - 4/7*sqrt3*i*f*g - 1/7*g^2 - 6/7*h^2,
+        a - 1/2*sqrt2*i*f - 1/2*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 + 5/2*g^2 + 3*sqrt3*i*g*h - 7/2*h^2,
+        e + sqrt3*i*g - 2*h,
+        m + 1/2*sqrt2*i*g - 1/2*sqrt3*sqrt2*h,
+        d^2 - 2*g^2 - 2*sqrt3*i*g*h + h^2,
+        c - 1/2*sqrt3*sqrt2*g - 1/2*sqrt2*i*h,
+        b^2 + 2*g^2 + 2*sqrt3*i*g*h - 3*h^2,
+        a^2 + g^2 + 2*sqrt3*i*g*h - 2*h^2
+    ],
+    [
+        -5/12*sqrt2*i*f^2 + 1/12*sqrt2*i*g^2 + e*h + 5/6*sqrt2*i*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m + 1/3*sqrt3*sqrt2*e + 1/3*sqrt3*i*h,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - e - sqrt2*i*h,
+        b + 1/3*sqrt3*i*e - 2/3*sqrt3*sqrt2*h,
+        a^2 - 2/3*f^2 - 2/3*g^2 + 1/3*h^2
+    ],
+    [
+        f^4 + 10/11*f^2*g^2 + g^4 + 4/11*f^2*h^2 + 4/11*g^2*h^2 - 4/11*h^4,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        11/28*sqrt2*i*e*f^2 + m*g^2 + 9/28*sqrt2*i*e*g^2 + 2/7*m*h^2 + 
+            5/14*sqrt2*i*e*h^2,
+        m*f^2 - 1/28*sqrt2*i*e*f^2 - 11/28*sqrt2*i*e*g^2 - 4/7*m*h^2 - 
+            3/14*sqrt2*i*e*h^2,
+        m*e + 1/12*sqrt2*i*f^2 - 5/12*sqrt2*i*g^2 - 1/6*sqrt2*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + 1/3*sqrt3*sqrt2*m - 1/3*sqrt3*i*e,
+        b + 2/3*sqrt3*sqrt2*m + 1/3*sqrt3*i*e,
+        a + 1/3*sqrt3*i*m - 1/3*sqrt3*sqrt2*e
+    ],
+    [
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        26/9*sqrt3*i*f^3 + m*g^2 + 20/9*sqrt3*i*f*g^2 - 5*m*h^2 + 
+            8/9*sqrt3*i*f*h^2,
+        m*f - 2/9*sqrt3*i*f^2 - 1/18*sqrt3*i*g^2 + 5/18*sqrt3*i*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d + 1/2*sqrt3*sqrt2*m + 1/2*sqrt2*i*f,
+        c^2 + 1/3*f^2 - 2/3*g^2 - 2/3*h^2,
+        b - 1/2*sqrt2*i*m - 1/2*sqrt3*sqrt2*f,
+        a + 1/2*sqrt3*sqrt2*m - 1/2*sqrt2*i*f
+    ],
+    [
+        f - 1/2*sqrt2*i*g + 1/2*sqrt2*i*h,
+        e - 1/3*sqrt3*i*g + 2/3*sqrt3*i*h,
+        m + 1/6*sqrt3*sqrt2*g + 1/6*sqrt3*sqrt2*h,
+        d^2 - 2/3*g^2 + 2/3*g*h - 5/3*h^2,
+        c^2 - 5/6*g^2 + 1/3*g*h - 5/6*h^2,
+        b^2 + 2/3*g^2 - 2/3*g*h - 1/3*h^2,
+        a^2 - 1/3*g^2 - 2/3*g*h + 2/3*h^2
+    ],
+    [
+        f - g - sqrt2*i*h,
+        e^2 - 5/3*g^2 - 8/3*sqrt2*i*g*h + 10/3*h^2,
+        m + 1/3*sqrt3*sqrt2*g + 1/3*sqrt3*i*h,
+        d + 1/3*sqrt3*i*g - 2/3*sqrt3*sqrt2*h,
+        c^2 - 1/3*g^2 + 2/3*sqrt2*i*g*h - 4/3*h^2,
+        b^2 - 1/3*g^2 - 4/3*sqrt2*i*g*h + 2/3*h^2,
+        a^2 - 4/3*g^2 - 4/3*sqrt2*i*g*h + 5/3*h^2
+    ],
+    [
+        f^2 - 6/7*sqrt3*i*f*g - 5/7*g^2 - 2/7*h^2,
+        e^2 - 8/7*sqrt3*i*f*g - 9/7*g^2 + 2/7*h^2,
+        m + 1/2*sqrt3*sqrt2*f - 1/2*sqrt2*i*g,
+        d - 2*f + sqrt3*i*g,
+        c^2 + 2/7*sqrt3*i*f*g - 3/7*g^2 - 4/7*h^2,
+        b^2 - 4/7*sqrt3*i*f*g - 1/7*g^2 - 6/7*h^2,
+        a - 1/2*sqrt2*i*f - 1/2*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 + 5/2*g^2 + 3*sqrt3*i*g*h - 7/2*h^2,
+        e + sqrt3*i*g - 2*h,
+        m - 1/2*sqrt2*i*g + 1/2*sqrt3*sqrt2*h,
+        d^2 - 2*g^2 - 2*sqrt3*i*g*h + h^2,
+        c - 1/2*sqrt3*sqrt2*g - 1/2*sqrt2*i*h,
+        b^2 + 2*g^2 + 2*sqrt3*i*g*h - 3*h^2,
+        a^2 + g^2 + 2*sqrt3*i*g*h - 2*h^2
+    ],
+    [
+        f^2 - 7/8*g^2 - 3/4*sqrt3*sqrt2*g*h - 5/4*h^2,
+        e + 1/2*sqrt3*sqrt2*g + h,
+        m^2 - 5/8*g^2 - 1/4*sqrt3*sqrt2*g*h - 3/4*h^2,
+        d^2 + 1/4*g^2 + 1/2*sqrt3*sqrt2*g*h - 1/2*h^2,
+        c - 1/4*sqrt3*sqrt2*g + 1/2*h,
+        b - 1/2*g - 1/2*sqrt3*sqrt2*h,
+        a^2 - 5/4*g^2 - 1/2*sqrt3*sqrt2*g*h - 1/2*h^2
+    ],
+    [
+        f^2 + 3/5*sqrt3*sqrt2*f*g + 7/10*g^2 - 4/5*h^2,
+        e^2 + 4/5*sqrt3*sqrt2*f*g + 3/5*g^2 - 2/5*h^2,
+        m^2 + 1/5*sqrt3*sqrt2*f*g - 1/10*g^2 - 3/5*h^2,
+        d + f + 1/2*sqrt3*sqrt2*g,
+        c^2 - 1/5*sqrt3*sqrt2*f*g - 9/10*g^2 - 2/5*h^2,
+        b - 1/2*sqrt3*sqrt2*f - 1/2*g,
+        a + 1/2*f - 1/4*sqrt3*sqrt2*g
+    ],
+    [
+        f + 1/2*g + h,
+        e + 1/3*sqrt3*sqrt2*g + 1/3*sqrt3*sqrt2*h,
+        m^2 - 5/12*g^2 - 1/3*g*h - 2/3*h^2,
+        d + 1/6*sqrt3*sqrt2*g - 1/3*sqrt3*sqrt2*h,
+        c^2 - 7/12*g^2 + 1/3*g*h - 1/3*h^2,
+        b^2 + 1/6*g^2 - 2/3*g*h - 4/3*h^2,
+        a^2 - 5/6*g^2 - 2/3*g*h - 1/3*h^2
+    ],
+    [
+        f^2 - 7/8*g^2 + 3/4*sqrt3*sqrt2*g*h - 5/4*h^2,
+        e - 1/2*sqrt3*sqrt2*g + h,
+        m^2 - 5/8*g^2 + 1/4*sqrt3*sqrt2*g*h - 3/4*h^2,
+        d^2 + 1/4*g^2 - 1/2*sqrt3*sqrt2*g*h - 1/2*h^2,
+        c + 1/4*sqrt3*sqrt2*g + 1/2*h,
+        b + 1/2*g - 1/2*sqrt3*sqrt2*h,
+        a^2 - 5/4*g^2 + 1/2*sqrt3*sqrt2*g*h - 1/2*h^2
+    ],
+    [
+        f^2 - 3/5*sqrt3*sqrt2*f*g + 7/10*g^2 - 4/5*h^2,
+        e^2 - 4/5*sqrt3*sqrt2*f*g + 3/5*g^2 - 2/5*h^2,
+        m^2 - 1/5*sqrt3*sqrt2*f*g - 1/10*g^2 - 3/5*h^2,
+        d + f - 1/2*sqrt3*sqrt2*g,
+        c^2 + 1/5*sqrt3*sqrt2*f*g - 9/10*g^2 - 2/5*h^2,
+        b - 1/2*sqrt3*sqrt2*f + 1/2*g,
+        a + 1/2*f + 1/4*sqrt3*sqrt2*g
+    ],
+    [
+        f + 1/2*g + h,
+        e + 1/3*sqrt3*sqrt2*g + 1/3*sqrt3*sqrt2*h,
+        m^2 - 5/12*g^2 - 1/3*g*h - 2/3*h^2,
+        d - 1/6*sqrt3*sqrt2*g + 1/3*sqrt3*sqrt2*h,
+        c^2 - 7/12*g^2 + 1/3*g*h - 1/3*h^2,
+        b^2 + 1/6*g^2 - 2/3*g*h - 4/3*h^2,
+        a^2 - 5/6*g^2 - 2/3*g*h - 1/3*h^2
+    ],
+    [
+        f + 1/2*g + h,
+        e - 1/3*sqrt3*sqrt2*g - 1/3*sqrt3*sqrt2*h,
+        m^2 - 5/12*g^2 - 1/3*g*h - 2/3*h^2,
+        d + 1/6*sqrt3*sqrt2*g - 1/3*sqrt3*sqrt2*h,
+        c^2 - 7/12*g^2 + 1/3*g*h - 1/3*h^2,
+        b^2 + 1/6*g^2 - 2/3*g*h - 4/3*h^2,
+        a^2 - 5/6*g^2 - 2/3*g*h - 1/3*h^2
+    ],
+    [
+        f^2 + 3/5*sqrt3*sqrt2*f*g + 7/10*g^2 - 4/5*h^2,
+        e^2 + 4/5*sqrt3*sqrt2*f*g + 3/5*g^2 - 2/5*h^2,
+        m^2 + 1/5*sqrt3*sqrt2*f*g - 1/10*g^2 - 3/5*h^2,
+        d + f + 1/2*sqrt3*sqrt2*g,
+        c^2 - 1/5*sqrt3*sqrt2*f*g - 9/10*g^2 - 2/5*h^2,
+        b + 1/2*sqrt3*sqrt2*f + 1/2*g,
+        a + 1/2*f - 1/4*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 - 7/8*g^2 - 3/4*sqrt3*sqrt2*g*h - 5/4*h^2,
+        e + 1/2*sqrt3*sqrt2*g + h,
+        m^2 - 5/8*g^2 - 1/4*sqrt3*sqrt2*g*h - 3/4*h^2,
+        d^2 + 1/4*g^2 + 1/2*sqrt3*sqrt2*g*h - 1/2*h^2,
+        c - 1/4*sqrt3*sqrt2*g + 1/2*h,
+        b + 1/2*g + 1/2*sqrt3*sqrt2*h,
+        a^2 - 5/4*g^2 - 1/2*sqrt3*sqrt2*g*h - 1/2*h^2
+    ],
+    [
+        f^2 - 7/8*g^2 + 3/4*sqrt3*sqrt2*g*h - 5/4*h^2,
+        e - 1/2*sqrt3*sqrt2*g + h,
+        m^2 - 5/8*g^2 + 1/4*sqrt3*sqrt2*g*h - 3/4*h^2,
+        d^2 + 1/4*g^2 - 1/2*sqrt3*sqrt2*g*h - 1/2*h^2,
+        c + 1/4*sqrt3*sqrt2*g + 1/2*h,
+        b - 1/2*g + 1/2*sqrt3*sqrt2*h,
+        a^2 - 5/4*g^2 + 1/2*sqrt3*sqrt2*g*h - 1/2*h^2
+    ],
+    [
+        f^2 - 3/5*sqrt3*sqrt2*f*g + 7/10*g^2 - 4/5*h^2,
+        e^2 - 4/5*sqrt3*sqrt2*f*g + 3/5*g^2 - 2/5*h^2,
+        m^2 - 1/5*sqrt3*sqrt2*f*g - 1/10*g^2 - 3/5*h^2,
+        d + f - 1/2*sqrt3*sqrt2*g,
+        c^2 + 1/5*sqrt3*sqrt2*f*g - 9/10*g^2 - 2/5*h^2,
+        b + 1/2*sqrt3*sqrt2*f - 1/2*g,
+        a + 1/2*f + 1/4*sqrt3*sqrt2*g
+    ],
+    [
+        f + 1/2*g + h,
+        e - 1/3*sqrt3*sqrt2*g - 1/3*sqrt3*sqrt2*h,
+        m^2 - 5/12*g^2 - 1/3*g*h - 2/3*h^2,
+        d - 1/6*sqrt3*sqrt2*g + 1/3*sqrt3*sqrt2*h,
+        c^2 - 7/12*g^2 + 1/3*g*h - 1/3*h^2,
+        b^2 + 1/6*g^2 - 2/3*g*h - 4/3*h^2,
+        a^2 - 5/6*g^2 - 2/3*g*h - 1/3*h^2
+    ],
+    [
+        f^2 - 7/8*g^2 + 3/4*sqrt3*sqrt2*g*h - 5/4*h^2,
+        e + 1/2*sqrt3*sqrt2*g - h,
+        m^2 - 5/8*g^2 + 1/4*sqrt3*sqrt2*g*h - 3/4*h^2,
+        d^2 + 1/4*g^2 - 1/2*sqrt3*sqrt2*g*h - 1/2*h^2,
+        c - 1/4*sqrt3*sqrt2*g - 1/2*h,
+        b - 1/2*g + 1/2*sqrt3*sqrt2*h,
+        a^2 - 5/4*g^2 + 1/2*sqrt3*sqrt2*g*h - 1/2*h^2
+    ],
+    [
+        f^2 - 3/5*sqrt3*sqrt2*f*g + 7/10*g^2 - 4/5*h^2,
+        e^2 - 4/5*sqrt3*sqrt2*f*g + 3/5*g^2 - 2/5*h^2,
+        m^2 - 1/5*sqrt3*sqrt2*f*g - 1/10*g^2 - 3/5*h^2,
+        d - f + 1/2*sqrt3*sqrt2*g,
+        c^2 + 1/5*sqrt3*sqrt2*f*g - 9/10*g^2 - 2/5*h^2,
+        b + 1/2*sqrt3*sqrt2*f - 1/2*g,
+        a - 1/2*f - 1/4*sqrt3*sqrt2*g
+    ],
+    [
+        f - 1/2*g - h,
+        e + 1/3*sqrt3*sqrt2*g + 1/3*sqrt3*sqrt2*h,
+        m^2 - 5/12*g^2 - 1/3*g*h - 2/3*h^2,
+        d + 1/6*sqrt3*sqrt2*g - 1/3*sqrt3*sqrt2*h,
+        c^2 - 7/12*g^2 + 1/3*g*h - 1/3*h^2,
+        b^2 + 1/6*g^2 - 2/3*g*h - 4/3*h^2,
+        a^2 - 5/6*g^2 - 2/3*g*h - 1/3*h^2
+    ],
+    [
+        f + 1/2*g - h,
+        e + 1/3*sqrt3*sqrt2*g - 1/3*sqrt3*sqrt2*h,
+        m^2 - 5/12*g^2 + 1/3*g*h - 2/3*h^2,
+        d + 1/6*sqrt3*sqrt2*g + 1/3*sqrt3*sqrt2*h,
+        c^2 - 7/12*g^2 - 1/3*g*h - 1/3*h^2,
+        b^2 + 1/6*g^2 + 2/3*g*h - 4/3*h^2,
+        a^2 - 5/6*g^2 + 2/3*g*h - 1/3*h^2
+    ],
+    [
+        f^2 + 3/5*sqrt3*sqrt2*f*g + 7/10*g^2 - 4/5*h^2,
+        e^2 + 4/5*sqrt3*sqrt2*f*g + 3/5*g^2 - 2/5*h^2,
+        m^2 + 1/5*sqrt3*sqrt2*f*g - 1/10*g^2 - 3/5*h^2,
+        d + f + 1/2*sqrt3*sqrt2*g,
+        c^2 - 1/5*sqrt3*sqrt2*f*g - 9/10*g^2 - 2/5*h^2,
+        b - 1/2*sqrt3*sqrt2*f - 1/2*g,
+        a - 1/2*f + 1/4*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 - 7/8*g^2 - 3/4*sqrt3*sqrt2*g*h - 5/4*h^2,
+        e + 1/2*sqrt3*sqrt2*g + h,
+        m^2 - 5/8*g^2 - 1/4*sqrt3*sqrt2*g*h - 3/4*h^2,
+        d^2 + 1/4*g^2 + 1/2*sqrt3*sqrt2*g*h - 1/2*h^2,
+        c + 1/4*sqrt3*sqrt2*g - 1/2*h,
+        b - 1/2*g - 1/2*sqrt3*sqrt2*h,
+        a^2 - 5/4*g^2 - 1/2*sqrt3*sqrt2*g*h - 1/2*h^2
+    ],
+    [
+        f^2 - 7/8*g^2 - 3/4*sqrt3*sqrt2*g*h - 5/4*h^2,
+        e - 1/2*sqrt3*sqrt2*g - h,
+        m^2 - 5/8*g^2 - 1/4*sqrt3*sqrt2*g*h - 3/4*h^2,
+        d^2 + 1/4*g^2 + 1/2*sqrt3*sqrt2*g*h - 1/2*h^2,
+        c + 1/4*sqrt3*sqrt2*g - 1/2*h,
+        b + 1/2*g + 1/2*sqrt3*sqrt2*h,
+        a^2 - 5/4*g^2 - 1/2*sqrt3*sqrt2*g*h - 1/2*h^2
+    ],
+    [
+        f^2 + 3/5*sqrt3*sqrt2*f*g + 7/10*g^2 - 4/5*h^2,
+        e^2 + 4/5*sqrt3*sqrt2*f*g + 3/5*g^2 - 2/5*h^2,
+        m^2 + 1/5*sqrt3*sqrt2*f*g - 1/10*g^2 - 3/5*h^2,
+        d - f - 1/2*sqrt3*sqrt2*g,
+        c^2 - 1/5*sqrt3*sqrt2*f*g - 9/10*g^2 - 2/5*h^2,
+        b + 1/2*sqrt3*sqrt2*f + 1/2*g,
+        a - 1/2*f + 1/4*sqrt3*sqrt2*g
+    ],
+    [
+        f - 1/2*g - h,
+        e + 1/3*sqrt3*sqrt2*g + 1/3*sqrt3*sqrt2*h,
+        m^2 - 5/12*g^2 - 1/3*g*h - 2/3*h^2,
+        d - 1/6*sqrt3*sqrt2*g + 1/3*sqrt3*sqrt2*h,
+        c^2 - 7/12*g^2 + 1/3*g*h - 1/3*h^2,
+        b^2 + 1/6*g^2 - 2/3*g*h - 4/3*h^2,
+        a^2 - 5/6*g^2 - 2/3*g*h - 1/3*h^2
+    ],
+    [
+        f + 1/2*g - h,
+        e - 1/3*sqrt3*sqrt2*g + 1/3*sqrt3*sqrt2*h,
+        m^2 - 5/12*g^2 + 1/3*g*h - 2/3*h^2,
+        d + 1/6*sqrt3*sqrt2*g + 1/3*sqrt3*sqrt2*h,
+        c^2 - 7/12*g^2 - 1/3*g*h - 1/3*h^2,
+        b^2 + 1/6*g^2 + 2/3*g*h - 4/3*h^2,
+        a^2 - 5/6*g^2 + 2/3*g*h - 1/3*h^2
+    ],
+    [
+        f^2 + 3/5*sqrt3*sqrt2*f*g + 7/10*g^2 - 4/5*h^2,
+        e^2 + 4/5*sqrt3*sqrt2*f*g + 3/5*g^2 - 2/5*h^2,
+        m^2 + 1/5*sqrt3*sqrt2*f*g - 1/10*g^2 - 3/5*h^2,
+        d + f + 1/2*sqrt3*sqrt2*g,
+        c^2 - 1/5*sqrt3*sqrt2*f*g - 9/10*g^2 - 2/5*h^2,
+        b + 1/2*sqrt3*sqrt2*f + 1/2*g,
+        a - 1/2*f + 1/4*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 - 7/8*g^2 - 3/4*sqrt3*sqrt2*g*h - 5/4*h^2,
+        e + 1/2*sqrt3*sqrt2*g + h,
+        m^2 - 5/8*g^2 - 1/4*sqrt3*sqrt2*g*h - 3/4*h^2,
+        d^2 + 1/4*g^2 + 1/2*sqrt3*sqrt2*g*h - 1/2*h^2,
+        c + 1/4*sqrt3*sqrt2*g - 1/2*h,
+        b + 1/2*g + 1/2*sqrt3*sqrt2*h,
+        a^2 - 5/4*g^2 - 1/2*sqrt3*sqrt2*g*h - 1/2*h^2
+    ],
+    [
+        f^2 - 7/8*g^2 + 3/4*sqrt3*sqrt2*g*h - 5/4*h^2,
+        e + 1/2*sqrt3*sqrt2*g - h,
+        m^2 - 5/8*g^2 + 1/4*sqrt3*sqrt2*g*h - 3/4*h^2,
+        d^2 + 1/4*g^2 - 1/2*sqrt3*sqrt2*g*h - 1/2*h^2,
+        c - 1/4*sqrt3*sqrt2*g - 1/2*h,
+        b + 1/2*g - 1/2*sqrt3*sqrt2*h,
+        a^2 - 5/4*g^2 + 1/2*sqrt3*sqrt2*g*h - 1/2*h^2
+    ],
+    [
+        f^2 - 3/5*sqrt3*sqrt2*f*g + 7/10*g^2 - 4/5*h^2,
+        e^2 - 4/5*sqrt3*sqrt2*f*g + 3/5*g^2 - 2/5*h^2,
+        m^2 - 1/5*sqrt3*sqrt2*f*g - 1/10*g^2 - 3/5*h^2,
+        d - f + 1/2*sqrt3*sqrt2*g,
+        c^2 + 1/5*sqrt3*sqrt2*f*g - 9/10*g^2 - 2/5*h^2,
+        b - 1/2*sqrt3*sqrt2*f + 1/2*g,
+        a - 1/2*f - 1/4*sqrt3*sqrt2*g
+    ],
+    [
+        f - 1/2*g - h,
+        e - 1/3*sqrt3*sqrt2*g - 1/3*sqrt3*sqrt2*h,
+        m^2 - 5/12*g^2 - 1/3*g*h - 2/3*h^2,
+        d + 1/6*sqrt3*sqrt2*g - 1/3*sqrt3*sqrt2*h,
+        c^2 - 7/12*g^2 + 1/3*g*h - 1/3*h^2,
+        b^2 + 1/6*g^2 - 2/3*g*h - 4/3*h^2,
+        a^2 - 5/6*g^2 - 2/3*g*h - 1/3*h^2
+    ],
+    [
+        f + 1/2*g - h,
+        e + 1/3*sqrt3*sqrt2*g - 1/3*sqrt3*sqrt2*h,
+        m^2 - 5/12*g^2 + 1/3*g*h - 2/3*h^2,
+        d - 1/6*sqrt3*sqrt2*g - 1/3*sqrt3*sqrt2*h,
+        c^2 - 7/12*g^2 - 1/3*g*h - 1/3*h^2,
+        b^2 + 1/6*g^2 + 2/3*g*h - 4/3*h^2,
+        a^2 - 5/6*g^2 + 2/3*g*h - 1/3*h^2
+    ],
+    [
+        f^2 - 3/5*sqrt3*sqrt2*f*g + 7/10*g^2 - 4/5*h^2,
+        e^2 - 4/5*sqrt3*sqrt2*f*g + 3/5*g^2 - 2/5*h^2,
+        m^2 - 1/5*sqrt3*sqrt2*f*g - 1/10*g^2 - 3/5*h^2,
+        d + f - 1/2*sqrt3*sqrt2*g,
+        c^2 + 1/5*sqrt3*sqrt2*f*g - 9/10*g^2 - 2/5*h^2,
+        b - 1/2*sqrt3*sqrt2*f + 1/2*g,
+        a - 1/2*f - 1/4*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 - 7/8*g^2 + 3/4*sqrt3*sqrt2*g*h - 5/4*h^2,
+        e - 1/2*sqrt3*sqrt2*g + h,
+        m^2 - 5/8*g^2 + 1/4*sqrt3*sqrt2*g*h - 3/4*h^2,
+        d^2 + 1/4*g^2 - 1/2*sqrt3*sqrt2*g*h - 1/2*h^2,
+        c - 1/4*sqrt3*sqrt2*g - 1/2*h,
+        b + 1/2*g - 1/2*sqrt3*sqrt2*h,
+        a^2 - 5/4*g^2 + 1/2*sqrt3*sqrt2*g*h - 1/2*h^2
+    ],
+    [
+        f^2 - 7/8*g^2 - 3/4*sqrt3*sqrt2*g*h - 5/4*h^2,
+        e - 1/2*sqrt3*sqrt2*g - h,
+        m^2 - 5/8*g^2 - 1/4*sqrt3*sqrt2*g*h - 3/4*h^2,
+        d^2 + 1/4*g^2 + 1/2*sqrt3*sqrt2*g*h - 1/2*h^2,
+        c + 1/4*sqrt3*sqrt2*g - 1/2*h,
+        b - 1/2*g - 1/2*sqrt3*sqrt2*h,
+        a^2 - 5/4*g^2 - 1/2*sqrt3*sqrt2*g*h - 1/2*h^2
+    ],
+    [
+        f^2 + 3/5*sqrt3*sqrt2*f*g + 7/10*g^2 - 4/5*h^2,
+        e^2 + 4/5*sqrt3*sqrt2*f*g + 3/5*g^2 - 2/5*h^2,
+        m^2 + 1/5*sqrt3*sqrt2*f*g - 1/10*g^2 - 3/5*h^2,
+        d - f - 1/2*sqrt3*sqrt2*g,
+        c^2 - 1/5*sqrt3*sqrt2*f*g - 9/10*g^2 - 2/5*h^2,
+        b - 1/2*sqrt3*sqrt2*f - 1/2*g,
+        a - 1/2*f + 1/4*sqrt3*sqrt2*g
+    ],
+    [
+        f - 1/2*g - h,
+        e - 1/3*sqrt3*sqrt2*g - 1/3*sqrt3*sqrt2*h,
+        m^2 - 5/12*g^2 - 1/3*g*h - 2/3*h^2,
+        d - 1/6*sqrt3*sqrt2*g + 1/3*sqrt3*sqrt2*h,
+        c^2 - 7/12*g^2 + 1/3*g*h - 1/3*h^2,
+        b^2 + 1/6*g^2 - 2/3*g*h - 4/3*h^2,
+        a^2 - 5/6*g^2 - 2/3*g*h - 1/3*h^2
+    ],
+    [
+        f + 1/2*g - h,
+        e - 1/3*sqrt3*sqrt2*g + 1/3*sqrt3*sqrt2*h,
+        m^2 - 5/12*g^2 + 1/3*g*h - 2/3*h^2,
+        d - 1/6*sqrt3*sqrt2*g - 1/3*sqrt3*sqrt2*h,
+        c^2 - 7/12*g^2 - 1/3*g*h - 1/3*h^2,
+        b^2 + 1/6*g^2 + 2/3*g*h - 4/3*h^2,
+        a^2 - 5/6*g^2 + 2/3*g*h - 1/3*h^2
+    ],
+    [
+        f^2 - 3/5*sqrt3*sqrt2*f*g + 7/10*g^2 - 4/5*h^2,
+        e^2 - 4/5*sqrt3*sqrt2*f*g + 3/5*g^2 - 2/5*h^2,
+        m^2 - 1/5*sqrt3*sqrt2*f*g - 1/10*g^2 - 3/5*h^2,
+        d + f - 1/2*sqrt3*sqrt2*g,
+        c^2 + 1/5*sqrt3*sqrt2*f*g - 9/10*g^2 - 2/5*h^2,
+        b + 1/2*sqrt3*sqrt2*f - 1/2*g,
+        a - 1/2*f - 1/4*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 - 7/8*g^2 + 3/4*sqrt3*sqrt2*g*h - 5/4*h^2,
+        e - 1/2*sqrt3*sqrt2*g + h,
+        m^2 - 5/8*g^2 + 1/4*sqrt3*sqrt2*g*h - 3/4*h^2,
+        d^2 + 1/4*g^2 - 1/2*sqrt3*sqrt2*g*h - 1/2*h^2,
+        c - 1/4*sqrt3*sqrt2*g - 1/2*h,
+        b - 1/2*g + 1/2*sqrt3*sqrt2*h,
+        a^2 - 5/4*g^2 + 1/2*sqrt3*sqrt2*g*h - 1/2*h^2
+    ],
+    [
+        f^2 - 7/8*g^2 - 3/4*sqrt3*sqrt2*g*h - 5/4*h^2,
+        e - 1/2*sqrt3*sqrt2*g - h,
+        m^2 - 5/8*g^2 - 1/4*sqrt3*sqrt2*g*h - 3/4*h^2,
+        d^2 + 1/4*g^2 + 1/2*sqrt3*sqrt2*g*h - 1/2*h^2,
+        c - 1/4*sqrt3*sqrt2*g + 1/2*h,
+        b - 1/2*g - 1/2*sqrt3*sqrt2*h,
+        a^2 - 5/4*g^2 - 1/2*sqrt3*sqrt2*g*h - 1/2*h^2
+    ],
+    [
+        f^2 + 3/5*sqrt3*sqrt2*f*g + 7/10*g^2 - 4/5*h^2,
+        e^2 + 4/5*sqrt3*sqrt2*f*g + 3/5*g^2 - 2/5*h^2,
+        m^2 + 1/5*sqrt3*sqrt2*f*g - 1/10*g^2 - 3/5*h^2,
+        d - f - 1/2*sqrt3*sqrt2*g,
+        c^2 - 1/5*sqrt3*sqrt2*f*g - 9/10*g^2 - 2/5*h^2,
+        b - 1/2*sqrt3*sqrt2*f - 1/2*g,
+        a + 1/2*f - 1/4*sqrt3*sqrt2*g
+    ],
+    [
+        f - 1/2*g + h,
+        e - 1/3*sqrt3*sqrt2*g + 1/3*sqrt3*sqrt2*h,
+        m^2 - 5/12*g^2 + 1/3*g*h - 2/3*h^2,
+        d - 1/6*sqrt3*sqrt2*g - 1/3*sqrt3*sqrt2*h,
+        c^2 - 7/12*g^2 - 1/3*g*h - 1/3*h^2,
+        b^2 + 1/6*g^2 + 2/3*g*h - 4/3*h^2,
+        a^2 - 5/6*g^2 + 2/3*g*h - 1/3*h^2
+    ],
+    [
+        f^2 - 7/8*g^2 + 3/4*sqrt3*sqrt2*g*h - 5/4*h^2,
+        e + 1/2*sqrt3*sqrt2*g - h,
+        m^2 - 5/8*g^2 + 1/4*sqrt3*sqrt2*g*h - 3/4*h^2,
+        d^2 + 1/4*g^2 - 1/2*sqrt3*sqrt2*g*h - 1/2*h^2,
+        c + 1/4*sqrt3*sqrt2*g + 1/2*h,
+        b + 1/2*g - 1/2*sqrt3*sqrt2*h,
+        a^2 - 5/4*g^2 + 1/2*sqrt3*sqrt2*g*h - 1/2*h^2
+    ],
+    [
+        f^2 - 3/5*sqrt3*sqrt2*f*g + 7/10*g^2 - 4/5*h^2,
+        e^2 - 4/5*sqrt3*sqrt2*f*g + 3/5*g^2 - 2/5*h^2,
+        m^2 - 1/5*sqrt3*sqrt2*f*g - 1/10*g^2 - 3/5*h^2,
+        d - f + 1/2*sqrt3*sqrt2*g,
+        c^2 + 1/5*sqrt3*sqrt2*f*g - 9/10*g^2 - 2/5*h^2,
+        b - 1/2*sqrt3*sqrt2*f + 1/2*g,
+        a + 1/2*f + 1/4*sqrt3*sqrt2*g
+    ],
+    [
+        f - 1/2*g + h,
+        e - 1/3*sqrt3*sqrt2*g + 1/3*sqrt3*sqrt2*h,
+        m^2 - 5/12*g^2 + 1/3*g*h - 2/3*h^2,
+        d + 1/6*sqrt3*sqrt2*g + 1/3*sqrt3*sqrt2*h,
+        c^2 - 7/12*g^2 - 1/3*g*h - 1/3*h^2,
+        b^2 + 1/6*g^2 + 2/3*g*h - 4/3*h^2,
+        a^2 - 5/6*g^2 + 2/3*g*h - 1/3*h^2
+    ],
+    [
+        f - 1/2*g + h,
+        e + 1/3*sqrt3*sqrt2*g - 1/3*sqrt3*sqrt2*h,
+        m^2 - 5/12*g^2 + 1/3*g*h - 2/3*h^2,
+        d - 1/6*sqrt3*sqrt2*g - 1/3*sqrt3*sqrt2*h,
+        c^2 - 7/12*g^2 - 1/3*g*h - 1/3*h^2,
+        b^2 + 1/6*g^2 + 2/3*g*h - 4/3*h^2,
+        a^2 - 5/6*g^2 + 2/3*g*h - 1/3*h^2
+    ],
+    [
+        f^2 + 3/5*sqrt3*sqrt2*f*g + 7/10*g^2 - 4/5*h^2,
+        e^2 + 4/5*sqrt3*sqrt2*f*g + 3/5*g^2 - 2/5*h^2,
+        m^2 + 1/5*sqrt3*sqrt2*f*g - 1/10*g^2 - 3/5*h^2,
+        d - f - 1/2*sqrt3*sqrt2*g,
+        c^2 - 1/5*sqrt3*sqrt2*f*g - 9/10*g^2 - 2/5*h^2,
+        b + 1/2*sqrt3*sqrt2*f + 1/2*g,
+        a + 1/2*f - 1/4*sqrt3*sqrt2*g
+    ],
+    [
+        f^2 - 7/8*g^2 - 3/4*sqrt3*sqrt2*g*h - 5/4*h^2,
+        e - 1/2*sqrt3*sqrt2*g - h,
+        m^2 - 5/8*g^2 - 1/4*sqrt3*sqrt2*g*h - 3/4*h^2,
+        d^2 + 1/4*g^2 + 1/2*sqrt3*sqrt2*g*h - 1/2*h^2,
+        c - 1/4*sqrt3*sqrt2*g + 1/2*h,
+        b + 1/2*g + 1/2*sqrt3*sqrt2*h,
+        a^2 - 5/4*g^2 - 1/2*sqrt3*sqrt2*g*h - 1/2*h^2
+    ],
+    [
+        f^2 - 7/8*g^2 + 3/4*sqrt3*sqrt2*g*h - 5/4*h^2,
+        e + 1/2*sqrt3*sqrt2*g - h,
+        m^2 - 5/8*g^2 + 1/4*sqrt3*sqrt2*g*h - 3/4*h^2,
+        d^2 + 1/4*g^2 - 1/2*sqrt3*sqrt2*g*h - 1/2*h^2,
+        c + 1/4*sqrt3*sqrt2*g + 1/2*h,
+        b - 1/2*g + 1/2*sqrt3*sqrt2*h,
+        a^2 - 5/4*g^2 + 1/2*sqrt3*sqrt2*g*h - 1/2*h^2
+    ],
+    [
+        f^2 - 3/5*sqrt3*sqrt2*f*g + 7/10*g^2 - 4/5*h^2,
+        e^2 - 4/5*sqrt3*sqrt2*f*g + 3/5*g^2 - 2/5*h^2,
+        m^2 - 1/5*sqrt3*sqrt2*f*g - 1/10*g^2 - 3/5*h^2,
+        d - f + 1/2*sqrt3*sqrt2*g,
+        c^2 + 1/5*sqrt3*sqrt2*f*g - 9/10*g^2 - 2/5*h^2,
+        b + 1/2*sqrt3*sqrt2*f - 1/2*g,
+        a + 1/2*f + 1/4*sqrt3*sqrt2*g
+    ],
+    [
+        f - 1/2*g + h,
+        e + 1/3*sqrt3*sqrt2*g - 1/3*sqrt3*sqrt2*h,
+        m^2 - 5/12*g^2 + 1/3*g*h - 2/3*h^2,
+        d + 1/6*sqrt3*sqrt2*g + 1/3*sqrt3*sqrt2*h,
+        c^2 - 7/12*g^2 - 1/3*g*h - 1/3*h^2,
+        b^2 + 1/6*g^2 + 2/3*g*h - 4/3*h^2,
+        a^2 - 5/6*g^2 + 2/3*g*h - 1/3*h^2
+    ],
+    [
+        7/12*sqrt2*f^2 - 5/12*sqrt2*g^2 + e*h - 1/6*sqrt2*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + 1/3*sqrt3*e + 1/3*sqrt3*sqrt2*h,
+        b + 1/3*e - 2/3*sqrt2*h,
+        a + 2/3*sqrt2*e + 1/3*h
+    ],
+    [
+        -7/12*sqrt2*f^2 + 5/12*sqrt2*g^2 + e*h + 1/6*sqrt2*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + 1/3*sqrt3*e - 1/3*sqrt3*sqrt2*h,
+        b + 1/3*e + 2/3*sqrt2*h,
+        a - 2/3*sqrt2*e + 1/3*h
+    ],
+    [
+        f + 1/2*sqrt2*g + 1/2*sqrt3*sqrt2*h,
+        e + g + 2/3*sqrt3*h,
+        m^2 - 1/2*g^2 - 1/3*sqrt3*g*h - 5/6*h^2,
+        d^2 + 2/3*sqrt3*g*h - 1/3*h^2,
+        c + 1/2*sqrt2*g - 1/6*sqrt3*sqrt2*h,
+        b^2 - 2/3*sqrt3*g*h - 5/3*h^2,
+        a^2 - g^2 - 2/3*sqrt3*g*h - 2/3*h^2
+    ],
+    [
+        f + 1/3*sqrt3*g + 1/3*sqrt3*sqrt2*h,
+        e^2 - 7/9*g^2 - 8/9*sqrt2*g*h - 2/9*h^2,
+        m^2 - 4/9*g^2 - 2/9*sqrt2*g*h - 5/9*h^2,
+        d + 1/3*g - 2/3*sqrt2*h,
+        c^2 - 5/9*g^2 + 2/9*sqrt2*g*h - 4/9*h^2,
+        b^2 + 1/9*g^2 - 4/9*sqrt2*g*h - 10/9*h^2,
+        a + 2/3*sqrt2*g + 1/3*h
+    ],
+    [
+        f + 1/3*sqrt3*g - 1/3*sqrt3*sqrt2*h,
+        e^2 - 7/9*g^2 + 8/9*sqrt2*g*h - 2/9*h^2,
+        m^2 - 4/9*g^2 + 2/9*sqrt2*g*h - 5/9*h^2,
+        d + 1/3*g + 2/3*sqrt2*h,
+        c^2 - 5/9*g^2 - 2/9*sqrt2*g*h - 4/9*h^2,
+        b^2 + 1/9*g^2 + 4/9*sqrt2*g*h - 10/9*h^2,
+        a - 2/3*sqrt2*g + 1/3*h
+    ],
+    [
+        f - 1/2*sqrt2*g - 1/2*sqrt3*sqrt2*h,
+        e + g + 2/3*sqrt3*h,
+        m^2 - 1/2*g^2 - 1/3*sqrt3*g*h - 5/6*h^2,
+        d^2 + 2/3*sqrt3*g*h - 1/3*h^2,
+        c - 1/2*sqrt2*g + 1/6*sqrt3*sqrt2*h,
+        b^2 - 2/3*sqrt3*g*h - 5/3*h^2,
+        a^2 - g^2 - 2/3*sqrt3*g*h - 2/3*h^2
+    ],
+    [
+        7/12*sqrt2*f^2 - 5/12*sqrt2*g^2 + e*h - 1/6*sqrt2*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + 1/3*sqrt3*e + 1/3*sqrt3*sqrt2*h,
+        b + 1/3*e - 2/3*sqrt2*h,
+        a - 2/3*sqrt2*e - 1/3*h
+    ],
+    [
+        f + 1/2*sqrt2*g + 1/2*sqrt3*sqrt2*h,
+        e + g + 2/3*sqrt3*h,
+        m^2 - 1/2*g^2 - 1/3*sqrt3*g*h - 5/6*h^2,
+        d^2 + 2/3*sqrt3*g*h - 1/3*h^2,
+        c - 1/2*sqrt2*g + 1/6*sqrt3*sqrt2*h,
+        b^2 - 2/3*sqrt3*g*h - 5/3*h^2,
+        a^2 - g^2 - 2/3*sqrt3*g*h - 2/3*h^2
+    ],
+    [
+        f + 1/3*sqrt3*g + 1/3*sqrt3*sqrt2*h,
+        e^2 - 7/9*g^2 - 8/9*sqrt2*g*h - 2/9*h^2,
+        m^2 - 4/9*g^2 - 2/9*sqrt2*g*h - 5/9*h^2,
+        d + 1/3*g - 2/3*sqrt2*h,
+        c^2 - 5/9*g^2 + 2/9*sqrt2*g*h - 4/9*h^2,
+        b^2 + 1/9*g^2 - 4/9*sqrt2*g*h - 10/9*h^2,
+        a - 2/3*sqrt2*g - 1/3*h
+    ],
+    [
+        7/12*sqrt2*f^2 - 5/12*sqrt2*g^2 + e*h - 1/6*sqrt2*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + 1/3*sqrt3*e + 1/3*sqrt3*sqrt2*h,
+        b - 1/3*e + 2/3*sqrt2*h,
+        a + 2/3*sqrt2*e + 1/3*h
+    ],
+    [
+        7/12*sqrt2*f^2 - 5/12*sqrt2*g^2 + e*h - 1/6*sqrt2*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - 1/3*sqrt3*e - 1/3*sqrt3*sqrt2*h,
+        b - 1/3*e + 2/3*sqrt2*h,
+        a + 2/3*sqrt2*e + 1/3*h
+    ],
+    [
+        f + 1/2*sqrt2*g + 1/2*sqrt3*sqrt2*h,
+        e - g - 2/3*sqrt3*h,
+        m^2 - 1/2*g^2 - 1/3*sqrt3*g*h - 5/6*h^2,
+        d^2 + 2/3*sqrt3*g*h - 1/3*h^2,
+        c + 1/2*sqrt2*g - 1/6*sqrt3*sqrt2*h,
+        b^2 - 2/3*sqrt3*g*h - 5/3*h^2,
+        a^2 - g^2 - 2/3*sqrt3*g*h - 2/3*h^2
+    ],
+    [
+        f + 1/3*sqrt3*g + 1/3*sqrt3*sqrt2*h,
+        e^2 - 7/9*g^2 - 8/9*sqrt2*g*h - 2/9*h^2,
+        m^2 - 4/9*g^2 - 2/9*sqrt2*g*h - 5/9*h^2,
+        d - 1/3*g + 2/3*sqrt2*h,
+        c^2 - 5/9*g^2 + 2/9*sqrt2*g*h - 4/9*h^2,
+        b^2 + 1/9*g^2 - 4/9*sqrt2*g*h - 10/9*h^2,
+        a + 2/3*sqrt2*g + 1/3*h
+    ],
+    [
+        f - 1/3*sqrt3*g - 1/3*sqrt3*sqrt2*h,
+        e^2 - 7/9*g^2 - 8/9*sqrt2*g*h - 2/9*h^2,
+        m^2 - 4/9*g^2 - 2/9*sqrt2*g*h - 5/9*h^2,
+        d - 1/3*g + 2/3*sqrt2*h,
+        c^2 - 5/9*g^2 + 2/9*sqrt2*g*h - 4/9*h^2,
+        b^2 + 1/9*g^2 - 4/9*sqrt2*g*h - 10/9*h^2,
+        a + 2/3*sqrt2*g + 1/3*h
+    ],
+    [
+        f + 1/2*sqrt2*g - 1/2*sqrt3*sqrt2*h,
+        e - g + 2/3*sqrt3*h,
+        m^2 - 1/2*g^2 + 1/3*sqrt3*g*h - 5/6*h^2,
+        d^2 - 2/3*sqrt3*g*h - 1/3*h^2,
+        c + 1/2*sqrt2*g + 1/6*sqrt3*sqrt2*h,
+        b^2 + 2/3*sqrt3*g*h - 5/3*h^2,
+        a^2 - g^2 + 2/3*sqrt3*g*h - 2/3*h^2
+    ],
+    [
+        7/12*sqrt2*f^2 - 5/12*sqrt2*g^2 + e*h - 1/6*sqrt2*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + 1/3*sqrt3*e + 1/3*sqrt3*sqrt2*h,
+        b - 1/3*e + 2/3*sqrt2*h,
+        a - 2/3*sqrt2*e - 1/3*h
+    ],
+    [
+        -7/12*sqrt2*f^2 + 5/12*sqrt2*g^2 + e*h + 1/6*sqrt2*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - 1/3*sqrt3*e + 1/3*sqrt3*sqrt2*h,
+        b - 1/3*e - 2/3*sqrt2*h,
+        a + 2/3*sqrt2*e - 1/3*h
+    ],
+    [
+        f + 1/2*sqrt2*g + 1/2*sqrt3*sqrt2*h,
+        e - g - 2/3*sqrt3*h,
+        m^2 - 1/2*g^2 - 1/3*sqrt3*g*h - 5/6*h^2,
+        d^2 + 2/3*sqrt3*g*h - 1/3*h^2,
+        c - 1/2*sqrt2*g + 1/6*sqrt3*sqrt2*h,
+        b^2 - 2/3*sqrt3*g*h - 5/3*h^2,
+        a^2 - g^2 - 2/3*sqrt3*g*h - 2/3*h^2
+    ],
+    [
+        f + 1/3*sqrt3*g + 1/3*sqrt3*sqrt2*h,
+        e^2 - 7/9*g^2 - 8/9*sqrt2*g*h - 2/9*h^2,
+        m^2 - 4/9*g^2 - 2/9*sqrt2*g*h - 5/9*h^2,
+        d - 1/3*g + 2/3*sqrt2*h,
+        c^2 - 5/9*g^2 + 2/9*sqrt2*g*h - 4/9*h^2,
+        b^2 + 1/9*g^2 - 4/9*sqrt2*g*h - 10/9*h^2,
+        a - 2/3*sqrt2*g - 1/3*h
+    ],
+    [
+        f - 1/3*sqrt3*g + 1/3*sqrt3*sqrt2*h,
+        e^2 - 7/9*g^2 + 8/9*sqrt2*g*h - 2/9*h^2,
+        m^2 - 4/9*g^2 + 2/9*sqrt2*g*h - 5/9*h^2,
+        d - 1/3*g - 2/3*sqrt2*h,
+        c^2 - 5/9*g^2 - 2/9*sqrt2*g*h - 4/9*h^2,
+        b^2 + 1/9*g^2 + 4/9*sqrt2*g*h - 10/9*h^2,
+        a + 2/3*sqrt2*g - 1/3*h
+    ],
+    [
+        f - 1/2*sqrt2*g + 1/2*sqrt3*sqrt2*h,
+        e - g + 2/3*sqrt3*h,
+        m^2 - 1/2*g^2 + 1/3*sqrt3*g*h - 5/6*h^2,
+        d^2 - 2/3*sqrt3*g*h - 1/3*h^2,
+        c + 1/2*sqrt2*g + 1/6*sqrt3*sqrt2*h,
+        b^2 + 2/3*sqrt3*g*h - 5/3*h^2,
+        a^2 - g^2 + 2/3*sqrt3*g*h - 2/3*h^2
+    ],
+    [
+        -7/12*sqrt2*f^2 + 5/12*sqrt2*g^2 + e*h + 1/6*sqrt2*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + 1/3*sqrt3*e - 1/3*sqrt3*sqrt2*h,
+        b + 1/3*e + 2/3*sqrt2*h,
+        a + 2/3*sqrt2*e - 1/3*h
+    ],
+    [
+        f - 1/2*sqrt2*g - 1/2*sqrt3*sqrt2*h,
+        e + g + 2/3*sqrt3*h,
+        m^2 - 1/2*g^2 - 1/3*sqrt3*g*h - 5/6*h^2,
+        d^2 + 2/3*sqrt3*g*h - 1/3*h^2,
+        c + 1/2*sqrt2*g - 1/6*sqrt3*sqrt2*h,
+        b^2 - 2/3*sqrt3*g*h - 5/3*h^2,
+        a^2 - g^2 - 2/3*sqrt3*g*h - 2/3*h^2
+    ],
+    [
+        f + 1/3*sqrt3*g - 1/3*sqrt3*sqrt2*h,
+        e^2 - 7/9*g^2 + 8/9*sqrt2*g*h - 2/9*h^2,
+        m^2 - 4/9*g^2 + 2/9*sqrt2*g*h - 5/9*h^2,
+        d + 1/3*g + 2/3*sqrt2*h,
+        c^2 - 5/9*g^2 - 2/9*sqrt2*g*h - 4/9*h^2,
+        b^2 + 1/9*g^2 + 4/9*sqrt2*g*h - 10/9*h^2,
+        a + 2/3*sqrt2*g - 1/3*h
+    ],
+    [
+        -7/12*sqrt2*f^2 + 5/12*sqrt2*g^2 + e*h + 1/6*sqrt2*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + 1/3*sqrt3*e - 1/3*sqrt3*sqrt2*h,
+        b - 1/3*e - 2/3*sqrt2*h,
+        a + 2/3*sqrt2*e - 1/3*h
+    ],
+    [
+        7/12*sqrt2*f^2 - 5/12*sqrt2*g^2 + e*h - 1/6*sqrt2*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - 1/3*sqrt3*e - 1/3*sqrt3*sqrt2*h,
+        b - 1/3*e + 2/3*sqrt2*h,
+        a - 2/3*sqrt2*e - 1/3*h
+    ],
+    [
+        f - 1/2*sqrt2*g - 1/2*sqrt3*sqrt2*h,
+        e - g - 2/3*sqrt3*h,
+        m^2 - 1/2*g^2 - 1/3*sqrt3*g*h - 5/6*h^2,
+        d^2 + 2/3*sqrt3*g*h - 1/3*h^2,
+        c + 1/2*sqrt2*g - 1/6*sqrt3*sqrt2*h,
+        b^2 - 2/3*sqrt3*g*h - 5/3*h^2,
+        a^2 - g^2 - 2/3*sqrt3*g*h - 2/3*h^2
+    ],
+    [
+        f + 1/3*sqrt3*g - 1/3*sqrt3*sqrt2*h,
+        e^2 - 7/9*g^2 + 8/9*sqrt2*g*h - 2/9*h^2,
+        m^2 - 4/9*g^2 + 2/9*sqrt2*g*h - 5/9*h^2,
+        d - 1/3*g - 2/3*sqrt2*h,
+        c^2 - 5/9*g^2 - 2/9*sqrt2*g*h - 4/9*h^2,
+        b^2 + 1/9*g^2 + 4/9*sqrt2*g*h - 10/9*h^2,
+        a + 2/3*sqrt2*g - 1/3*h
+    ],
+    [
+        f - 1/3*sqrt3*g - 1/3*sqrt3*sqrt2*h,
+        e^2 - 7/9*g^2 - 8/9*sqrt2*g*h - 2/9*h^2,
+        m^2 - 4/9*g^2 - 2/9*sqrt2*g*h - 5/9*h^2,
+        d - 1/3*g + 2/3*sqrt2*h,
+        c^2 - 5/9*g^2 + 2/9*sqrt2*g*h - 4/9*h^2,
+        b^2 + 1/9*g^2 - 4/9*sqrt2*g*h - 10/9*h^2,
+        a - 2/3*sqrt2*g - 1/3*h
+    ],
+    [
+        f + 1/2*sqrt2*g - 1/2*sqrt3*sqrt2*h,
+        e - g + 2/3*sqrt3*h,
+        m^2 - 1/2*g^2 + 1/3*sqrt3*g*h - 5/6*h^2,
+        d^2 - 2/3*sqrt3*g*h - 1/3*h^2,
+        c - 1/2*sqrt2*g - 1/6*sqrt3*sqrt2*h,
+        b^2 + 2/3*sqrt3*g*h - 5/3*h^2,
+        a^2 - g^2 + 2/3*sqrt3*g*h - 2/3*h^2
+    ],
+    [
+        -7/12*sqrt2*f^2 + 5/12*sqrt2*g^2 + e*h + 1/6*sqrt2*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c + 1/3*sqrt3*e - 1/3*sqrt3*sqrt2*h,
+        b - 1/3*e - 2/3*sqrt2*h,
+        a - 2/3*sqrt2*e + 1/3*h
+    ],
+    [
+        -7/12*sqrt2*f^2 + 5/12*sqrt2*g^2 + e*h + 1/6*sqrt2*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - 1/3*sqrt3*e + 1/3*sqrt3*sqrt2*h,
+        b - 1/3*e - 2/3*sqrt2*h,
+        a - 2/3*sqrt2*e + 1/3*h
+    ],
+    [
+        f - 1/2*sqrt2*g - 1/2*sqrt3*sqrt2*h,
+        e - g - 2/3*sqrt3*h,
+        m^2 - 1/2*g^2 - 1/3*sqrt3*g*h - 5/6*h^2,
+        d^2 + 2/3*sqrt3*g*h - 1/3*h^2,
+        c - 1/2*sqrt2*g + 1/6*sqrt3*sqrt2*h,
+        b^2 - 2/3*sqrt3*g*h - 5/3*h^2,
+        a^2 - g^2 - 2/3*sqrt3*g*h - 2/3*h^2
+    ],
+    [
+        f + 1/3*sqrt3*g - 1/3*sqrt3*sqrt2*h,
+        e^2 - 7/9*g^2 + 8/9*sqrt2*g*h - 2/9*h^2,
+        m^2 - 4/9*g^2 + 2/9*sqrt2*g*h - 5/9*h^2,
+        d - 1/3*g - 2/3*sqrt2*h,
+        c^2 - 5/9*g^2 - 2/9*sqrt2*g*h - 4/9*h^2,
+        b^2 + 1/9*g^2 + 4/9*sqrt2*g*h - 10/9*h^2,
+        a - 2/3*sqrt2*g + 1/3*h
+    ],
+    [
+        f - 1/3*sqrt3*g + 1/3*sqrt3*sqrt2*h,
+        e^2 - 7/9*g^2 + 8/9*sqrt2*g*h - 2/9*h^2,
+        m^2 - 4/9*g^2 + 2/9*sqrt2*g*h - 5/9*h^2,
+        d - 1/3*g - 2/3*sqrt2*h,
+        c^2 - 5/9*g^2 - 2/9*sqrt2*g*h - 4/9*h^2,
+        b^2 + 1/9*g^2 + 4/9*sqrt2*g*h - 10/9*h^2,
+        a - 2/3*sqrt2*g + 1/3*h
+    ],
+    [
+        f - 1/2*sqrt2*g + 1/2*sqrt3*sqrt2*h,
+        e - g + 2/3*sqrt3*h,
+        m^2 - 1/2*g^2 + 1/3*sqrt3*g*h - 5/6*h^2,
+        d^2 - 2/3*sqrt3*g*h - 1/3*h^2,
+        c - 1/2*sqrt2*g - 1/6*sqrt3*sqrt2*h,
+        b^2 + 2/3*sqrt3*g*h - 5/3*h^2,
+        a^2 - g^2 + 2/3*sqrt3*g*h - 2/3*h^2
+    ],
+    [
+        -7/12*sqrt2*f^2 + 5/12*sqrt2*g^2 + e*h + 1/6*sqrt2*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - 1/3*sqrt3*e + 1/3*sqrt3*sqrt2*h,
+        b + 1/3*e + 2/3*sqrt2*h,
+        a + 2/3*sqrt2*e - 1/3*h
+    ],
+    [
+        f - 1/2*sqrt2*g + 1/2*sqrt3*sqrt2*h,
+        e + g - 2/3*sqrt3*h,
+        m^2 - 1/2*g^2 + 1/3*sqrt3*g*h - 5/6*h^2,
+        d^2 - 2/3*sqrt3*g*h - 1/3*h^2,
+        c + 1/2*sqrt2*g + 1/6*sqrt3*sqrt2*h,
+        b^2 + 2/3*sqrt3*g*h - 5/3*h^2,
+        a^2 - g^2 + 2/3*sqrt3*g*h - 2/3*h^2
+    ],
+    [
+        f - 1/3*sqrt3*g + 1/3*sqrt3*sqrt2*h,
+        e^2 - 7/9*g^2 + 8/9*sqrt2*g*h - 2/9*h^2,
+        m^2 - 4/9*g^2 + 2/9*sqrt2*g*h - 5/9*h^2,
+        d + 1/3*g + 2/3*sqrt2*h,
+        c^2 - 5/9*g^2 - 2/9*sqrt2*g*h - 4/9*h^2,
+        b^2 + 1/9*g^2 + 4/9*sqrt2*g*h - 10/9*h^2,
+        a + 2/3*sqrt2*g - 1/3*h
+    ],
+    [
+        -7/12*sqrt2*f^2 + 5/12*sqrt2*g^2 + e*h + 1/6*sqrt2*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - 1/3*sqrt3*e + 1/3*sqrt3*sqrt2*h,
+        b + 1/3*e + 2/3*sqrt2*h,
+        a - 2/3*sqrt2*e + 1/3*h
+    ],
+    [
+        7/12*sqrt2*f^2 - 5/12*sqrt2*g^2 + e*h - 1/6*sqrt2*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - 1/3*sqrt3*e - 1/3*sqrt3*sqrt2*h,
+        b + 1/3*e - 2/3*sqrt2*h,
+        a + 2/3*sqrt2*e + 1/3*h
+    ],
+    [
+        f - 1/2*sqrt2*g + 1/2*sqrt3*sqrt2*h,
+        e + g - 2/3*sqrt3*h,
+        m^2 - 1/2*g^2 + 1/3*sqrt3*g*h - 5/6*h^2,
+        d^2 - 2/3*sqrt3*g*h - 1/3*h^2,
+        c - 1/2*sqrt2*g - 1/6*sqrt3*sqrt2*h,
+        b^2 + 2/3*sqrt3*g*h - 5/3*h^2,
+        a^2 - g^2 + 2/3*sqrt3*g*h - 2/3*h^2
+    ],
+    [
+        f - 1/3*sqrt3*g + 1/3*sqrt3*sqrt2*h,
+        e^2 - 7/9*g^2 + 8/9*sqrt2*g*h - 2/9*h^2,
+        m^2 - 4/9*g^2 + 2/9*sqrt2*g*h - 5/9*h^2,
+        d + 1/3*g + 2/3*sqrt2*h,
+        c^2 - 5/9*g^2 - 2/9*sqrt2*g*h - 4/9*h^2,
+        b^2 + 1/9*g^2 + 4/9*sqrt2*g*h - 10/9*h^2,
+        a - 2/3*sqrt2*g + 1/3*h
+    ],
+    [
+        f - 1/3*sqrt3*g - 1/3*sqrt3*sqrt2*h,
+        e^2 - 7/9*g^2 - 8/9*sqrt2*g*h - 2/9*h^2,
+        m^2 - 4/9*g^2 - 2/9*sqrt2*g*h - 5/9*h^2,
+        d + 1/3*g - 2/3*sqrt2*h,
+        c^2 - 5/9*g^2 + 2/9*sqrt2*g*h - 4/9*h^2,
+        b^2 + 1/9*g^2 - 4/9*sqrt2*g*h - 10/9*h^2,
+        a + 2/3*sqrt2*g + 1/3*h
+    ],
+    [
+        f + 1/2*sqrt2*g - 1/2*sqrt3*sqrt2*h,
+        e + g - 2/3*sqrt3*h,
+        m^2 - 1/2*g^2 + 1/3*sqrt3*g*h - 5/6*h^2,
+        d^2 - 2/3*sqrt3*g*h - 1/3*h^2,
+        c + 1/2*sqrt2*g + 1/6*sqrt3*sqrt2*h,
+        b^2 + 2/3*sqrt3*g*h - 5/3*h^2,
+        a^2 - g^2 + 2/3*sqrt3*g*h - 2/3*h^2
+    ],
+    [
+        7/12*sqrt2*f^2 - 5/12*sqrt2*g^2 + e*h - 1/6*sqrt2*h^2,
+        e^2 - 4/3*f^2 - 1/3*g^2 + 2/3*h^2,
+        m^2 - 1/3*f^2 - 1/3*g^2 - 1/3*h^2,
+        d^2 + 2/3*f^2 - 1/3*g^2 - 4/3*h^2,
+        c - 1/3*sqrt3*e - 1/3*sqrt3*sqrt2*h,
+        b + 1/3*e - 2/3*sqrt2*h,
+        a - 2/3*sqrt2*e - 1/3*h
+    ],
+    [
+        f + 1/2*sqrt2*g - 1/2*sqrt3*sqrt2*h,
+        e + g - 2/3*sqrt3*h,
+        m^2 - 1/2*g^2 + 1/3*sqrt3*g*h - 5/6*h^2,
+        d^2 - 2/3*sqrt3*g*h - 1/3*h^2,
+        c - 1/2*sqrt2*g - 1/6*sqrt3*sqrt2*h,
+        b^2 + 2/3*sqrt3*g*h - 5/3*h^2,
+        a^2 - g^2 + 2/3*sqrt3*g*h - 2/3*h^2
+    ],
+    [
+        f - 1/3*sqrt3*g - 1/3*sqrt3*sqrt2*h,
+        e^2 - 7/9*g^2 - 8/9*sqrt2*g*h - 2/9*h^2,
+        m^2 - 4/9*g^2 - 2/9*sqrt2*g*h - 5/9*h^2,
+        d + 1/3*g - 2/3*sqrt2*h,
+        c^2 - 5/9*g^2 + 2/9*sqrt2*g*h - 4/9*h^2,
+        b^2 + 1/9*g^2 - 4/9*sqrt2*g*h - 10/9*h^2,
+        a - 2/3*sqrt2*g - 1/3*h
+    ],
+    [
+        f^2 - 2*g^2 + 4*h^2,
+        e + 1/2*sqrt3*sqrt2*f,
+        m^2 - g^2 + h^2,
+        d^2 + g^2 - 4*h^2,
+        c - sqrt2*h,
+        b + 1/2*sqrt2*f,
+        a^2 - 2*g^2 + 3*h^2
+    ],
+    [
+        f^2 + 2/5*g^2 - 4/5*h^2,
+        e + 1/2*sqrt2*f,
+        m^2 - 1/5*g^2 - 3/5*h^2,
+        d^2 - 3/5*g^2 - 4/5*h^2,
+        c^2 - 4/5*g^2 - 2/5*h^2,
+        b + 1/2*sqrt3*sqrt2*f,
+        a - 1/2*sqrt2*c
+    ],
+    [
+        f^2 - 1/2*g^2 + 1/4*h^2,
+        e^2 - g^2 + h^2,
+        m^2 - 1/2*g^2 - 1/4*h^2,
+        d + 1/2*sqrt3*sqrt2*h,
+        c^2 - 1/2*g^2 - 3/4*h^2,
+        b + 1/2*sqrt2*h,
+        a - sqrt2*f
+    ],
+    [
+        f - 1/2*sqrt2*h,
+        e - 1/3*sqrt3*g,
+        m^2 - 1/3*g^2 - 1/2*h^2,
+        d^2 - 1/3*g^2 - h^2,
+        c^2 - 2/3*g^2 - 1/2*h^2,
+        b^2 + 1/3*g^2 - h^2,
+        a + 1/3*sqrt3*sqrt2*g
+    ],
+    [
+        f - sqrt2*h,
+        e^2 - 1/3*g^2 - 2*h^2,
+        m^2 - 1/3*g^2 - h^2,
+        d - 1/3*sqrt3*g,
+        c + 1/3*sqrt3*sqrt2*g,
+        b^2 + 1/3*g^2 - 2*h^2,
+        a^2 - 2/3*g^2 - h^2
+    ],
+    [
+        f^2 + 4*g^2 - 2*h^2,
+        e^2 + 5*g^2 - 2*h^2,
+        m^2 + g^2 - h^2,
+        d - sqrt3*g,
+        c + sqrt2*g,
+        b^2 + 3*g^2 - 2*h^2,
+        a - 1/2*sqrt2*f
+    ],
+    [
+        f^2 - 2*g^2 - 1/2*h^2,
+        e - sqrt3*g,
+        m^2 - g^2 - 1/2*h^2,
+        d^2 + g^2 - h^2,
+        c - 1/2*sqrt2*h,
+        b^2 - g^2 - h^2,
+        a + sqrt2*g
+    ],
+    [
+        f^2 - 2*g^2 + 4*h^2,
+        e - 1/2*sqrt3*sqrt2*f,
+        m^2 - g^2 + h^2,
+        d^2 + g^2 - 4*h^2,
+        c - sqrt2*h,
+        b - 1/2*sqrt2*f,
+        a^2 - 2*g^2 + 3*h^2
+    ],
+    [
+        f^2 + 2/5*g^2 - 4/5*h^2,
+        e - 1/2*sqrt2*f,
+        m^2 - 1/5*g^2 - 3/5*h^2,
+        d^2 - 3/5*g^2 - 4/5*h^2,
+        c^2 - 4/5*g^2 - 2/5*h^2,
+        b - 1/2*sqrt3*sqrt2*f,
+        a - 1/2*sqrt2*c
+    ],
+    [
+        f^2 - 1/2*g^2 + 1/4*h^2,
+        e^2 - g^2 + h^2,
+        m^2 - 1/2*g^2 - 1/4*h^2,
+        d - 1/2*sqrt3*sqrt2*h,
+        c^2 - 1/2*g^2 - 3/4*h^2,
+        b - 1/2*sqrt2*h,
+        a - sqrt2*f
+    ],
+    [
+        f - 1/2*sqrt2*h,
+        e - 1/3*sqrt3*g,
+        m^2 - 1/3*g^2 - 1/2*h^2,
+        d^2 - 1/3*g^2 - h^2,
+        c^2 - 2/3*g^2 - 1/2*h^2,
+        b^2 + 1/3*g^2 - h^2,
+        a - 1/3*sqrt3*sqrt2*g
+    ],
+    [
+        f - sqrt2*h,
+        e^2 - 1/3*g^2 - 2*h^2,
+        m^2 - 1/3*g^2 - h^2,
+        d - 1/3*sqrt3*g,
+        c - 1/3*sqrt3*sqrt2*g,
+        b^2 + 1/3*g^2 - 2*h^2,
+        a^2 - 2/3*g^2 - h^2
+    ],
+    [
+        f^2 + 4*g^2 - 2*h^2,
+        e^2 + 5*g^2 - 2*h^2,
+        m^2 + g^2 - h^2,
+        d - sqrt3*g,
+        c - sqrt2*g,
+        b^2 + 3*g^2 - 2*h^2,
+        a - 1/2*sqrt2*f
+    ],
+    [
+        f^2 - 2*g^2 - 1/2*h^2,
+        e - sqrt3*g,
+        m^2 - g^2 - 1/2*h^2,
+        d^2 + g^2 - h^2,
+        c - 1/2*sqrt2*h,
+        b^2 - g^2 - h^2,
+        a - sqrt2*g
+    ],
+    [
+        f^2 - 2*g^2 + 4*h^2,
+        e + 1/2*sqrt3*sqrt2*f,
+        m^2 - g^2 + h^2,
+        d^2 + g^2 - 4*h^2,
+        c - sqrt2*h,
+        b - 1/2*sqrt2*f,
+        a^2 - 2*g^2 + 3*h^2
+    ],
+    [
+        f^2 + 2/5*g^2 - 4/5*h^2,
+        e - 1/2*sqrt2*f,
+        m^2 - 1/5*g^2 - 3/5*h^2,
+        d^2 - 3/5*g^2 - 4/5*h^2,
+        c^2 - 4/5*g^2 - 2/5*h^2,
+        b + 1/2*sqrt3*sqrt2*f,
+        a - 1/2*sqrt2*c
+    ],
+    [
+        f^2 - 1/2*g^2 + 1/4*h^2,
+        e^2 - g^2 + h^2,
+        m^2 - 1/2*g^2 - 1/4*h^2,
+        d + 1/2*sqrt3*sqrt2*h,
+        c^2 - 1/2*g^2 - 3/4*h^2,
+        b - 1/2*sqrt2*h,
+        a - sqrt2*f
+    ],
+    [
+        f - 1/2*sqrt2*h,
+        e + 1/3*sqrt3*g,
+        m^2 - 1/3*g^2 - 1/2*h^2,
+        d^2 - 1/3*g^2 - h^2,
+        c^2 - 2/3*g^2 - 1/2*h^2,
+        b^2 + 1/3*g^2 - h^2,
+        a + 1/3*sqrt3*sqrt2*g
+    ],
+    [
+        f - sqrt2*h,
+        e^2 - 1/3*g^2 - 2*h^2,
+        m^2 - 1/3*g^2 - h^2,
+        d + 1/3*sqrt3*g,
+        c + 1/3*sqrt3*sqrt2*g,
+        b^2 + 1/3*g^2 - 2*h^2,
+        a^2 - 2/3*g^2 - h^2
+    ],
+    [
+        f^2 + 4*g^2 - 2*h^2,
+        e^2 + 5*g^2 - 2*h^2,
+        m^2 + g^2 - h^2,
+        d + sqrt3*g,
+        c - sqrt2*g,
+        b^2 + 3*g^2 - 2*h^2,
+        a - 1/2*sqrt2*f
+    ],
+    [
+        f^2 - 2*g^2 - 1/2*h^2,
+        e + sqrt3*g,
+        m^2 - g^2 - 1/2*h^2,
+        d^2 + g^2 - h^2,
+        c - 1/2*sqrt2*h,
+        b^2 - g^2 - h^2,
+        a - sqrt2*g
+    ],
+    [
+        f^2 - 2*g^2 + 4*h^2,
+        e - 1/2*sqrt3*sqrt2*f,
+        m^2 - g^2 + h^2,
+        d^2 + g^2 - 4*h^2,
+        c - sqrt2*h,
+        b + 1/2*sqrt2*f,
+        a^2 - 2*g^2 + 3*h^2
+    ],
+    [
+        f^2 + 2/5*g^2 - 4/5*h^2,
+        e + 1/2*sqrt2*f,
+        m^2 - 1/5*g^2 - 3/5*h^2,
+        d^2 - 3/5*g^2 - 4/5*h^2,
+        c^2 - 4/5*g^2 - 2/5*h^2,
+        b - 1/2*sqrt3*sqrt2*f,
+        a - 1/2*sqrt2*c
+    ],
+    [
+        f^2 - 1/2*g^2 + 1/4*h^2,
+        e^2 - g^2 + h^2,
+        m^2 - 1/2*g^2 - 1/4*h^2,
+        d - 1/2*sqrt3*sqrt2*h,
+        c^2 - 1/2*g^2 - 3/4*h^2,
+        b + 1/2*sqrt2*h,
+        a - sqrt2*f
+    ],
+    [
+        f - 1/2*sqrt2*h,
+        e + 1/3*sqrt3*g,
+        m^2 - 1/3*g^2 - 1/2*h^2,
+        d^2 - 1/3*g^2 - h^2,
+        c^2 - 2/3*g^2 - 1/2*h^2,
+        b^2 + 1/3*g^2 - h^2,
+        a - 1/3*sqrt3*sqrt2*g
+    ],
+    [
+        f - sqrt2*h,
+        e^2 - 1/3*g^2 - 2*h^2,
+        m^2 - 1/3*g^2 - h^2,
+        d + 1/3*sqrt3*g,
+        c - 1/3*sqrt3*sqrt2*g,
+        b^2 + 1/3*g^2 - 2*h^2,
+        a^2 - 2/3*g^2 - h^2
+    ],
+    [
+        f^2 + 4*g^2 - 2*h^2,
+        e^2 + 5*g^2 - 2*h^2,
+        m^2 + g^2 - h^2,
+        d + sqrt3*g,
+        c + sqrt2*g,
+        b^2 + 3*g^2 - 2*h^2,
+        a - 1/2*sqrt2*f
+    ],
+    [
+        f^2 - 2*g^2 - 1/2*h^2,
+        e + sqrt3*g,
+        m^2 - g^2 - 1/2*h^2,
+        d^2 + g^2 - h^2,
+        c - 1/2*sqrt2*h,
+        b^2 - g^2 - h^2,
+        a + sqrt2*g
+    ],
+    [
+        f^2 - 2*g^2 + 4*h^2,
+        e + 1/2*sqrt3*sqrt2*f,
+        m^2 - g^2 + h^2,
+        d^2 + g^2 - 4*h^2,
+        c + sqrt2*h,
+        b + 1/2*sqrt2*f,
+        a^2 - 2*g^2 + 3*h^2
+    ],
+    [
+        f^2 + 2/5*g^2 - 4/5*h^2,
+        e + 1/2*sqrt2*f,
+        m^2 - 1/5*g^2 - 3/5*h^2,
+        d^2 - 3/5*g^2 - 4/5*h^2,
+        c^2 - 4/5*g^2 - 2/5*h^2,
+        b + 1/2*sqrt3*sqrt2*f,
+        a + 1/2*sqrt2*c
+    ],
+    [
+        f^2 - 1/2*g^2 + 1/4*h^2,
+        e^2 - g^2 + h^2,
+        m^2 - 1/2*g^2 - 1/4*h^2,
+        d + 1/2*sqrt3*sqrt2*h,
+        c^2 - 1/2*g^2 - 3/4*h^2,
+        b + 1/2*sqrt2*h,
+        a + sqrt2*f
+    ],
+    [
+        f + 1/2*sqrt2*h,
+        e - 1/3*sqrt3*g,
+        m^2 - 1/3*g^2 - 1/2*h^2,
+        d^2 - 1/3*g^2 - h^2,
+        c^2 - 2/3*g^2 - 1/2*h^2,
+        b^2 + 1/3*g^2 - h^2,
+        a + 1/3*sqrt3*sqrt2*g
+    ],
+    [
+        f + sqrt2*h,
+        e^2 - 1/3*g^2 - 2*h^2,
+        m^2 - 1/3*g^2 - h^2,
+        d - 1/3*sqrt3*g,
+        c + 1/3*sqrt3*sqrt2*g,
+        b^2 + 1/3*g^2 - 2*h^2,
+        a^2 - 2/3*g^2 - h^2
+    ],
+    [
+        f^2 + 4*g^2 - 2*h^2,
+        e^2 + 5*g^2 - 2*h^2,
+        m^2 + g^2 - h^2,
+        d - sqrt3*g,
+        c + sqrt2*g,
+        b^2 + 3*g^2 - 2*h^2,
+        a + 1/2*sqrt2*f
+    ],
+    [
+        f^2 - 2*g^2 - 1/2*h^2,
+        e - sqrt3*g,
+        m^2 - g^2 - 1/2*h^2,
+        d^2 + g^2 - h^2,
+        c + 1/2*sqrt2*h,
+        b^2 - g^2 - h^2,
+        a + sqrt2*g
+    ],
+    [
+        f^2 - 2*g^2 + 4*h^2,
+        e - 1/2*sqrt3*sqrt2*f,
+        m^2 - g^2 + h^2,
+        d^2 + g^2 - 4*h^2,
+        c + sqrt2*h,
+        b - 1/2*sqrt2*f,
+        a^2 - 2*g^2 + 3*h^2
+    ],
+    [
+        f^2 + 2/5*g^2 - 4/5*h^2,
+        e - 1/2*sqrt2*f,
+        m^2 - 1/5*g^2 - 3/5*h^2,
+        d^2 - 3/5*g^2 - 4/5*h^2,
+        c^2 - 4/5*g^2 - 2/5*h^2,
+        b - 1/2*sqrt3*sqrt2*f,
+        a + 1/2*sqrt2*c
+    ],
+    [
+        f^2 - 1/2*g^2 + 1/4*h^2,
+        e^2 - g^2 + h^2,
+        m^2 - 1/2*g^2 - 1/4*h^2,
+        d - 1/2*sqrt3*sqrt2*h,
+        c^2 - 1/2*g^2 - 3/4*h^2,
+        b - 1/2*sqrt2*h,
+        a + sqrt2*f
+    ],
+    [
+        f + 1/2*sqrt2*h,
+        e - 1/3*sqrt3*g,
+        m^2 - 1/3*g^2 - 1/2*h^2,
+        d^2 - 1/3*g^2 - h^2,
+        c^2 - 2/3*g^2 - 1/2*h^2,
+        b^2 + 1/3*g^2 - h^2,
+        a - 1/3*sqrt3*sqrt2*g
+    ],
+    [
+        f + sqrt2*h,
+        e^2 - 1/3*g^2 - 2*h^2,
+        m^2 - 1/3*g^2 - h^2,
+        d - 1/3*sqrt3*g,
+        c - 1/3*sqrt3*sqrt2*g,
+        b^2 + 1/3*g^2 - 2*h^2,
+        a^2 - 2/3*g^2 - h^2
+    ],
+    [
+        f^2 + 4*g^2 - 2*h^2,
+        e^2 + 5*g^2 - 2*h^2,
+        m^2 + g^2 - h^2,
+        d - sqrt3*g,
+        c - sqrt2*g,
+        b^2 + 3*g^2 - 2*h^2,
+        a + 1/2*sqrt2*f
+    ],
+    [
+        f^2 - 2*g^2 - 1/2*h^2,
+        e - sqrt3*g,
+        m^2 - g^2 - 1/2*h^2,
+        d^2 + g^2 - h^2,
+        c + 1/2*sqrt2*h,
+        b^2 - g^2 - h^2,
+        a - sqrt2*g
+    ],
+    [
+        f^2 - 2*g^2 + 4*h^2,
+        e + 1/2*sqrt3*sqrt2*f,
+        m^2 - g^2 + h^2,
+        d^2 + g^2 - 4*h^2,
+        c + sqrt2*h,
+        b - 1/2*sqrt2*f,
+        a^2 - 2*g^2 + 3*h^2
+    ],
+    [
+        f^2 + 2/5*g^2 - 4/5*h^2,
+        e - 1/2*sqrt2*f,
+        m^2 - 1/5*g^2 - 3/5*h^2,
+        d^2 - 3/5*g^2 - 4/5*h^2,
+        c^2 - 4/5*g^2 - 2/5*h^2,
+        b + 1/2*sqrt3*sqrt2*f,
+        a + 1/2*sqrt2*c
+    ],
+    [
+        f^2 - 1/2*g^2 + 1/4*h^2,
+        e^2 - g^2 + h^2,
+        m^2 - 1/2*g^2 - 1/4*h^2,
+        d + 1/2*sqrt3*sqrt2*h,
+        c^2 - 1/2*g^2 - 3/4*h^2,
+        b - 1/2*sqrt2*h,
+        a + sqrt2*f
+    ],
+    [
+        f + 1/2*sqrt2*h,
+        e + 1/3*sqrt3*g,
+        m^2 - 1/3*g^2 - 1/2*h^2,
+        d^2 - 1/3*g^2 - h^2,
+        c^2 - 2/3*g^2 - 1/2*h^2,
+        b^2 + 1/3*g^2 - h^2,
+        a + 1/3*sqrt3*sqrt2*g
+    ],
+    [
+        f + sqrt2*h,
+        e^2 - 1/3*g^2 - 2*h^2,
+        m^2 - 1/3*g^2 - h^2,
+        d + 1/3*sqrt3*g,
+        c + 1/3*sqrt3*sqrt2*g,
+        b^2 + 1/3*g^2 - 2*h^2,
+        a^2 - 2/3*g^2 - h^2
+    ],
+    [
+        f^2 + 4*g^2 - 2*h^2,
+        e^2 + 5*g^2 - 2*h^2,
+        m^2 + g^2 - h^2,
+        d + sqrt3*g,
+        c - sqrt2*g,
+        b^2 + 3*g^2 - 2*h^2,
+        a + 1/2*sqrt2*f
+    ],
+    [
+        f^2 - 2*g^2 - 1/2*h^2,
+        e + sqrt3*g,
+        m^2 - g^2 - 1/2*h^2,
+        d^2 + g^2 - h^2,
+        c + 1/2*sqrt2*h,
+        b^2 - g^2 - h^2,
+        a - sqrt2*g
+    ],
+    [
+        f^2 - 2*g^2 + 4*h^2,
+        e - 1/2*sqrt3*sqrt2*f,
+        m^2 - g^2 + h^2,
+        d^2 + g^2 - 4*h^2,
+        c + sqrt2*h,
+        b + 1/2*sqrt2*f,
+        a^2 - 2*g^2 + 3*h^2
+    ],
+    [
+        f^2 + 2/5*g^2 - 4/5*h^2,
+        e + 1/2*sqrt2*f,
+        m^2 - 1/5*g^2 - 3/5*h^2,
+        d^2 - 3/5*g^2 - 4/5*h^2,
+        c^2 - 4/5*g^2 - 2/5*h^2,
+        b - 1/2*sqrt3*sqrt2*f,
+        a + 1/2*sqrt2*c
+    ],
+    [
+        f^2 - 1/2*g^2 + 1/4*h^2,
+        e^2 - g^2 + h^2,
+        m^2 - 1/2*g^2 - 1/4*h^2,
+        d - 1/2*sqrt3*sqrt2*h,
+        c^2 - 1/2*g^2 - 3/4*h^2,
+        b + 1/2*sqrt2*h,
+        a + sqrt2*f
+    ],
+    [
+        f + 1/2*sqrt2*h,
+        e + 1/3*sqrt3*g,
+        m^2 - 1/3*g^2 - 1/2*h^2,
+        d^2 - 1/3*g^2 - h^2,
+        c^2 - 2/3*g^2 - 1/2*h^2,
+        b^2 + 1/3*g^2 - h^2,
+        a - 1/3*sqrt3*sqrt2*g
+    ],
+    [
+        f + sqrt2*h,
+        e^2 - 1/3*g^2 - 2*h^2,
+        m^2 - 1/3*g^2 - h^2,
+        d + 1/3*sqrt3*g,
+        c - 1/3*sqrt3*sqrt2*g,
+        b^2 + 1/3*g^2 - 2*h^2,
+        a^2 - 2/3*g^2 - h^2
+    ],
+    [
+        f^2 + 4*g^2 - 2*h^2,
+        e^2 + 5*g^2 - 2*h^2,
+        m^2 + g^2 - h^2,
+        d + sqrt3*g,
+        c + sqrt2*g,
+        b^2 + 3*g^2 - 2*h^2,
+        a + 1/2*sqrt2*f
+    ],
+    [
+        f^2 - 2*g^2 - 1/2*h^2,
+        e + sqrt3*g,
+        m^2 - g^2 - 1/2*h^2,
+        d^2 + g^2 - h^2,
+        c + 1/2*sqrt2*h,
+        b^2 - g^2 - h^2,
+        a + sqrt2*g
+    ],
+    [
+        f^2 - 1/5*g^2 - 6/5*sqrt3*f*h + h^2,
+        e + sqrt3*f - h,
+        m^2 - 2/5*g^2 - 2/5*sqrt3*f*h,
+        d - f + sqrt3*h,
+        c - sqrt3*f + 2*h,
+        b^2 + 1/5*g^2 - 4/5*sqrt3*f*h,
+        a - 2*f + sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 - 6/5*sqrt3*f*h + h^2,
+        e + sqrt3*f - h,
+        m^2 - 2/5*g^2 - 2/5*sqrt3*f*h,
+        d - f + sqrt3*h,
+        c + sqrt3*f - 2*h,
+        b^2 + 1/5*g^2 - 4/5*sqrt3*f*h,
+        a + 2*f - sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 - 6/5*sqrt3*f*h + h^2,
+        e - sqrt3*f + h,
+        m^2 - 2/5*g^2 - 2/5*sqrt3*f*h,
+        d - f + sqrt3*h,
+        c + sqrt3*f - 2*h,
+        b^2 + 1/5*g^2 - 4/5*sqrt3*f*h,
+        a + 2*f - sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 - 6/5*sqrt3*f*h + h^2,
+        e + sqrt3*f - h,
+        m^2 - 2/5*g^2 - 2/5*sqrt3*f*h,
+        d + f - sqrt3*h,
+        c - sqrt3*f + 2*h,
+        b^2 + 1/5*g^2 - 4/5*sqrt3*f*h,
+        a - 2*f + sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 + 6/5*sqrt3*f*h + h^2,
+        e - sqrt3*f - h,
+        m^2 - 2/5*g^2 + 2/5*sqrt3*f*h,
+        d + f + sqrt3*h,
+        c + sqrt3*f + 2*h,
+        b^2 + 1/5*g^2 + 4/5*sqrt3*f*h,
+        a + 2*f + sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 + 6/5*sqrt3*f*h + h^2,
+        e + sqrt3*f + h,
+        m^2 - 2/5*g^2 + 2/5*sqrt3*f*h,
+        d - f - sqrt3*h,
+        c + sqrt3*f + 2*h,
+        b^2 + 1/5*g^2 + 4/5*sqrt3*f*h,
+        a + 2*f + sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 - 6/5*sqrt3*f*h + h^2,
+        e - sqrt3*f + h,
+        m^2 - 2/5*g^2 - 2/5*sqrt3*f*h,
+        d - f + sqrt3*h,
+        c - sqrt3*f + 2*h,
+        b^2 + 1/5*g^2 - 4/5*sqrt3*f*h,
+        a + 2*f - sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 - 6/5*sqrt3*f*h + h^2,
+        e + sqrt3*f - h,
+        m^2 - 2/5*g^2 - 2/5*sqrt3*f*h,
+        d + f - sqrt3*h,
+        c - sqrt3*f + 2*h,
+        b^2 + 1/5*g^2 - 4/5*sqrt3*f*h,
+        a + 2*f - sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 + 6/5*sqrt3*f*h + h^2,
+        e - sqrt3*f - h,
+        m^2 - 2/5*g^2 + 2/5*sqrt3*f*h,
+        d - f - sqrt3*h,
+        c + sqrt3*f + 2*h,
+        b^2 + 1/5*g^2 + 4/5*sqrt3*f*h,
+        a + 2*f + sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 - 6/5*sqrt3*f*h + h^2,
+        e + sqrt3*f - h,
+        m^2 - 2/5*g^2 - 2/5*sqrt3*f*h,
+        d - f + sqrt3*h,
+        c - sqrt3*f + 2*h,
+        b^2 + 1/5*g^2 - 4/5*sqrt3*f*h,
+        a + 2*f - sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 + 6/5*sqrt3*f*h + h^2,
+        e - sqrt3*f - h,
+        m^2 - 2/5*g^2 + 2/5*sqrt3*f*h,
+        d + f + sqrt3*h,
+        c + sqrt3*f + 2*h,
+        b^2 + 1/5*g^2 + 4/5*sqrt3*f*h,
+        a - 2*f - sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 + 6/5*sqrt3*f*h + h^2,
+        e + sqrt3*f + h,
+        m^2 - 2/5*g^2 + 2/5*sqrt3*f*h,
+        d - f - sqrt3*h,
+        c - sqrt3*f - 2*h,
+        b^2 + 1/5*g^2 + 4/5*sqrt3*f*h,
+        a + 2*f + sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 + 6/5*sqrt3*f*h + h^2,
+        e - sqrt3*f - h,
+        m^2 - 2/5*g^2 + 2/5*sqrt3*f*h,
+        d - f - sqrt3*h,
+        c - sqrt3*f - 2*h,
+        b^2 + 1/5*g^2 + 4/5*sqrt3*f*h,
+        a + 2*f + sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 + 6/5*sqrt3*f*h + h^2,
+        e - sqrt3*f - h,
+        m^2 - 2/5*g^2 + 2/5*sqrt3*f*h,
+        d - f - sqrt3*h,
+        c + sqrt3*f + 2*h,
+        b^2 + 1/5*g^2 + 4/5*sqrt3*f*h,
+        a - 2*f - sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 + 6/5*sqrt3*f*h + h^2,
+        e + sqrt3*f + h,
+        m^2 - 2/5*g^2 + 2/5*sqrt3*f*h,
+        d - f - sqrt3*h,
+        c - sqrt3*f - 2*h,
+        b^2 + 1/5*g^2 + 4/5*sqrt3*f*h,
+        a - 2*f - sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 + 6/5*sqrt3*f*h + h^2,
+        e - sqrt3*f - h,
+        m^2 - 2/5*g^2 + 2/5*sqrt3*f*h,
+        d + f + sqrt3*h,
+        c - sqrt3*f - 2*h,
+        b^2 + 1/5*g^2 + 4/5*sqrt3*f*h,
+        a - 2*f - sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 - 6/5*sqrt3*f*h + h^2,
+        e - sqrt3*f + h,
+        m^2 - 2/5*g^2 - 2/5*sqrt3*f*h,
+        d - f + sqrt3*h,
+        c + sqrt3*f - 2*h,
+        b^2 + 1/5*g^2 - 4/5*sqrt3*f*h,
+        a - 2*f + sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 - 6/5*sqrt3*f*h + h^2,
+        e + sqrt3*f - h,
+        m^2 - 2/5*g^2 - 2/5*sqrt3*f*h,
+        d + f - sqrt3*h,
+        c + sqrt3*f - 2*h,
+        b^2 + 1/5*g^2 - 4/5*sqrt3*f*h,
+        a - 2*f + sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 - 6/5*sqrt3*f*h + h^2,
+        e - sqrt3*f + h,
+        m^2 - 2/5*g^2 - 2/5*sqrt3*f*h,
+        d + f - sqrt3*h,
+        c + sqrt3*f - 2*h,
+        b^2 + 1/5*g^2 - 4/5*sqrt3*f*h,
+        a + 2*f - sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 - 6/5*sqrt3*f*h + h^2,
+        e - sqrt3*f + h,
+        m^2 - 2/5*g^2 - 2/5*sqrt3*f*h,
+        d + f - sqrt3*h,
+        c - sqrt3*f + 2*h,
+        b^2 + 1/5*g^2 - 4/5*sqrt3*f*h,
+        a - 2*f + sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 - 6/5*sqrt3*f*h + h^2,
+        e - sqrt3*f + h,
+        m^2 - 2/5*g^2 - 2/5*sqrt3*f*h,
+        d - f + sqrt3*h,
+        c - sqrt3*f + 2*h,
+        b^2 + 1/5*g^2 - 4/5*sqrt3*f*h,
+        a - 2*f + sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 - 6/5*sqrt3*f*h + h^2,
+        e + sqrt3*f - h,
+        m^2 - 2/5*g^2 - 2/5*sqrt3*f*h,
+        d + f - sqrt3*h,
+        c + sqrt3*f - 2*h,
+        b^2 + 1/5*g^2 - 4/5*sqrt3*f*h,
+        a + 2*f - sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 + 6/5*sqrt3*f*h + h^2,
+        e + sqrt3*f + h,
+        m^2 - 2/5*g^2 + 2/5*sqrt3*f*h,
+        d + f + sqrt3*h,
+        c - sqrt3*f - 2*h,
+        b^2 + 1/5*g^2 + 4/5*sqrt3*f*h,
+        a - 2*f - sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 - 6/5*sqrt3*f*h + h^2,
+        e + sqrt3*f - h,
+        m^2 - 2/5*g^2 - 2/5*sqrt3*f*h,
+        d - f + sqrt3*h,
+        c + sqrt3*f - 2*h,
+        b^2 + 1/5*g^2 - 4/5*sqrt3*f*h,
+        a - 2*f + sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 - 6/5*sqrt3*f*h + h^2,
+        e - sqrt3*f + h,
+        m^2 - 2/5*g^2 - 2/5*sqrt3*f*h,
+        d + f - sqrt3*h,
+        c + sqrt3*f - 2*h,
+        b^2 + 1/5*g^2 - 4/5*sqrt3*f*h,
+        a - 2*f + sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 + 6/5*sqrt3*f*h + h^2,
+        e - sqrt3*f - h,
+        m^2 - 2/5*g^2 + 2/5*sqrt3*f*h,
+        d - f - sqrt3*h,
+        c - sqrt3*f - 2*h,
+        b^2 + 1/5*g^2 + 4/5*sqrt3*f*h,
+        a - 2*f - sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 + 6/5*sqrt3*f*h + h^2,
+        e + sqrt3*f + h,
+        m^2 - 2/5*g^2 + 2/5*sqrt3*f*h,
+        d + f + sqrt3*h,
+        c - sqrt3*f - 2*h,
+        b^2 + 1/5*g^2 + 4/5*sqrt3*f*h,
+        a + 2*f + sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 + 6/5*sqrt3*f*h + h^2,
+        e + sqrt3*f + h,
+        m^2 - 2/5*g^2 + 2/5*sqrt3*f*h,
+        d + f + sqrt3*h,
+        c + sqrt3*f + 2*h,
+        b^2 + 1/5*g^2 + 4/5*sqrt3*f*h,
+        a - 2*f - sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 + 6/5*sqrt3*f*h + h^2,
+        e + sqrt3*f + h,
+        m^2 - 2/5*g^2 + 2/5*sqrt3*f*h,
+        d - f - sqrt3*h,
+        c + sqrt3*f + 2*h,
+        b^2 + 1/5*g^2 + 4/5*sqrt3*f*h,
+        a - 2*f - sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 + 6/5*sqrt3*f*h + h^2,
+        e - sqrt3*f - h,
+        m^2 - 2/5*g^2 + 2/5*sqrt3*f*h,
+        d + f + sqrt3*h,
+        c - sqrt3*f - 2*h,
+        b^2 + 1/5*g^2 + 4/5*sqrt3*f*h,
+        a + 2*f + sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 + 6/5*sqrt3*f*h + h^2,
+        e + sqrt3*f + h,
+        m^2 - 2/5*g^2 + 2/5*sqrt3*f*h,
+        d + f + sqrt3*h,
+        c + sqrt3*f + 2*h,
+        b^2 + 1/5*g^2 + 4/5*sqrt3*f*h,
+        a + 2*f + sqrt3*h
+    ],
+    [
+        f^2 - 1/5*g^2 - 6/5*sqrt3*f*h + h^2,
+        e - sqrt3*f + h,
+        m^2 - 2/5*g^2 - 2/5*sqrt3*f*h,
+        d + f - sqrt3*h,
+        c - sqrt3*f + 2*h,
+        b^2 + 1/5*g^2 - 4/5*sqrt3*f*h,
+        a + 2*f - sqrt3*h
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -b + 4*c - 3*d,
+        b - c + d - m
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (2*sqrt2*i + 2)*a + (-2*sqrt2*i + 1)*b - 3*d,
+        -sqrt2*i*a + sqrt2*i*b + 2*d - 2*m
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (-2*sqrt2*i + 2)*a + (2*sqrt2*i + 1)*b - 3*d,
+        sqrt2*i*a - sqrt2*i*b + 2*d - 2*m
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (sqrt3*i + 1)*a + (-sqrt3*i + 1)*b - 2*c,
+        -sqrt3*i*a + sqrt3*i*b + 3*c - 3*m
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (-sqrt3*i + 1)*a + (sqrt3*i + 1)*b - 2*c,
+        sqrt3*i*a - sqrt3*i*b + 3*c - 3*m
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (sqrt3*sqrt2 + 4)*a + (-sqrt3*sqrt2 - 2)*b - 2*c,
+        sqrt3*sqrt2*a - sqrt3*sqrt2*b + 6*c - 6*d
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (-sqrt3*sqrt2 + 4)*a + (sqrt3*sqrt2 - 2)*b - 2*c,
+        -sqrt3*sqrt2*a + sqrt3*sqrt2*b + 6*c - 6*d
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        2*b + c - 3*d,
+        -b + c + d - e
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        4*a - b - 3*d,
+        -a + b + d - e
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -a + 3*c - 2*d,
+        2*a - 2*c + d - e
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (sqrt3*sqrt2 + 4)*a + (-sqrt3*sqrt2 + 1)*b - 5*c,
+        -sqrt3*sqrt2*a + sqrt3*sqrt2*b + 3*c - 3*e
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (-sqrt3*sqrt2 + 4)*a + (sqrt3*sqrt2 + 1)*b - 5*c,
+        sqrt3*sqrt2*a - sqrt3*sqrt2*b + 3*c - 3*e
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (sqrt3 - 2)*a + (-sqrt3 + 3)*c - d,
+        sqrt3*a - sqrt3*c + d - f
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (-sqrt3 - 2)*a + (sqrt3 + 3)*c - d,
+        -sqrt3*a + sqrt3*c + d - f
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (2*sqrt3*sqrt2 + 2)*a + (-2*sqrt3*sqrt2 + 3)*b - 5*d,
+        -sqrt3*sqrt2*a + sqrt3*sqrt2*b + 2*d - 2*f
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (-2*sqrt3*sqrt2 + 2)*a + (2*sqrt3*sqrt2 + 3)*b - 5*d,
+        sqrt3*sqrt2*a - sqrt3*sqrt2*b + 2*d - 2*f
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (sqrt3 + 1)*a + (-sqrt3 + 1)*b - 2*c,
+        -2*sqrt3*a + 2*sqrt3*b + 3*c - 3*f
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (-sqrt3 + 1)*a + (sqrt3 + 1)*b - 2*c,
+        2*sqrt3*a - 2*sqrt3*b + 3*c - 3*f
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        4*a - 3*b - d,
+        -a + b + d - g
+    ],
+    [
+        b^2 + 2*g^2 - 2*h^2,
+        m^2 + 1/2*g^2 - h^2,
+        e^2 + 3*g^2 - 2*h^2,
+        f^2 + 5/2*g^2 - 2*h^2,
+        a - 1/2*sqrt2*b,
+        c + 1/2*sqrt3*sqrt2*g,
+        d - sqrt2*g
+    ],
+    [
+        b^2 + 2*g^2 - 2*h^2,
+        m^2 + 1/2*g^2 - h^2,
+        e^2 + 3*g^2 - 2*h^2,
+        f^2 + 5/2*g^2 - 2*h^2,
+        a - 1/2*sqrt2*b,
+        c - 1/2*sqrt3*sqrt2*g,
+        d + sqrt2*g
+    ],
+    [
+        b^2 + 2*g^2 - 2*h^2,
+        m^2 + 1/2*g^2 - h^2,
+        e^2 + 3*g^2 - 2*h^2,
+        f^2 + 5/2*g^2 - 2*h^2,
+        a + 1/2*sqrt2*b,
+        c + 1/2*sqrt3*sqrt2*g,
+        d + sqrt2*g
+    ],
+    [
+        b^2 + 2*g^2 - 2*h^2,
+        m^2 + 1/2*g^2 - h^2,
+        e^2 + 3*g^2 - 2*h^2,
+        f^2 + 5/2*g^2 - 2*h^2,
+        a + 1/2*sqrt2*b,
+        c - 1/2*sqrt3*sqrt2*g,
+        d - sqrt2*g
+    ],
+    [
+        b^2 + 2*g^2 - 2*h^2,
+        m^2 + 1/2*g^2 - h^2,
+        e^2 + 3*g^2 - 2*h^2,
+        f^2 + 5/2*g^2 - 2*h^2,
+        a - 1/2*sqrt2*b,
+        c - 1/2*sqrt3*sqrt2*g,
+        d - sqrt2*g
+    ],
+    [
+        b^2 + 2*g^2 - 2*h^2,
+        m^2 + 1/2*g^2 - h^2,
+        e^2 + 3*g^2 - 2*h^2,
+        f^2 + 5/2*g^2 - 2*h^2,
+        a - 1/2*sqrt2*b,
+        c + 1/2*sqrt3*sqrt2*g,
+        d + sqrt2*g
+    ],
+    [
+        b^2 + 2*g^2 - 2*h^2,
+        m^2 + 1/2*g^2 - h^2,
+        e^2 + 3*g^2 - 2*h^2,
+        f^2 + 5/2*g^2 - 2*h^2,
+        a + 1/2*sqrt2*b,
+        c - 1/2*sqrt3*sqrt2*g,
+        d + sqrt2*g
+    ],
+    [
+        b^2 + 2*g^2 - 2*h^2,
+        m^2 + 1/2*g^2 - h^2,
+        e^2 + 3*g^2 - 2*h^2,
+        f^2 + 5/2*g^2 - 2*h^2,
+        a + 1/2*sqrt2*b,
+        c + 1/2*sqrt3*sqrt2*g,
+        d - sqrt2*g
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (sqrt3 + 2)*a + (-sqrt3 - 1)*b - c,
+        -sqrt3*a + sqrt3*b + 3*c - 3*g
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (-sqrt3 + 2)*a + (sqrt3 - 1)*b - c,
+        sqrt3*a - sqrt3*b + 3*c - 3*g
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -2*a + 3*c - d,
+        -a + c + d - h
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (sqrt3 - 1)*a + (-sqrt3 + 2)*b - c,
+        -sqrt3*a + sqrt3*b + 3*c - 3*h
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (-sqrt3 - 1)*a + (sqrt3 + 2)*b - c,
+        sqrt3*a - sqrt3*b + 3*c - 3*h
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        4*a - c - 3*f,
+        -a + c + f - g
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        a + 2*b - 3*f,
+        a - b + f - g
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        4*b - c - 3*f,
+        -b + c + f - h
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        2*a + b - 3*f,
+        -a + b + f - h
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        a + 2*b - 3*m,
+        a - b + m - e
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -b + 4*m - 3*e,
+        b - m + e - h
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -2*a + 3*e - f,
+        -a + e + f - h
+    ],
+    [
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        4*a - d - 3*g,
+        -a + d - m + g
+    ],
+    [
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        4*c - e - 3*g,
+        -c - m + e + g
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -3*e + 4*f - g,
+        -m + e - f + g
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        -3*d - g + 4*h,
+        d - m + g - h
+    ],
+    [
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -3*b - d + 4*f,
+        b + d - m - f
+    ],
+    [
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        (-2*sqrt2*i + 1)*d + (2*sqrt2*i + 2)*f - 3*g,
+        sqrt2*i*d - 2*m - sqrt2*i*f + 2*g
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        (-2*sqrt2*i + 1)*b + (2*sqrt2*i + 2)*c - 3*e,
+        sqrt2*i*b - sqrt2*i*c - 2*m + 2*e
+    ],
+    [
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (-2*sqrt2*i + 1)*e - 3*g + (2*sqrt2*i + 2)*h,
+        -2*m + sqrt2*i*e + 2*g - sqrt2*i*h
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -3*e + (-2*sqrt2*i + 1)*g + (2*sqrt2*i + 2)*h,
+        -2*m + 2*e + sqrt2*i*g - sqrt2*i*h
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        -3*d + (2*sqrt2*i + 2)*f + (-2*sqrt2*i + 1)*g,
+        2*d - 2*m - sqrt2*i*f + sqrt2*i*g
+    ],
+    [
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        -3*b + (2*sqrt2*i + 2)*c + (-2*sqrt2*i + 1)*e,
+        2*b - sqrt2*i*c - 2*m + sqrt2*i*e
+    ],
+    [
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        -2*a + (-sqrt3*i + 1)*d + (sqrt3*i + 1)*f,
+        3*a + sqrt3*i*d - 3*m - sqrt3*i*f
+    ],
+    [
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -2*c + (-sqrt3*i + 1)*e + (sqrt3*i + 1)*h,
+        3*c - 3*m + sqrt3*i*e - sqrt3*i*h
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -2*f + (-sqrt3*i + 1)*g + (sqrt3*i + 1)*h,
+        -3*m + 3*f + sqrt3*i*g - sqrt3*i*h
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        (sqrt3*i + 1)*f + (-sqrt3*i + 1)*g - 2*h,
+        -3*m - sqrt3*i*f + sqrt3*i*g + 3*h
+    ],
+    [
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        (sqrt3*i + 1)*c + (-sqrt3*i + 1)*e - 2*h,
+        -sqrt3*i*c - 3*m + sqrt3*i*e + 3*h
+    ],
+    [
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (sqrt3*i + 1)*a + (-sqrt3*i + 1)*d - 2*f,
+        -sqrt3*i*a + sqrt3*i*d - 3*m + 3*f
+    ],
+    [
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        -2*a + (-sqrt3*sqrt2 - 2)*d + (sqrt3*sqrt2 + 4)*f,
+        6*a - sqrt3*sqrt2*d + sqrt3*sqrt2*f - 6*g
+    ],
+    [
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -2*c + (-sqrt3*sqrt2 - 2)*e + (sqrt3*sqrt2 + 4)*h,
+        6*c - sqrt3*sqrt2*e - 6*g + sqrt3*sqrt2*h
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -2*f + (-sqrt3*sqrt2 - 2)*g + (sqrt3*sqrt2 + 4)*h,
+        -6*e + 6*f - sqrt3*sqrt2*g + sqrt3*sqrt2*h
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        (sqrt3*sqrt2 + 4)*f + (-sqrt3*sqrt2 - 2)*g - 2*h,
+        -6*d + sqrt3*sqrt2*f - sqrt3*sqrt2*g + 6*h
+    ],
+    [
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        (sqrt3*sqrt2 + 4)*c + (-sqrt3*sqrt2 - 2)*e - 2*h,
+        -6*b + sqrt3*sqrt2*c - sqrt3*sqrt2*e + 6*h
+    ],
+    [
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        -2*a + (sqrt3*sqrt2 - 2)*d + (-sqrt3*sqrt2 + 4)*f,
+        6*a + sqrt3*sqrt2*d - sqrt3*sqrt2*f - 6*g
+    ],
+    [
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -2*c + (sqrt3*sqrt2 - 2)*e + (-sqrt3*sqrt2 + 4)*h,
+        6*c + sqrt3*sqrt2*e - 6*g - sqrt3*sqrt2*h
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -2*f + (sqrt3*sqrt2 - 2)*g + (-sqrt3*sqrt2 + 4)*h,
+        -6*e + 6*f + sqrt3*sqrt2*g - sqrt3*sqrt2*h
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        (-sqrt3*sqrt2 + 4)*f + (sqrt3*sqrt2 - 2)*g - 2*h,
+        -6*d - sqrt3*sqrt2*f + sqrt3*sqrt2*g + 6*h
+    ],
+    [
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        (-sqrt3*sqrt2 + 4)*c + (sqrt3*sqrt2 - 2)*e - 2*h,
+        -6*b - sqrt3*sqrt2*c + sqrt3*sqrt2*e + 6*h
+    ],
+    [
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        c + 2*e - 3*g,
+        -b + c - e + g
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -3*e + f + 2*g,
+        -d + e + f - g
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        -3*d + 2*g + h,
+        d - e - g + h
+    ],
+    [
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        -3*b + 2*e + h,
+        b - e - g + h
+    ],
+    [
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -3*b + 2*d + f,
+        b - d + f - g
+    ],
+    [
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        3*c - 2*g - h,
+        -b - 2*c + g + 2*h
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -2*e + 3*f - h,
+        -d + e - 2*f + 2*h
+    ],
+    [
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        (-sqrt3 + 3)*a + (sqrt3 - 2)*f - g,
+        -sqrt3*a + sqrt3*f + g - h
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        (-sqrt3 + 3)*a + (sqrt3 - 2)*c - e,
+        -sqrt3*a + sqrt3*c + e - h
+    ],
+    [
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (-sqrt3 + 3)*c - g + (sqrt3 - 2)*h,
+        -sqrt3*c - f + g + sqrt3*h
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -e + (-sqrt3 + 3)*f + (sqrt3 - 2)*h,
+        -c + e - sqrt3*f + sqrt3*h
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        -d + (sqrt3 - 2)*f + (-sqrt3 + 3)*h,
+        -a + d + sqrt3*f - sqrt3*h
+    ],
+    [
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        (sqrt3 + 3)*a + (-sqrt3 - 2)*f - g,
+        sqrt3*a - sqrt3*f + g - h
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        (sqrt3 + 3)*a + (-sqrt3 - 2)*c - e,
+        sqrt3*a - sqrt3*c + e - h
+    ],
+    [
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (sqrt3 + 3)*c - g + (-sqrt3 - 2)*h,
+        sqrt3*c - f + g - sqrt3*h
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -e + (sqrt3 + 3)*f + (-sqrt3 - 2)*h,
+        -c + e + sqrt3*f - sqrt3*h
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        -d + (-sqrt3 - 2)*f + (sqrt3 + 3)*h,
+        -a + d - sqrt3*f + sqrt3*h
+    ],
+    [
+        b^2 + 1/4*g^2 - h^2,
+        c^2 - 5/8*g^2 - 1/2*h^2,
+        m^2 - 3/8*g^2 - 1/2*h^2,
+        f^2 - 1/8*g^2 - 1/2*h^2,
+        a + 1/2*sqrt3*g,
+        d - sqrt2*f,
+        e - 1/2*sqrt2*g
+    ],
+    [
+        c^2 - 1/4*g^2 - 1/2*h^2,
+        d^2 + 1/2*g^2 - h^2,
+        m^2 - 3/4*g^2 - 1/2*h^2,
+        f^2 - 5/4*g^2 - 1/2*h^2,
+        a + 1/2*sqrt3*sqrt2*g,
+        b - sqrt2*c,
+        e - sqrt2*g
+    ],
+    [
+        a^2 - 1/2*g^2 - h^2,
+        b^2 + 1/2*g^2 - 2*h^2,
+        m^2 - 1/4*g^2 - h^2,
+        f^2 + 1/4*g^2 - 2*h^2,
+        c + 1/2*sqrt3*g,
+        d - 1/2*sqrt2*g,
+        e - sqrt2*h
+    ],
+    [
+        a^2 - 2/3*f^2 - h^2,
+        c^2 + 1/3*f^2 - 2*h^2,
+        d^2 + 2/3*f^2 - 2*h^2,
+        m^2 - 1/3*f^2 - h^2,
+        b + 1/3*sqrt3*sqrt2*f,
+        e + 2/3*sqrt3*f,
+        g - sqrt2*h
+    ],
+    [
+        a^2 - g^2 + 1/3*h^2,
+        c^2 - 1/2*g^2 - 2/3*h^2,
+        m^2 - 1/2*g^2 - 1/3*h^2,
+        e^2 - g^2 + 2/3*h^2,
+        b + 1/3*sqrt3*sqrt2*h,
+        d + 2/3*sqrt3*h,
+        f - 1/2*sqrt2*g
+    ],
+    [
+        a^2 - g^2 - 1/3*h^2,
+        m^2 - 1/2*g^2 - 2/3*h^2,
+        e^2 - g^2 - 2/3*h^2,
+        f^2 - 1/2*g^2 - h^2,
+        b + 2/3*sqrt3*h,
+        c - 1/2*sqrt2*e,
+        d + 1/3*sqrt3*sqrt2*h
+    ],
+    [
+        c^2 - 5/6*g^2 - 1/3*h^2,
+        d^2 - 2/3*g^2 - 2/3*h^2,
+        m^2 - 1/6*g^2 - 2/3*h^2,
+        f^2 + 1/2*g^2 - h^2,
+        a - 1/2*sqrt2*d,
+        b + 2/3*sqrt3*f,
+        e + 1/3*sqrt3*sqrt2*f
+    ],
+    [
+        b^2 + 1/4*g^2 - h^2,
+        c^2 - 5/8*g^2 - 1/2*h^2,
+        m^2 - 3/8*g^2 - 1/2*h^2,
+        f^2 - 1/8*g^2 - 1/2*h^2,
+        a + 1/2*sqrt3*g,
+        d - sqrt2*f,
+        e + 1/2*sqrt2*g
+    ],
+    [
+        c^2 - 1/4*g^2 - 1/2*h^2,
+        d^2 + 1/2*g^2 - h^2,
+        m^2 - 3/4*g^2 - 1/2*h^2,
+        f^2 - 5/4*g^2 - 1/2*h^2,
+        a - 1/2*sqrt3*sqrt2*g,
+        b - sqrt2*c,
+        e + sqrt2*g
+    ],
+    [
+        a^2 - 1/2*g^2 - h^2,
+        b^2 + 1/2*g^2 - 2*h^2,
+        m^2 - 1/4*g^2 - h^2,
+        f^2 + 1/4*g^2 - 2*h^2,
+        c + 1/2*sqrt3*g,
+        d + 1/2*sqrt2*g,
+        e - sqrt2*h
+    ],
+    [
+        a^2 - 2/3*f^2 - h^2,
+        c^2 + 1/3*f^2 - 2*h^2,
+        d^2 + 2/3*f^2 - 2*h^2,
+        m^2 - 1/3*f^2 - h^2,
+        b - 1/3*sqrt3*sqrt2*f,
+        e + 2/3*sqrt3*f,
+        g - sqrt2*h
+    ],
+    [
+        a^2 - g^2 + 1/3*h^2,
+        c^2 - 1/2*g^2 - 2/3*h^2,
+        m^2 - 1/2*g^2 - 1/3*h^2,
+        e^2 - g^2 + 2/3*h^2,
+        b - 1/3*sqrt3*sqrt2*h,
+        d + 2/3*sqrt3*h,
+        f - 1/2*sqrt2*g
+    ],
+    [
+        a^2 - g^2 - 1/3*h^2,
+        m^2 - 1/2*g^2 - 2/3*h^2,
+        e^2 - g^2 - 2/3*h^2,
+        f^2 - 1/2*g^2 - h^2,
+        b + 2/3*sqrt3*h,
+        c - 1/2*sqrt2*e,
+        d - 1/3*sqrt3*sqrt2*h
+    ],
+    [
+        c^2 - 5/6*g^2 - 1/3*h^2,
+        d^2 - 2/3*g^2 - 2/3*h^2,
+        m^2 - 1/6*g^2 - 2/3*h^2,
+        f^2 + 1/2*g^2 - h^2,
+        a - 1/2*sqrt2*d,
+        b + 2/3*sqrt3*f,
+        e - 1/3*sqrt3*sqrt2*f
+    ],
+    [
+        b^2 + 1/4*g^2 - h^2,
+        c^2 - 5/8*g^2 - 1/2*h^2,
+        m^2 - 3/8*g^2 - 1/2*h^2,
+        f^2 - 1/8*g^2 - 1/2*h^2,
+        a - 1/2*sqrt3*g,
+        d + sqrt2*f,
+        e + 1/2*sqrt2*g
+    ],
+    [
+        c^2 - 1/4*g^2 - 1/2*h^2,
+        d^2 + 1/2*g^2 - h^2,
+        m^2 - 3/4*g^2 - 1/2*h^2,
+        f^2 - 5/4*g^2 - 1/2*h^2,
+        a + 1/2*sqrt3*sqrt2*g,
+        b + sqrt2*c,
+        e + sqrt2*g
+    ],
+    [
+        a^2 - 1/2*g^2 - h^2,
+        b^2 + 1/2*g^2 - 2*h^2,
+        m^2 - 1/4*g^2 - h^2,
+        f^2 + 1/4*g^2 - 2*h^2,
+        c - 1/2*sqrt3*g,
+        d + 1/2*sqrt2*g,
+        e + sqrt2*h
+    ],
+    [
+        a^2 - 2/3*f^2 - h^2,
+        c^2 + 1/3*f^2 - 2*h^2,
+        d^2 + 2/3*f^2 - 2*h^2,
+        m^2 - 1/3*f^2 - h^2,
+        b + 1/3*sqrt3*sqrt2*f,
+        e - 2/3*sqrt3*f,
+        g + sqrt2*h
+    ],
+    [
+        a^2 - g^2 + 1/3*h^2,
+        c^2 - 1/2*g^2 - 2/3*h^2,
+        m^2 - 1/2*g^2 - 1/3*h^2,
+        e^2 - g^2 + 2/3*h^2,
+        b + 1/3*sqrt3*sqrt2*h,
+        d - 2/3*sqrt3*h,
+        f + 1/2*sqrt2*g
+    ],
+    [
+        a^2 - g^2 - 1/3*h^2,
+        m^2 - 1/2*g^2 - 2/3*h^2,
+        e^2 - g^2 - 2/3*h^2,
+        f^2 - 1/2*g^2 - h^2,
+        b - 2/3*sqrt3*h,
+        c + 1/2*sqrt2*e,
+        d + 1/3*sqrt3*sqrt2*h
+    ],
+    [
+        c^2 - 5/6*g^2 - 1/3*h^2,
+        d^2 - 2/3*g^2 - 2/3*h^2,
+        m^2 - 1/6*g^2 - 2/3*h^2,
+        f^2 + 1/2*g^2 - h^2,
+        a + 1/2*sqrt2*d,
+        b - 2/3*sqrt3*f,
+        e + 1/3*sqrt3*sqrt2*f
+    ],
+    [
+        b^2 + 1/4*g^2 - h^2,
+        c^2 - 5/8*g^2 - 1/2*h^2,
+        m^2 - 3/8*g^2 - 1/2*h^2,
+        f^2 - 1/8*g^2 - 1/2*h^2,
+        a - 1/2*sqrt3*g,
+        d + sqrt2*f,
+        e - 1/2*sqrt2*g
+    ],
+    [
+        c^2 - 1/4*g^2 - 1/2*h^2,
+        d^2 + 1/2*g^2 - h^2,
+        m^2 - 3/4*g^2 - 1/2*h^2,
+        f^2 - 5/4*g^2 - 1/2*h^2,
+        a - 1/2*sqrt3*sqrt2*g,
+        b + sqrt2*c,
+        e - sqrt2*g
+    ],
+    [
+        a^2 - 1/2*g^2 - h^2,
+        b^2 + 1/2*g^2 - 2*h^2,
+        m^2 - 1/4*g^2 - h^2,
+        f^2 + 1/4*g^2 - 2*h^2,
+        c - 1/2*sqrt3*g,
+        d - 1/2*sqrt2*g,
+        e + sqrt2*h
+    ],
+    [
+        a^2 - 2/3*f^2 - h^2,
+        c^2 + 1/3*f^2 - 2*h^2,
+        d^2 + 2/3*f^2 - 2*h^2,
+        m^2 - 1/3*f^2 - h^2,
+        b - 1/3*sqrt3*sqrt2*f,
+        e - 2/3*sqrt3*f,
+        g + sqrt2*h
+    ],
+    [
+        a^2 - g^2 + 1/3*h^2,
+        c^2 - 1/2*g^2 - 2/3*h^2,
+        m^2 - 1/2*g^2 - 1/3*h^2,
+        e^2 - g^2 + 2/3*h^2,
+        b - 1/3*sqrt3*sqrt2*h,
+        d - 2/3*sqrt3*h,
+        f + 1/2*sqrt2*g
+    ],
+    [
+        a^2 - g^2 - 1/3*h^2,
+        m^2 - 1/2*g^2 - 2/3*h^2,
+        e^2 - g^2 - 2/3*h^2,
+        f^2 - 1/2*g^2 - h^2,
+        b - 2/3*sqrt3*h,
+        c + 1/2*sqrt2*e,
+        d - 1/3*sqrt3*sqrt2*h
+    ],
+    [
+        c^2 - 5/6*g^2 - 1/3*h^2,
+        d^2 - 2/3*g^2 - 2/3*h^2,
+        m^2 - 1/6*g^2 - 2/3*h^2,
+        f^2 + 1/2*g^2 - h^2,
+        a + 1/2*sqrt2*d,
+        b - 2/3*sqrt3*f,
+        e - 1/3*sqrt3*sqrt2*f
+    ],
+    [
+        b^2 + 1/4*g^2 - h^2,
+        c^2 - 5/8*g^2 - 1/2*h^2,
+        m^2 - 3/8*g^2 - 1/2*h^2,
+        f^2 - 1/8*g^2 - 1/2*h^2,
+        a - 1/2*sqrt3*g,
+        d - sqrt2*f,
+        e - 1/2*sqrt2*g
+    ],
+    [
+        c^2 - 1/4*g^2 - 1/2*h^2,
+        d^2 + 1/2*g^2 - h^2,
+        m^2 - 3/4*g^2 - 1/2*h^2,
+        f^2 - 5/4*g^2 - 1/2*h^2,
+        a - 1/2*sqrt3*sqrt2*g,
+        b - sqrt2*c,
+        e - sqrt2*g
+    ],
+    [
+        a^2 - 1/2*g^2 - h^2,
+        b^2 + 1/2*g^2 - 2*h^2,
+        m^2 - 1/4*g^2 - h^2,
+        f^2 + 1/4*g^2 - 2*h^2,
+        c - 1/2*sqrt3*g,
+        d - 1/2*sqrt2*g,
+        e - sqrt2*h
+    ],
+    [
+        a^2 - 2/3*f^2 - h^2,
+        c^2 + 1/3*f^2 - 2*h^2,
+        d^2 + 2/3*f^2 - 2*h^2,
+        m^2 - 1/3*f^2 - h^2,
+        b - 1/3*sqrt3*sqrt2*f,
+        e - 2/3*sqrt3*f,
+        g - sqrt2*h
+    ],
+    [
+        a^2 - g^2 + 1/3*h^2,
+        c^2 - 1/2*g^2 - 2/3*h^2,
+        m^2 - 1/2*g^2 - 1/3*h^2,
+        e^2 - g^2 + 2/3*h^2,
+        b - 1/3*sqrt3*sqrt2*h,
+        d - 2/3*sqrt3*h,
+        f - 1/2*sqrt2*g
+    ],
+    [
+        a^2 - g^2 - 1/3*h^2,
+        m^2 - 1/2*g^2 - 2/3*h^2,
+        e^2 - g^2 - 2/3*h^2,
+        f^2 - 1/2*g^2 - h^2,
+        b - 2/3*sqrt3*h,
+        c - 1/2*sqrt2*e,
+        d - 1/3*sqrt3*sqrt2*h
+    ],
+    [
+        c^2 - 5/6*g^2 - 1/3*h^2,
+        d^2 - 2/3*g^2 - 2/3*h^2,
+        m^2 - 1/6*g^2 - 2/3*h^2,
+        f^2 + 1/2*g^2 - h^2,
+        a - 1/2*sqrt2*d,
+        b - 2/3*sqrt3*f,
+        e - 1/3*sqrt3*sqrt2*f
+    ],
+    [
+        b^2 + 1/4*g^2 - h^2,
+        c^2 - 5/8*g^2 - 1/2*h^2,
+        m^2 - 3/8*g^2 - 1/2*h^2,
+        f^2 - 1/8*g^2 - 1/2*h^2,
+        a - 1/2*sqrt3*g,
+        d - sqrt2*f,
+        e + 1/2*sqrt2*g
+    ],
+    [
+        c^2 - 1/4*g^2 - 1/2*h^2,
+        d^2 + 1/2*g^2 - h^2,
+        m^2 - 3/4*g^2 - 1/2*h^2,
+        f^2 - 5/4*g^2 - 1/2*h^2,
+        a + 1/2*sqrt3*sqrt2*g,
+        b - sqrt2*c,
+        e + sqrt2*g
+    ],
+    [
+        a^2 - 1/2*g^2 - h^2,
+        b^2 + 1/2*g^2 - 2*h^2,
+        m^2 - 1/4*g^2 - h^2,
+        f^2 + 1/4*g^2 - 2*h^2,
+        c - 1/2*sqrt3*g,
+        d + 1/2*sqrt2*g,
+        e - sqrt2*h
+    ],
+    [
+        a^2 - 2/3*f^2 - h^2,
+        c^2 + 1/3*f^2 - 2*h^2,
+        d^2 + 2/3*f^2 - 2*h^2,
+        m^2 - 1/3*f^2 - h^2,
+        b + 1/3*sqrt3*sqrt2*f,
+        e - 2/3*sqrt3*f,
+        g - sqrt2*h
+    ],
+    [
+        a^2 - g^2 + 1/3*h^2,
+        c^2 - 1/2*g^2 - 2/3*h^2,
+        m^2 - 1/2*g^2 - 1/3*h^2,
+        e^2 - g^2 + 2/3*h^2,
+        b + 1/3*sqrt3*sqrt2*h,
+        d - 2/3*sqrt3*h,
+        f - 1/2*sqrt2*g
+    ],
+    [
+        a^2 - g^2 - 1/3*h^2,
+        m^2 - 1/2*g^2 - 2/3*h^2,
+        e^2 - g^2 - 2/3*h^2,
+        f^2 - 1/2*g^2 - h^2,
+        b - 2/3*sqrt3*h,
+        c - 1/2*sqrt2*e,
+        d + 1/3*sqrt3*sqrt2*h
+    ],
+    [
+        c^2 - 5/6*g^2 - 1/3*h^2,
+        d^2 - 2/3*g^2 - 2/3*h^2,
+        m^2 - 1/6*g^2 - 2/3*h^2,
+        f^2 + 1/2*g^2 - h^2,
+        a - 1/2*sqrt2*d,
+        b - 2/3*sqrt3*f,
+        e + 1/3*sqrt3*sqrt2*f
+    ],
+    [
+        b^2 + 1/4*g^2 - h^2,
+        c^2 - 5/8*g^2 - 1/2*h^2,
+        m^2 - 3/8*g^2 - 1/2*h^2,
+        f^2 - 1/8*g^2 - 1/2*h^2,
+        a + 1/2*sqrt3*g,
+        d + sqrt2*f,
+        e + 1/2*sqrt2*g
+    ],
+    [
+        c^2 - 1/4*g^2 - 1/2*h^2,
+        d^2 + 1/2*g^2 - h^2,
+        m^2 - 3/4*g^2 - 1/2*h^2,
+        f^2 - 5/4*g^2 - 1/2*h^2,
+        a - 1/2*sqrt3*sqrt2*g,
+        b + sqrt2*c,
+        e + sqrt2*g
+    ],
+    [
+        a^2 - 1/2*g^2 - h^2,
+        b^2 + 1/2*g^2 - 2*h^2,
+        m^2 - 1/4*g^2 - h^2,
+        f^2 + 1/4*g^2 - 2*h^2,
+        c + 1/2*sqrt3*g,
+        d + 1/2*sqrt2*g,
+        e + sqrt2*h
+    ],
+    [
+        a^2 - 2/3*f^2 - h^2,
+        c^2 + 1/3*f^2 - 2*h^2,
+        d^2 + 2/3*f^2 - 2*h^2,
+        m^2 - 1/3*f^2 - h^2,
+        b - 1/3*sqrt3*sqrt2*f,
+        e + 2/3*sqrt3*f,
+        g + sqrt2*h
+    ],
+    [
+        a^2 - g^2 + 1/3*h^2,
+        c^2 - 1/2*g^2 - 2/3*h^2,
+        m^2 - 1/2*g^2 - 1/3*h^2,
+        e^2 - g^2 + 2/3*h^2,
+        b - 1/3*sqrt3*sqrt2*h,
+        d + 2/3*sqrt3*h,
+        f + 1/2*sqrt2*g
+    ],
+    [
+        a^2 - g^2 - 1/3*h^2,
+        m^2 - 1/2*g^2 - 2/3*h^2,
+        e^2 - g^2 - 2/3*h^2,
+        f^2 - 1/2*g^2 - h^2,
+        b + 2/3*sqrt3*h,
+        c + 1/2*sqrt2*e,
+        d - 1/3*sqrt3*sqrt2*h
+    ],
+    [
+        c^2 - 5/6*g^2 - 1/3*h^2,
+        d^2 - 2/3*g^2 - 2/3*h^2,
+        m^2 - 1/6*g^2 - 2/3*h^2,
+        f^2 + 1/2*g^2 - h^2,
+        a + 1/2*sqrt2*d,
+        b + 2/3*sqrt3*f,
+        e - 1/3*sqrt3*sqrt2*f
+    ],
+    [
+        b^2 + 1/4*g^2 - h^2,
+        c^2 - 5/8*g^2 - 1/2*h^2,
+        m^2 - 3/8*g^2 - 1/2*h^2,
+        f^2 - 1/8*g^2 - 1/2*h^2,
+        a + 1/2*sqrt3*g,
+        d + sqrt2*f,
+        e - 1/2*sqrt2*g
+    ],
+    [
+        c^2 - 1/4*g^2 - 1/2*h^2,
+        d^2 + 1/2*g^2 - h^2,
+        m^2 - 3/4*g^2 - 1/2*h^2,
+        f^2 - 5/4*g^2 - 1/2*h^2,
+        a + 1/2*sqrt3*sqrt2*g,
+        b + sqrt2*c,
+        e - sqrt2*g
+    ],
+    [
+        a^2 - 1/2*g^2 - h^2,
+        b^2 + 1/2*g^2 - 2*h^2,
+        m^2 - 1/4*g^2 - h^2,
+        f^2 + 1/4*g^2 - 2*h^2,
+        c + 1/2*sqrt3*g,
+        d - 1/2*sqrt2*g,
+        e + sqrt2*h
+    ],
+    [
+        a^2 - 2/3*f^2 - h^2,
+        c^2 + 1/3*f^2 - 2*h^2,
+        d^2 + 2/3*f^2 - 2*h^2,
+        m^2 - 1/3*f^2 - h^2,
+        b + 1/3*sqrt3*sqrt2*f,
+        e + 2/3*sqrt3*f,
+        g + sqrt2*h
+    ],
+    [
+        a^2 - g^2 + 1/3*h^2,
+        c^2 - 1/2*g^2 - 2/3*h^2,
+        m^2 - 1/2*g^2 - 1/3*h^2,
+        e^2 - g^2 + 2/3*h^2,
+        b + 1/3*sqrt3*sqrt2*h,
+        d + 2/3*sqrt3*h,
+        f + 1/2*sqrt2*g
+    ],
+    [
+        a^2 - g^2 - 1/3*h^2,
+        m^2 - 1/2*g^2 - 2/3*h^2,
+        e^2 - g^2 - 2/3*h^2,
+        f^2 - 1/2*g^2 - h^2,
+        b + 2/3*sqrt3*h,
+        c + 1/2*sqrt2*e,
+        d + 1/3*sqrt3*sqrt2*h
+    ],
+    [
+        c^2 - 5/6*g^2 - 1/3*h^2,
+        d^2 - 2/3*g^2 - 2/3*h^2,
+        m^2 - 1/6*g^2 - 2/3*h^2,
+        f^2 + 1/2*g^2 - h^2,
+        a + 1/2*sqrt2*d,
+        b + 2/3*sqrt3*f,
+        e + 1/3*sqrt3*sqrt2*f
+    ],
+    [
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        -a + (-sqrt3 - 1)*d + (sqrt3 + 2)*f,
+        3*a + sqrt3*d - 3*e - sqrt3*f
+    ],
+    [
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -c + (-sqrt3 - 1)*e + (sqrt3 + 2)*h,
+        3*c - 3*d + sqrt3*e - sqrt3*h
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        -f + (-sqrt3 - 1)*g + (sqrt3 + 2)*h,
+        -3*b + 3*f + sqrt3*g - sqrt3*h
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        (sqrt3 + 2)*f + (-sqrt3 - 1)*g - h,
+        -3*b - sqrt3*f + sqrt3*g + 3*h
+    ],
+    [
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        (sqrt3 + 2)*c + (-sqrt3 - 1)*e - h,
+        -sqrt3*c - 3*d + sqrt3*e + 3*h
+    ],
+    [
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        (sqrt3 + 2)*a + (-sqrt3 - 1)*d - f,
+        -sqrt3*a + sqrt3*d - 3*e + 3*f
+    ],
+    [
+        a^2 + b^2 + c^2 - 3*m^2,
+        d^2 - 2*m^2 + e^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        3*a - 2*c - e,
+        a - c + e - f
+    ],
+    [
+        c^2 - 3*m^2 + e^2 + h^2,
+        b^2 - 2*m^2 + g^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 - 2*m^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        3*c - g - 2*h,
+        -a + c + g - h
+    ],
+    [
+        -3*m^2 + f^2 + g^2 + h^2,
+        d^2 - 2*m^2 + e^2,
+        a^2 + b^2 + c^2 - 3*m^2,
+        a^2 + d^2 - 3*m^2 + f^2,
+        b^2 - 2*m^2 + g^2,
+        c^2 - 3*m^2 + e^2 + h^2,
+        c^2 - 2*m^2 + f^2,
+        a^2 - 2*m^2 + h^2,
+        -d - 2*f + 3*h,
+        -c + d - f + h
+    ]
+];
