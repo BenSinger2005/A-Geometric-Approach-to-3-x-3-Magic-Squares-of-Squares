@@ -154,3 +154,127 @@ for n in [1..#Configs] do
     end for;
     printf "];\n\n";
 end for;
+
+//To get the rest of the divisors corresponding to the orbits of the line preimages in each configuration under the action of the automorphism group, add maps corresponding to the rotation and reflection in the automorphism group as outlined in Section 1. Then, loop them over an appended list of all preimages computed as above, adding the orbit of each line preimage. Most of them are equal to components we already have; the new ones take up indices 417..800 in Comps.m.
+
+//Here is the code to compute the preimages of lines on cubic surfaces. The idea is to project each magic dP4 from the point p = [1,1,1,1,1] which is present on all of them, find the lines on all of the cubic surfaces, and then pull back to V.
+
+//We first give the function to compute the projection from a point given the two defining quadrics of a magic dP4.
+
+GetCubic := function(q1, q2)
+    A := PolynomialRing(K, 9);          // A.1..A.5 = y (chosen coords), A.6..A.9 = u
+    y := [A.t     : t in [1..5]];
+    u := [A.(5+t) : t in [1..4]];
+    Q1 := &+[ q1[t]*y[t]^2 : t in [1..5] ];
+    Q2 := &+[ q2[t]*y[t]^2 : t in [1..5] ];
+    proj := [ y[1]-y[2], y[2]-y[3], y[3]-y[4], y[4]-y[5] ];
+    I  := ideal<A | Q1, Q2, [ u[t]-proj[t] : t in [1..4] ]>;
+    Iu := EliminationIdeal(I, 5);        // eliminate the 5 y's -> ideal in u only
+    cub := [b : b in Basis(Iu) | TotalDegree(b) eq 3];
+    error if #cub eq 0, "no cubic generator found (p may be a node here)";
+    // move the cubic into a clean 4-variable ring
+    Ru := PolynomialRing(K, 4);
+    toRu := hom< A -> Ru | [Ru | 0,0,0,0,0, Ru.1,Ru.2,Ru.3,Ru.4] >;
+    return toRu(cub[1]), Ru;
+end function;
+
+// Here is the function to compute the lines on a given cubic surface, following the Elsenhans-Jahnel method similarly to above.
+
+LinesOnCubic := function(F, Ru)
+    R := PolynomialRing(K, 4);
+    AssignNames(~R, ["al1","al2","be1","be2"]);
+    al := [R.1, R.2];  be := [R.3, R.4];
+    Rst := PolynomialRing(R, 2);  s := Rst.1;  t := Rst.2;
+    found := {};  lines := [];
+    for p in [1..4] do
+      for q in [p+1..4] do
+        J  := [j : j in [1..4] | j ne p and j ne q];
+        pt := [Rst| 0,0,0,0];
+        pt[p] := s;  pt[q] := t;
+        pt[J[1]] := al[1]*s + be[1]*t;
+        pt[J[2]] := al[2]*s + be[2]*t;
+        Fval := Evaluate(F, pt);                      
+        eqs  := [ MonomialCoefficient(Fval, m)
+                    : m in [s^3, s^2*t, s*t^2, t^3] ];
+        I := ideal<R | eqs>;
+        if Dimension(I) gt 0 then continue; end if;
+        for sol in Variety(I) do
+            a1,a2,b1,b2 := Explode([sol[1],sol[2],sol[3],sol[4]]);
+            Pl := ZeroMatrix(K, 2, 4);
+            Pl[1,p]:=1; Pl[2,q]:=1;
+            Pl[1,J[1]]:=a1; Pl[1,J[2]]:=a2; Pl[2,J[1]]:=b1; Pl[2,J[2]]:=b2;
+            key := Eltseq(EchelonForm(Pl));
+            if key notin found then
+                Include(~found, key);
+                Append(~lines, <p, q, J, [a1,a2], [b1,b2]>);
+            end if;
+        end for;
+      end for;
+    end for;
+    return lines;
+end function;
+
+//  We now give the function to compute the preimages of each line. The u-coordinates in the original variables are: uu[t] = C_t - C_{t+1}, C_t = cfg's t-th var.
+
+CubicLineForms := function(cfg, line)
+    C  := [ vars[idx[cfg[t]]] : t in [1..5] ];
+    uu := [ C[1]-C[2], C[2]-C[3], C[3]-C[4], C[4]-C[5] ];  // pullback of u0..u3
+    p := line[1]; q := line[2]; J := line[3];
+    a := line[4]; b := line[5];
+    L1 := uu[J[1]] - a[1]*uu[p] - b[1]*uu[q];
+    L2 := uu[J[2]] - a[2]*uu[p] - b[2]*uu[q];
+    return [ ClearDen(L1), ClearDen(L2) ];
+end function;
+
+// We now run this over all the configurations, omitting the pullback blocks.
+
+for n in [1..#Configs] do
+    cfg    := Configs[n];
+    chosen := [ idx[st] : st in cfg ];
+    q1, q2 := DPQuadrics(chosen);
+    F, Ru  := GetCubic(q1, q2);
+    lines  := LinesOnCubic(F, Ru);
+
+    cfgstr := cfg[1]; for st in [2..5] do cfgstr := cfgstr cat ", " cat cfg[st]; end for;
+    printf "// ===== CubicConfig%o := [%o]  ->  %o lines on the cubic =====\n",
+           n, cfgstr, #lines;
+    printf "CubicConfig%o_pullbacks := [\n", n;
+    for tt in [1..#lines] do
+        L := CubicLineForms(cfg, lines[tt]);
+        sep := (tt lt #lines) select "," else "";
+        printf "    Veqns cat [ %o,  %o ]%o   // line %o\n", L[1], L[2], sep, tt;
+    end for;
+    printf "];\n\n";
+end for;
+
+PP := Proj(P);   // P^8 with coordinate ring P<a,b,c,d,m,e,f,g,h>
+
+// 1-dimensional irreducible components of a divisor block, with canonical keys.
+CurveComponents := function(eqns)
+    out := [];   // list of <key, scheme>
+    for C in IrreducibleComponents(Scheme(PP, eqns)) do
+        if Dimension(C) eq 1 then
+            Append(~out, < GroebnerBasis(Ideal(C)), C >);
+        end if;
+    end for;
+    return out;
+end function;
+
+//Building the list of cubics. 
+
+CubicLists := [* *];    
+for n in [1..#Configs] do
+    cfg    := Configs[n];
+    chosen := [ idx[st] : st in cfg ];
+    q1, q2 := DPQuadrics(chosen);
+    F, Ru  := GetCubic(q1, q2);
+    lines  := LinesOnCubic(F, Ru);
+
+    blocks := [ Veqns cat CubicLineForms(cfg, lines[tt]) : tt in [1..#lines] ];
+    Append(~CubicLists, blocks);
+
+end for;
+
+//Output it! To get the rest of the divisors corresponding to the orbits of the line preimages in each configuration under the action of the automorphism group, add maps corresponding to the rotation and reflection in the automorphism group as outlined in Section 1. Then, loop them over CubicLists, adding the orbit of each line preimage. Most of them are equal to components we already have; the new ones take up indices 801..948 in Comps.m.
+
+CubicLists;
