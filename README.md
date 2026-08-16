@@ -2,7 +2,7 @@ This repository contains the Magma code used to verify the computational results
 Below is a guide to which files are used to prove which results in the paper.
 
 **THEOREM 3: Picard Rank Bound:**
-This is the most computationally intensive result in the paper. It involves three files: Comps.m, ComputeLinePreimages.m, PicardRankCodeSquareOfSquares.m, and IntersectionMatrix.m. PicardRankCodeSquareOfSquares contains code to compute the Picard ranks of both the square of squares variety V and the K3 surface X from section 4.2. 
+This is the most computationally intensive result in the paper. It involves three files: Comps.m, ComputeLinePreimages.m, PicardRankCodeSquareOfSquares.m, and IntersectionMatrix.m. PicardRankCodeSquareOfSquares contains code to compute the Picard ranks of both the magic square of squares variety V and the K3 surface X from section 4.2. 
 To run the verification for Theorem 2, paste in PicardRankCodeSquareOfSquares.m up until retrieving the singular points of V. Then, paste in Comps.m. Afterwards, paste the rest of the code up through the first instance of Rank(pairingmat). The computation should take ~2 hours. The raw intersection matrix is also available in the file IntersectionMatrix.m. As far as ComputeLinePreimages.m goes, this is to compute the 532 divisors appearing as preimages of lines on the magic quartic del Pezzo and cubic surfaces derived in Section 4.1. The equations are already in Comps.m, but the curious reader may check that the code gives the divisors we claim to have.
 
 **Hardware note.** Computing the Picard rank of V requires substantially more memory than is typically available on a desktop/laptop installation of Magma. We recommend running this computation on a high-memory computing cluster.
