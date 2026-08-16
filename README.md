@@ -1,7 +1,7 @@
 This repository contains the Magma code used to verify the computational results in my paper A Geometric Approach to Magic Squares of Squares (with Asher Auel, arxiv ID to be uploaded). The paper studies the classical problem of 3×3 magic squares of squares using methods from algebraic geometry, including the geometry of quartic del Pezzo surfaces and K3 surfaces. This repository contains all computations required to reproduce the main computational results. The paper is heavily reliant on Magma, particularly for the Picard rank, classifying magic del Pezzo surfaces, and computing Weil polynomials of magic K3 surfaces.
 Below is a guide to which files are used to prove which results in the paper.
 
-**THEOREM 2: Picard Rank Bound:**
+**THEOREM 3: Picard Rank Bound:**
 This is the most computationally intensive result in the paper. It involves three files: Comps.m, ComputeLinePreimages.m, PicardRankCodeSquareOfSquares.m, and IntersectionMatrix.m. PicardRankCodeSquareOfSquares contains code to compute the Picard ranks of both the square of squares variety V and the K3 surface X from section 4.2. 
 To run the verification for Theorem 2, paste in PicardRankCodeSquareOfSquares.m up until retrieving the singular points of V. Then, paste in Comps.m. Afterwards, paste the rest of the code up through the first instance of Rank(pairingmat). The computation should take ~2 hours. The raw intersection matrix is also available in the file IntersectionMatrix.m. As far as ComputeLinePreimages.m goes, this is to compute the 532 divisors appearing as preimages of lines on the magic quartic del Pezzo and cubic surfaces derived in Section 4.1. The equations are already in Comps.m, but the curious reader may check that the code gives the divisors we claim to have.
 
